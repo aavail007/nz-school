@@ -1,40 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>淨零永續學校</title>
-    <link rel="stylesheet" href="css/plugin/bootstrap.min.css">
-    <link rel="stylesheet" href="css/plugin/fontawesome-free-5.11.2-web/css/all.min.css">
+    <link rel="stylesheet" href="css/plugin/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="css/plugin/fontawesome-free-5.11.2-web/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/nz_style.css" />
     <script src="js/plugin/jQuery-v3.3.1.miin.js"></script>
     <script src="js/plugin/bootstrap.min.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="container px-100">
-            <nav class="nav justify-content-between">
-                <a class="navbar-brand" href="index.html">
-                    <img class="" src="img/layout/logo.png" alt="淨零永續學校" title="淨零永續學校">
-                </a>
-                <ul class="nav justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">會員登入</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">產業學習網</a>
-                      </li>
-                </ul>
-            </nav>
+      <div class="container">
+        <nav class="nav justify-content-between nz-nav">
+          <a class="navbar-brand" href="index.html">
+            <img
+              class="nz-logo"
+              src="img/layout/logo.png"
+              alt="淨零永續學校"
+              title="淨零永續學校"
+            />
+          </a>
+          <ul
+            class="nav justify-content-end align-items-center font-weight-bold"
+          >
+            <li class="nz-nav-item">
+              <a class="nz-primary active" href="#">會員登入</a>
+            </li>
+            <li class="nz-gray">|</li>
+            <li class="nz-nav-item">
+              <a class="nz-primary" href="#">產業學習網</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="nz-menu">
+        <div class="nz-container">
+          <ul class="nav justify-content-between">
+            <li>淨零知識</li>
+            <li>專業課程</li>
+            <li>趨勢焦點</li>
+            <li>加值服務</li>
+            <li>關於我們</li>
+          </ul>
         </div>
+      </div>
     </header>
+
+    <div class="container">
+      <!-- 趨勢焦點 -->
+      <section>
+        <h1 class="nz-title nz-primary my-4">趨勢焦點</h1>
+        <div class="row">
+          <div class="col-md-8 col-12">
+            <div class="nz-focus-img">
+              <img src="img/example/img-1.JPG" />
+              <div class="nz-mask">
+                  <div class="nz-img-word">
+                    <p class="nz-img-title nz-overflow-ellipsis">
+                        碳足跡盤查｜為2050年淨零碳排提早佈局，企業綠色轉型享2大優勢。碳足跡盤查｜為2050年淨零碳排提早佈局，企業綠色轉型享2大優勢
+                    </p>
+                    <small>2022-08-09</small>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">55555</div>
+        </div>
+      </section>
+    </div>
+
     <!-- footer -->
-    <footer class="text-center my-4">
-
-    </footer>
-
-</body>
-
+    <footer class="text-center my-4"></footer>
+  </body>
 </html>
