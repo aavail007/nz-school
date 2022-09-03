@@ -3,7 +3,7 @@ body {
 }
 
 header {
-  border-top: solid 6px #7fb77e;
+  border-top: solid 6px #45904d;
   background: #ffffff;
   box-shadow: 0px 2px 38px rgb(0 0 0 / 8%);
 }
@@ -18,12 +18,12 @@ a:hover {
   object-fit: cover;
 }
 
-
 .nz-primary {
-  color: #7fb77e;
+  color: #45904d;
 }
 
-a.nz-primary:hover {
+a.nz-primary:hover,
+a .nz-primary:hover {
   color: #649e68;
   transition: 0.3s;
   text-decoration: none;
@@ -37,6 +37,32 @@ a.nz-primary:hover {
   color: #555555;
 }
 
+a.nz-black:hover,
+a .nz-black:hover {
+  color: #649e68;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+/* 通用按鈕 */
+.nz-btn {
+  padding: 5px 20px;
+  border-radius: 6px;
+}
+
+.nz-btn-primary {
+  background-color: #649e68;
+  color: #ffffff;
+}
+
+.nz-btn-primary:hover,
+.nz-btn-primary:active,
+.nz-btn-primary:focus {
+  background-color: #45904d;
+  color: #ffffff;
+}
+
+/* 超出寬度省略字... */
 .nz-overflow-ellipsis {
   overflow: hidden;
   display: -webkit-box;
@@ -51,19 +77,21 @@ a.nz-primary:hover {
   -webkit-box-orient: vertical;
 }
 
-/* 輪播圖 */
-
+/* 通用輪播圖 */
 .nz-carousel {
   margin: 0 -30px;
- }
+}
 
 .nz-carousel .carousel-indicators {
-bottom: -65px;
-
+  bottom: -45px;
 }
 
 .nz-carousel .carousel-indicators li {
   background-color: #649e68;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  margin: 0 6px;
 }
 
 .nz-carousel .carousel-inner {
@@ -72,14 +100,13 @@ bottom: -65px;
 
 /* ----- header ----- */
 .nz-logo {
-  height: 60px;
+  height: 55px;
   position: relative;
-  left: -35px;
 }
 
 .nz-nav {
-  font-size: 20px;
-  padding: 10px 0;
+  font-size: 18px;
+  padding: 14px 0;
 }
 
 .nz-nav-item {
@@ -91,34 +118,26 @@ bottom: -65px;
 }
 
 .nz-menu {
-  border-top: solid 1px rgba(127, 183, 126, 0.3);
   font-size: 24px;
-  color: #555555;
+  background-color: #45904d;
 }
 
-.nz-container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+.nz-menu a {
+  color: #ffffff;
+}
+.nz-menu li:hover a {
+  color: #fff500;
 }
 
 .nz-menu li {
-  padding: 10px 35px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.nz-menu li .active {
-  padding: 5px 30px;
+  padding: 10px 0;
 }
 
 .nz-menu li:hover,
 .nz-menu li .active {
-  background-color: #649e68;
-  color: #ffffff;
-  transition: 0.5;
+  border-bottom: #fff500 solid 3px;
+  box-sizing: border-box;
+  padding: 10px 0 7px 0;
 }
 
 .nz-title {
@@ -126,42 +145,34 @@ bottom: -65px;
   font-weight: bold;
 }
 
-/* ----- 趨勢焦點 ----- */
-.nz-focus-img {
-  position: relative;
-  width: 100%;
+/* ----- banner 輪播圖 ----- */
+.nz-banner .carousel-inner {
   height: 280px;
+  padding: 0px 40px 15px 30px;
+}
+
+.nz-banner .carousel-item {
+  width: 100%;
+  height: 100%;
   border-radius: 11px;
   overflow: hidden;
 }
 
-.nz-focus-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+/* ----- 焦點訊息 ----- */
+.nz-focus-item {
+  border-left: solid 3px #9dbc1b;
+  padding: 0 0 0 20px;
+  margin: 25px 0;
 }
 
-.nz-img-word {
-  position: absolute;
-  bottom: 0px;
-  color: #ffffff;
-  padding: 15px;
-}
-
-.nz-mask {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 30%,
-    rgba(0, 0, 0, 0.9) 120%
-  );
-}
-.nz-img-title {
+.nz-focus-title {
   font-size: 20px;
-  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.nz-focus-date {
+  font-size: 12px;
+  color: #7fb77e;
 }
 
 /* ----- 專業課程 ----- */
@@ -195,17 +206,9 @@ bottom: -65px;
   padding: 2px 15px;
   border-radius: 25px;
   font-size: 12px;
-  background-color: #FFAB6A;
+  background-color: #ffab6a;
 }
 
 .nz-course-p {
   font-size: 14px;
-}
-
-
-
-@media (min-width: 1200px) {
-  .nz-container {
-    max-width: calc(1140px + 70px);
-  }
 }
