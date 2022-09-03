@@ -1,11 +1,15 @@
 body {
-  font-family: Microsoft JhengHei;
+  font-family: "PingFang TC", "Microsoft JhengHei", "Roboto";
 }
 
 header {
   border-top: solid 6px #45904d;
   background: #ffffff;
   box-shadow: 0px 2px 38px rgb(0 0 0 / 8%);
+}
+
+.nz-bg-gray {
+  background-color: #f4f4f4;
 }
 
 a:hover {
@@ -77,6 +81,13 @@ a .nz-black:hover {
   -webkit-box-orient: vertical;
 }
 
+.nz-overflow-ellipsis-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
 /* 通用輪播圖 */
 .nz-carousel {
   margin: 0 -30px;
@@ -141,8 +152,14 @@ a .nz-black:hover {
 }
 
 .nz-title {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: bold;
+}
+
+.nz-subtitle {
+  font-size: 18px;
+  color: #ff8b32;
+  margin-left: 12px;
 }
 
 /* ----- banner 輪播圖 ----- */
@@ -154,7 +171,6 @@ a .nz-black:hover {
 .nz-banner .carousel-item {
   width: 100%;
   height: 100%;
-  border-radius: 11px;
   overflow: hidden;
 }
 
@@ -211,4 +227,107 @@ a .nz-black:hover {
 
 .nz-course-p {
   font-size: 14px;
+}
+
+/* ------------- 淨零知識 -------------- */
+.nz-know-theme {
+  position: relative;
+  border-radius: 11px;
+  height: 180px;
+  overflow: hidden;
+}
+
+.nz-know-theme h3 {
+  transition: 0.3s;
+}
+
+.nz-know-theme p {
+  font-size: 14px;
+  transition: 0.5s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.nz-know-theme:hover p,
+.nz-know-theme:hover h3 {
+  opacity: 1;
+  height: auto;
+  transition: 0.5s ease-in;
+}
+
+.nz-img-word {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #ffffff;
+  padding: 15px;
+  text-align: center;
+}
+
+.nz-mask {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0 0 0 / 50%);
+}
+
+/* 淨零知識卡片 */
+.nz-know-card {
+  background-color: #fff;
+  border-radius: 11px;
+  overflow: hidden;
+  min-height: 380px;
+  margin: 15px 0;
+}
+.nz-know-card-img {
+  width: 100%;
+  height: 180px;
+  position: relative;
+}
+
+.nz-flag {
+  position: absolute;
+  background-color: #ff8b32;
+  top: 12px;
+  right: -29px;
+  width: 115px;
+  transform: rotate(45deg);
+  color: #ffffff;
+  text-align: center;
+  padding: 5px;
+  font-family: sans-serif;
+}
+
+.nz-know-card-info {
+  padding: 10px 15px;
+}
+
+.nz-know-card-info p {
+  font-size: 14px;
+  color: #898989;
+}
+
+.nz-know-type {
+  display: inline-block;
+  background-color: #7fb77e;
+  color: #ffffff;
+  padding: 2px 15px;
+  border-radius: 25px;
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.nz-know-card-title {
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.nz-know-date {
+  font-size: 12px;
+  color: #A1A1A1;
 }
