@@ -343,3 +343,58 @@ a .nz-black:hover {
 .nz-member-logo img {
   width: 80%;
 }
+
+/* ---------- footer ------------ */
+footer {
+  background-color: #45904d;
+  padding: 30px 0;
+  color: #ffffff;
+}
+
+.nz-footer-title {
+  letter-spacing: 2px;
+}
+
+.nz-community-i {
+  background-color: #ffffff4f;
+  color: #ffffff;
+  /* margin: 5px; */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.nz-connection {
+  font-size: 16px;
+}
+
+.nz-vertical-line {
+  width: 1px;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.nz-hr {
+  border-top: 1px solid #ffffff;
+}
+
+.nz-a-white {
+  color: #ffffff;
+}
+
+.nz-a-white:hover {
+  opacity: 0.8;
+  color: #ffffff;
+}
+
+.nz-footer-logo {
+  height: 48px;
+}
+
+.nz-footer-right {
+  font-size: 12px;
+}
