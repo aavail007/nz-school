@@ -12,8 +12,15 @@ header {
   background-color: #f4f4f4;
 }
 
-a:hover {
+a {
+  color: #45904d;
+}
+
+a:hover,
+a:active,
+a:focus {
   text-decoration: none;
+  color: #649e68;
 }
 
 .nz-img {
@@ -162,6 +169,15 @@ a .nz-black:hover {
   margin-left: 12px;
 }
 
+.nz-menu-bar {
+  color: #45904d;
+  font-size: 26px;
+}
+
+.nz-navbar-nav {
+  padding: 0 40px;
+  font-size: 26px;
+}
 /* ----- banner 輪播圖 ----- */
 .nz-banner .carousel-inner {
   height: 280px;
@@ -223,6 +239,8 @@ a .nz-black:hover {
   border-radius: 25px;
   font-size: 12px;
   background-color: #ffab6a;
+  text-align: center;
+  display: inline-block;
 }
 
 .nz-course-p {
@@ -283,6 +301,7 @@ a .nz-black:hover {
   overflow: hidden;
   min-height: 380px;
   margin: 15px 0;
+  box-shadow: 0px 6px 27px rgba(0, 0, 0, 0.08);
 }
 .nz-know-card-img {
   width: 100%;
@@ -352,20 +371,19 @@ footer {
 }
 
 .nz-footer-title {
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 .nz-community-i {
   background-color: #ffffff4f;
   color: #ffffff;
-  /* margin: 5px; */
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .nz-connection {
@@ -397,4 +415,18 @@ footer {
 
 .nz-footer-right {
   font-size: 12px;
+}
+
+
+/* RWD */
+@media (max-width: 991.98px) {
+  .nz-logo {
+    height: 40px;
+  }
+}
+
+@media (max-width: 1199.98px) { 
+  .nz-course-type {
+    padding: 2px 10px;
+  }
 }

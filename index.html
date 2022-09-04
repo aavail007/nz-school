@@ -18,7 +18,7 @@
   <body>
     <header>
       <div class="container">
-        <nav class="nav justify-content-between nz-nav">
+        <div class="nz-nav nav justify-content-between align-items-center">
           <a class="navbar-brand" href="index.html">
             <img
               class="nz-logo"
@@ -27,22 +27,30 @@
               title="淨零永續學校"
             />
           </a>
-          <ul
-            class="nav justify-content-end align-items-center font-weight-bold"
-          >
-            <li class="nz-nav-item">
-              <a class="nz-primary active" href="#">會員登入</a>
-            </li>
-            <li class="nz-gray">|</li>
-            <li class="nz-nav-item">
-              <a class="nz-primary" href="#">產業學習網</a>
-            </li>
-          </ul>
-        </nav>
+          <div class="d-none d-lg-block">
+            <ul
+              class="nav justify-content-end align-items-center font-weight-bold"
+            >
+              <li class="nz-nav-item">
+                <a class="nz-primary active" href="#">會員登入</a>
+              </li>
+              <li class="nz-gray">|</li>
+              <li class="nz-nav-item">
+                <a class="nz-primary" href="https://college.itri.org.tw/">產業學習網</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nz-mobile-menu d-lg-none d-md-block">
+            <button class="nz-menu-bar navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="nz-menu">
-        <div class="container">
-          <ul class="nav justify-content-between">
+      <nav>
+        <!-- 電腦版 menu -->
+        <div class="nz-menu d-none d-lg-block">
+          <ul class="nav container justify-content-between">
             <!-- TODO: url -->
             <li><a href="#">淨零知識</a></li>
             <li><a href="">專業課程</a></li>
@@ -51,14 +59,44 @@
             <li><a href="">關於我們</a></li>
           </ul>
         </div>
-      </div>
+        <!-- 手機版 menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav nz-navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">淨零知識</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">專業課程</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">案例與加值服務</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">焦點訊息</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">關於我們</a>
+            </li>
+            <li class="nav-item">
+              <hr>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">會員登入</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://college.itri.org.tw/">產業學習網</a>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
     </header>
 
     <div class="container mb-5">
       <!-- 輪播、焦點訊息 -->
       <section>
         <div class="row my-5">
-          <div class="nz-banner col-md-7 col-12">
+          <div class="nz-banner col-md-7 mb-5">
             <div
               id="bannerCarousel"
               class="nz-carousel carousel slide"
@@ -122,7 +160,7 @@
               </a>
             </div>
           </div>
-          <div class="col-5">
+          <div class="col-md-5">
             <h1 class="nz-title nz-primary mb-4">焦點訊息</h1>
             <!-- 焦點訊息-1 -->
             <div class="nz-focus-item">
@@ -174,7 +212,6 @@
       <!-- 永續專業課程 -->
       <section>
         <h1 class="nz-title nz-primary my-4">永續管理專業課程</h1>
-
         <div
           id="courseCarousel-1"
           class="carousel slide nz-carousel"
@@ -211,14 +248,16 @@
                           淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
                         </h4>
                         <div class="d-flex">
-                          <div class="nz-course-type mr-3">線上同步</div>
-                          <div class="nz-course-p nz-black mr-3">
-                            <i class="far fa-calendar-alt"></i>
-                            <span class="mx-1">8/18 ~ 8/19</span>
-                          </div>
-                          <div class="nz-course-p nz-black">
-                            <i class="far fa-clock"></i>
-                            <span class="mx-1">12 hrs</span>
+                          <div class="nz-course-type mr-3 d-none d-lg-flex">線上同步</div>
+                          <div class="d-flex">
+                            <div class="nz-course-p nz-black mr-3">
+                              <i class="far fa-calendar-alt"></i>
+                              <span class="mx-1">8/18 ~ 8/19</span>
+                            </div>
+                            <div class="nz-course-p nz-black">
+                              <i class="far fa-clock"></i>
+                              <span class="mx-1">12 hrs</span>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -233,7 +272,7 @@
                         <img
                           class="nz-img"
                           alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/img0721.jpg"
+                          src="https://college.itri.org.tw/nzschool/assets/images/imgA06.jpg"
                         />
                       </div>
                       <div class="nz-course-info">
@@ -243,14 +282,84 @@
                           淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
                         </h4>
                         <div class="d-flex">
-                          <div class="nz-course-type mr-3">線上同步</div>
-                          <div class="nz-course-p nz-black mr-3">
-                            <i class="far fa-calendar-alt"></i>
-                            <span class="mx-1">8/18 ~ 8/19</span>
+                          <div class="nz-course-type mr-3 d-none d-lg-flex">線上同步</div>
+                          <div class="d-flex">
+                            <div class="nz-course-p nz-black mr-3">
+                              <i class="far fa-calendar-alt"></i>
+                              <span class="mx-1">8/18 ~ 8/19</span>
+                            </div>
+                            <div class="nz-course-p nz-black">
+                              <i class="far fa-clock"></i>
+                              <span class="mx-1">12 hrs</span>
+                            </div>
                           </div>
-                          <div class="nz-course-p nz-black">
-                            <i class="far fa-clock"></i>
-                            <span class="mx-1">12 hrs</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 課程卡片 -->
+                <div class="col-md-6 col-12">
+                  <a href="#">
+                    <div class="nz-course-card d-flex">
+                      <div class="nz-course-img">
+                        <img
+                          class="nz-img"
+                          alt="課程圖片"
+                          src="https://college.itri.org.tw/nzschool/assets/images/imgA12.jpg"
+                        />
+                      </div>
+                      <div class="nz-course-info">
+                        <h4
+                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
+                        >
+                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                        </h4>
+                        <div class="d-flex">
+                          <div class="nz-course-type mr-3 d-none d-lg-flex">線上同步</div>
+                          <div class="d-flex">
+                            <div class="nz-course-p nz-black mr-3">
+                              <i class="far fa-calendar-alt"></i>
+                              <span class="mx-1">8/18 ~ 8/19</span>
+                            </div>
+                            <div class="nz-course-p nz-black">
+                              <i class="far fa-clock"></i>
+                              <span class="mx-1">12 hrs</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 課程卡片 -->
+                <div class="col-md-6 col-12">
+                  <a href="#">
+                    <div class="nz-course-card d-flex">
+                      <div class="nz-course-img">
+                        <img
+                          class="nz-img"
+                          alt="課程圖片"
+                          src="https://college.itri.org.tw/nzschool/assets/images/imgA13.jpg"
+                        />
+                      </div>
+                      <div class="nz-course-info">
+                        <h4
+                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
+                        >
+                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                        </h4>
+                        <div class="d-flex">
+                          <div class="nz-course-type mr-3 d-none d-lg-flex">線上同步</div>
+                          <div class="d-flex">
+                            <div class="nz-course-p nz-black mr-3">
+                              <i class="far fa-calendar-alt"></i>
+                              <span class="mx-1">8/18 ~ 8/19</span>
+                            </div>
+                            <div class="nz-course-p nz-black">
+                              <i class="far fa-clock"></i>
+                              <span class="mx-1">12 hrs</span>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -270,25 +379,60 @@
                         <img
                           class="nz-img"
                           alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/imgA06.jpg"
+                          src="https://college.itri.org.tw/nzschool/assets/images/imgA12.jpg"
                         />
                       </div>
                       <div class="nz-course-info">
                         <h4
                           class="nz-course-title nz-overflow-ellipsis-2 nz-black"
                         >
-                          ISO 20400:2017 暨 PAS 7000:2014
-                          永續採購與供應鏈管理建置課程［台北班］
+                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
                         </h4>
                         <div class="d-flex">
-                          <div class="nz-course-type mr-3">線上同步</div>
-                          <div class="nz-course-p nz-black mr-3">
-                            <i class="far fa-calendar-alt"></i>
-                            <span class="mx-1">8/18 ~ 8/19</span>
+                          <div class="nz-course-type mr-3 d-none d-lg-flex">線上同步</div>
+                          <div class="d-flex">
+                            <div class="nz-course-p nz-black mr-3">
+                              <i class="far fa-calendar-alt"></i>
+                              <span class="mx-1">8/18 ~ 8/19</span>
+                            </div>
+                            <div class="nz-course-p nz-black">
+                              <i class="far fa-clock"></i>
+                              <span class="mx-1">12 hrs</span>
+                            </div>
                           </div>
-                          <div class="nz-course-p nz-black">
-                            <i class="far fa-clock"></i>
-                            <span class="mx-1">12 hrs</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 課程卡片 -->
+                <div class="col-md-6 col-12">
+                  <a href="#">
+                    <div class="nz-course-card d-flex">
+                      <div class="nz-course-img">
+                        <img
+                          class="nz-img"
+                          alt="課程圖片"
+                          src="https://college.itri.org.tw/nzschool/assets/images/imgA13.jpg"
+                        />
+                      </div>
+                      <div class="nz-course-info">
+                        <h4
+                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
+                        >
+                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                        </h4>
+                        <div class="d-flex">
+                          <div class="nz-course-type mr-3 d-none d-lg-flex">線上同步</div>
+                          <div class="d-flex">
+                            <div class="nz-course-p nz-black mr-3">
+                              <i class="far fa-calendar-alt"></i>
+                              <span class="mx-1">8/18 ~ 8/19</span>
+                            </div>
+                            <div class="nz-course-p nz-black">
+                              <i class="far fa-clock"></i>
+                              <span class="mx-1">12 hrs</span>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -313,14 +457,50 @@
                           淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
                         </h4>
                         <div class="d-flex">
-                          <div class="nz-course-type mr-3">線上同步</div>
-                          <div class="nz-course-p nz-black mr-3">
-                            <i class="far fa-calendar-alt"></i>
-                            <span class="mx-1">8/18 ~ 8/19</span>
+                          <div class="nz-course-type mr-3 d-none d-lg-flex">線上同步</div>
+                          <div class="d-flex">
+                            <div class="nz-course-p nz-black mr-3">
+                              <i class="far fa-calendar-alt"></i>
+                              <span class="mx-1">8/18 ~ 8/19</span>
+                            </div>
+                            <div class="nz-course-p nz-black">
+                              <i class="far fa-clock"></i>
+                              <span class="mx-1">12 hrs</span>
+                            </div>
                           </div>
-                          <div class="nz-course-p nz-black">
-                            <i class="far fa-clock"></i>
-                            <span class="mx-1">12 hrs</span>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- 課程卡片 -->
+                <div class="col-md-6 col-12">
+                  <a href="#">
+                    <div class="nz-course-card d-flex">
+                      <div class="nz-course-img">
+                        <img
+                          class="nz-img"
+                          alt="課程圖片"
+                          src="https://college.itri.org.tw/nzschool/assets/images/imgA06.jpg"
+                        />
+                      </div>
+                      <div class="nz-course-info">
+                        <h4
+                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
+                        >
+                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                        </h4>
+                        <div class="d-flex">
+                          <div class="nz-course-type mr-3 d-none d-lg-flex">線上同步</div>
+                          <div class="d-flex">
+                            <div class="nz-course-p nz-black mr-3">
+                              <i class="far fa-calendar-alt"></i>
+                              <span class="mx-1">8/18 ~ 8/19</span>
+                            </div>
+                            <div class="nz-course-p nz-black">
+                              <i class="far fa-clock"></i>
+                              <span class="mx-1">12 hrs</span>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -544,7 +724,7 @@
     </div>
 
     <!-- 人才聯盟成員 -->
-    <div class="container mt-5">
+    <div class="container my-5">
       <h1 class="nz-title nz-primary my-4">人才聯盟成員</h1>
       <div class="row nz-member-row">
         <div class="col-md-4 col-6 nz-member-logo">
@@ -582,24 +762,25 @@
       <div class="container">
         <div class="row">
           <div class="col-6 text-left">
-            <h3 class="nz-footer-title">工研院產業學院</h3>
+            <h4 class="nz-footer-title">工研院產業學院</h4>
             <div class="d-flex align-content-center my-3">
-              <a href="">
+              <a target="_blank" href="https://page.line.me/750xsesc?openQrModal=true">
                 <div class="nz-community-i mr-3">
                   <i class="fab fa-line"></i>
                 </div>
               </a>
-              <a href="">
+
+              <a target="_blank" href="https://www.linkedin.com/company/itricollege">
                 <div class="nz-community-i mr-3">
                   <i class="fab fa-linkedin"></i>
                 </div>
               </a>
-              <a href="">
+              <a target="_blank" href="https://www.facebook.com/itricollege.fans">
                 <div class="nz-community-i mr-3">
                   <i class="fab fa-facebook-square"></i>
                 </div>
               </a>
-              <a href="">
+              <a target="_blank" href="https://www.youtube.com/channel/UCwccRxh1jrez5YfSRdXUB2A">
                 <div class="nz-community-i mr-3">
                   <i class="fab fa-youtube"></i>
                 </div>
