@@ -3,6 +3,10 @@ body {
 }
 
 header {
+  /* position: fixed; */
+  width: 100%;
+  z-index: 99;
+  top: 0;
   border-top: solid 6px #45904d;
   background: #ffffff;
   box-shadow: 0px 2px 38px rgb(0 0 0 / 8%);
@@ -116,6 +120,31 @@ a .nz-black:hover {
   padding: 10px 30px 30px 30px;
 }
 
+.nz-carousel .carousel-control-next,
+.nz-carousel .carousel-control-prev {
+  font-size: 35px;
+  color: #649e68;
+  opacity: 0.3;
+}
+
+.nz-carousel .carousel-control-next {
+  right: -80px;
+}
+
+.nz-carousel .carousel-control-prev {
+  left: -80px;
+}
+
+.nz-banner .nz-carousel .carousel-control-next {
+  right: 0;
+  opacity: 0.7;
+}
+
+.nz-banner .nz-carousel .carousel-control-prev {
+  left: 0;
+  opacity: 0.7;
+}
+
 /* ----- header ----- */
 .nz-logo {
   height: 55px;
@@ -181,7 +210,7 @@ a .nz-black:hover {
 /* ----- banner 輪播圖 ----- */
 .nz-banner .carousel-inner {
   height: 280px;
-  padding: 0px 40px 15px 30px;
+  padding: 0px 30px 15px 30px;
 }
 
 .nz-banner .carousel-item {
@@ -421,6 +450,9 @@ footer {
 
 /* RWD */
 @media (max-width: 991.98px) {
+  .container {
+    max-width: 100%;
+  }
   .nz-logo {
     height: 40px;
   }
@@ -430,11 +462,11 @@ footer {
   }
 
   .nz-carousel {
-    margin: 0;
+    margin: -15px;
   }
 
   .nz-carousel .carousel-inner {
-    padding: 10px;
+    padding: 10px 15px 15px 15px;
   }
 
   .nz-img-word h2 {
@@ -469,6 +501,22 @@ footer {
   }
   .nz-footer-right {
     margin-top: 10px;
+  }
+
+  .nz-carousel .carousel-control-next {
+    right: 0;
+  }
+  
+  .nz-carousel .carousel-control-prev {
+    left: 0;
+  }
+  
+  .nz-banner .nz-carousel .carousel-control-next {
+    right: 0;
+  }
+  
+  .nz-banner .nz-carousel .carousel-control-prev {
+    left: 0;
   }
 }
 
