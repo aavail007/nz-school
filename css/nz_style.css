@@ -368,6 +368,7 @@ footer {
   background-color: #45904d;
   padding: 30px 0;
   color: #ffffff;
+  text-align: left;
 }
 
 .nz-footer-title {
@@ -422,6 +423,52 @@ footer {
 @media (max-width: 991.98px) {
   .nz-logo {
     height: 40px;
+  }
+
+  .nz-title {
+    text-align: center;
+  }
+
+  .nz-carousel {
+    margin: 0;
+  }
+
+  .nz-carousel .carousel-inner {
+    padding: 10px;
+  }
+
+  .nz-img-word h2 {
+    font-size: 28px;
+  }
+
+  .nz-know-theme p {
+    opacity: 1;
+    height: auto;
+    font-size: 16px;
+  }
+
+  .nz-know-theme {
+    margin-bottom: 10px;
+  }
+
+  .nz-member-row {
+    margin: 0;
+    text-align: center;
+  }
+
+  .nz-member-logo {
+    padding: 15px;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .nz-community-div {
+    justify-content: center;
+  }
+  .nz-footer-right {
+    margin-top: 10px;
   }
 }
 
