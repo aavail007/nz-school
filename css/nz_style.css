@@ -173,7 +173,8 @@ a .nz-black:hover {
 .nz-menu a {
   color: #ffffff;
 }
-.nz-menu li:hover a {
+.nz-menu li:hover a,
+.nz-menu li.active a {
   color: #fff500;
 }
 
@@ -182,7 +183,7 @@ a .nz-black:hover {
 }
 
 .nz-menu li:hover,
-.nz-menu li .active {
+.nz-menu li.active {
   border-bottom: #fff500 solid 3px;
   box-sizing: border-box;
   padding: 10px 0 7px 0;
@@ -191,6 +192,11 @@ a .nz-black:hover {
 .nz-title {
   font-size: 32px;
   font-weight: bold;
+}
+
+.nz-title-2 {
+  font-size: 28px;
+  font-weight: 900;
 }
 
 .nz-subtitle {
@@ -460,6 +466,41 @@ footer {
 
 .nz-footer-right {
   font-size: 12px;
+}
+
+/* -------------- 麵包屑 ----------------- */
+.nz-breadcrumb {
+  background-color: #ffffff;
+  color: #898989;
+  padding: 20px 0;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.nz-breadcrumb li {
+  display: flex;
+  align-items: center;
+}
+
+.nz-breadcrumb a {
+  color: #898989;
+}
+
+.nz-breadcrumb a:hover,
+.nz-breadcrumb .active a {
+  color: #7FB77E;
+}
+
+.nz-home-i {
+  background-color: #898989;
+  color: #ffffff;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
 }
 
 /* RWD */
