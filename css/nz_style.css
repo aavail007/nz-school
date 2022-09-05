@@ -217,6 +217,10 @@ a .nz-black:hover {
   text-align: center;
   font-weight: 600;
 }
+
+.nz-navbar-nav .active a {
+  color: #ff8b32;
+}
 /* ----- banner 輪播圖 ----- */
 .nz-banner .carousel-inner {
   height: 280px;
