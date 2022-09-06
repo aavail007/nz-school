@@ -213,13 +213,21 @@ a .nz-black:hover {
 .nz-navbar-nav {
     padding: 10px 40px;
     font-size: 26px;
-    border-top: solid #45904d 1px;
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
+    background-color: #45904d;
+}
+
+.nz-navbar-nav a {
+    color: #ffffff;
 }
 
 .nz-navbar-nav .active a {
-    color: #ff8b32;
+    color: #fff500;
+}
+
+.nav-item hr {
+    border-color: #ffffff;
 }
 
 /* 滾輪下拉後縮小 header */
