@@ -3,7 +3,6 @@ body {
 }
 
 header {
-  /* position: fixed; */
   width: 100%;
   z-index: 99;
   top: 0;
@@ -150,6 +149,7 @@ a .nz-black:hover {
 .nz-logo {
   height: 50px;
   position: relative;
+  transition: 0.5s;
 }
 
 .nz-nav {
@@ -221,6 +221,24 @@ a .nz-black:hover {
 .nz-navbar-nav .active a {
   color: #ff8b32;
 }
+
+/* 滾輪下拉後縮小 header */
+.nz-small-header {
+  transition: 0.5s;
+  border-top: solid 3px #45904d;
+}
+.nz-small-header .nz-logo {
+  height: 45px;
+}
+
+.nz-small-header .nz-nav {
+  padding: 8px 0;
+}
+
+.nz-small-header .nz-menu {
+  font-size: 18px;
+}
+
 /* ----- banner 輪播圖 ----- */
 .nz-banner .carousel-inner {
   height: 280px;
@@ -298,8 +316,8 @@ a .nz-black:hover {
   overflow: hidden;
 }
 
-.nz-know-theme h3 {
-  transition: 0.3s;
+.nz-know-theme h2 {
+  transition: 0.5s;
 }
 
 .nz-know-theme p {
@@ -311,11 +329,15 @@ a .nz-black:hover {
   margin-bottom: 0;
 }
 
-.nz-know-theme:hover p,
-.nz-know-theme:hover h3 {
+.nz-know-theme:hover p {
   opacity: 1;
   height: auto;
   transition: 0.5s ease-in;
+}
+
+.nz-know-theme:hover h2 {
+  font-size: 31px;
+  transition: 0.5s;
 }
 
 .nz-img-word {

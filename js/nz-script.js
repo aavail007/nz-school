@@ -1,4 +1,7 @@
 $(document).ready(function () {
+  // 偵測滾輪
+  window.onscroll = function() {scrollFunction()};
+
   // 手機版顯示 menu
   $('#navbarNav').on('show.bs.collapse', function () {
     $("#openNav").addClass("d-none");
@@ -11,4 +14,17 @@ $(document).ready(function () {
     $("#closeNav").addClass("d-none");
   });
 
+
+
+
+
 });
+
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    console.log("1111")
+    $("#nzHeader").addClass("nz-small-header");
+  } else {
+    $("#nzHeader").removeClass("nz-small-header");
+  }
+}
