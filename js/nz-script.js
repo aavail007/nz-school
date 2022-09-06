@@ -19,7 +19,7 @@ $(document).ready(function () {
 
 // 手機版 header 滾輪往下縮小
 function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     $("#nzHeader").addClass("nz-small-header");
   } else {
     $("#nzHeader").removeClass("nz-small-header");
