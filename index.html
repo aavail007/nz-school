@@ -1,1726 +1,1363 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta
-      property="og:site_name"
-      content="工研院淨零永續學校-縮短你與淨零的距離"
-    />
-    <meta
-      name="description"
-      content="整合工研院團隊與外部專家的專業能量與資源，以人才培育為核心，以綠色職能為導向，規劃一系列實務課程，透過系統性的培育計畫提升產業界的減碳格局，並陪伴產業人才在淨零時代持續成長。"
-    />
-    <meta
-      name="keywords"
-      content="淨零碳排知識,碳足跡計算,永續能源,能源轉型,工研院技術,ESG,減碳技術,智慧綠能"
-    />
-    <meta name="copyright" content="工業技術研究院版權歸屬" />
-    <meta name="distribution" content="Taiwan" />
-    <meta property="og:type" content="type" />
-    <meta
-      property="og:title"
-      content="工研院淨零永續學校-縮短你與淨零的距離。"
-    />
-    <meta
-      property="og:description"
-      content="整合工研院團隊與外部專家的專業能量與資源，以人才培育為核心，以綠色職能為導向，規劃一系列實務課程，透過系統性的培育計畫提升產業界的減碳格局，並陪伴產業人才在淨零時代持續成長"
-    />
-    <meta
-      property="og:image"
-      content="https://college.itri.org.tw/nzschool/assets/images/banner31.jpg"
-    />
-    <meta property="og:url" content="https://college.itri.org.tw/nzschool" />
-    <meta property="og:site_name" content="site_name" />
 
-    <title>工研院淨零永續學校-縮短你與淨零的距離</title>
-    <link id="linkIco" rel="shortcut icon" href="img/layout/favicon.ico" />
-    <link rel="stylesheet" href="css/plugin/bootstrap.min.css" />
-    <link
-      rel="stylesheet"
-      href="css/plugin/fontawesome-free-5.11.2-web/css/all.min.css"
-    />
-    <!-- 淨零永續學校 css -->
-    <link rel="stylesheet" href="css/nz_style.css" />
-    <script src="js/plugin/jQuery-v3.3.1.miin.js"></script>
-    <script src="js/plugin/bootstrap.min.js"></script>
-    <!-- 淨零永續學校通用 js -->
-    <script src="js/nz-script.js"></script>
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta property="og:site_name" content="工研院淨零永續學校-縮短你與淨零的距離" />
+  <meta name="description"
+    content="整合工研院團隊與外部專家的專業能量與資源，以人才培育為核心，以綠色職能為導向，規劃一系列實務課程，透過系統性的培育計畫提升產業界的減碳格局，並陪伴產業人才在淨零時代持續成長。" />
+  <meta name="keywords" content="淨零碳排知識,碳足跡計算,永續能源,能源轉型,工研院技術,ESG,減碳技術,智慧綠能" />
+  <meta name="copyright" content="工業技術研究院版權歸屬" />
+  <meta name="distribution" content="Taiwan" />
+  <meta property="og:type" content="type" />
+  <meta property="og:title" content="工研院淨零永續學校-縮短你與淨零的距離。" />
+  <meta property="og:description"
+    content="整合工研院團隊與外部專家的專業能量與資源，以人才培育為核心，以綠色職能為導向，規劃一系列實務課程，透過系統性的培育計畫提升產業界的減碳格局，並陪伴產業人才在淨零時代持續成長" />
+  <meta property="og:image" content="https://college.itri.org.tw/nzschool/assets/images/banner31.jpg" />
+  <meta property="og:url" content="https://college.itri.org.tw/nzschool" />
+  <meta property="og:site_name" content="site_name" />
 
-  <body>
-    <header id="nzHeader" class="sticky-top">
-      <div class="container">
-        <div class="nz-nav nav justify-content-between align-items-center">
-          <a class="navbar-brand" href="index.html">
-            <img
-              class="nz-logo"
-              src="img/layout/logo.png"
-              alt="淨零永續學校"
-              title="淨零永續學校"
-            />
-          </a>
-          <div class="d-none d-lg-block">
-            <ul
-              class="nav justify-content-end align-items-center font-weight-bold"
-            >
-              <li class="nz-nav-item">
-                <a class="nz-primary active" href="#">會員登入</a>
-              </li>
-              <li class="nz-gray">|</li>
-              <li class="nz-nav-item">
-                <a class="nz-primary" href="https://college.itri.org.tw/"
-                  >產業學習網</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="nz-mobile-menu d-lg-none d-md-block">
-            <button
-              class="nz-menu-bar navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span id="openNav"><i class="fa fa-bars"></i></span>
-              <span id="closeNav" class="d-none"><i class="fa fa-times"></i></span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <nav>
-        <!-- 電腦版 menu -->
-        <div class="nz-menu d-none d-lg-block">
-          <div class="container">
-            <ul class="nav justify-content-between">
-              <li><a href="knowledge.html">淨零知識</a></li>
-              <li><a href="">專業課程</a></li>
-              <li><a href="">案例與加值服務</a></li>
-              <li><a href="">焦點訊息</a></li>
-              <li><a href="">關於我們</a></li>
-            </ul>
-          </div>
-        </div>
-        <!-- 手機版 menu -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav nz-navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="knowledge.html">淨零知識</a>
+  <title>工研院淨零永續學校-縮短你與淨零的距離</title>
+  <link id="linkIco" rel="shortcut icon" href="img/layout/favicon.ico" />
+  <link rel="stylesheet" href="css/plugin/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/plugin/fontawesome-free-5.11.2-web/css/all.min.css" />
+  <!-- 淨零永續學校 css -->
+  <link rel="stylesheet" href="css/nz_style.css" />
+  <script src="js/plugin/jQuery-v3.3.1.miin.js"></script>
+  <script src="js/plugin/bootstrap.min.js"></script>
+  <!-- 淨零永續學校通用 js -->
+  <script src="js/nz-script.js"></script>
+</head>
+
+<body>
+  <header class="sticky-top">
+    <div class="container">
+      <div class="nz-nav nav justify-content-between align-items-center">
+        <a class="navbar-brand" href="index.html">
+          <img class="nz-logo" src="img/layout/logo.png" alt="淨零永續學校" title="淨零永續學校" />
+        </a>
+        <div class="d-none d-lg-block">
+          <ul class="nav justify-content-end align-items-center font-weight-bold">
+            <li class="nz-nav-item">
+              <a class="nz-primary active" href="#">會員登入</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">專業課程</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">案例與加值服務</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">焦點訊息</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">關於我們</a>
-            </li>
-            <li class="nav-item">
-              <hr />
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">會員登入</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://college.itri.org.tw/"
-                >產業學習網</a
-              >
+            <li class="nz-gray">|</li>
+            <li class="nz-nav-item">
+              <a class="nz-primary" href="https://college.itri.org.tw/">產業學習網</a>
             </li>
           </ul>
         </div>
-      </nav>
-    </header>
-
-    <div class="container mb-5">
-      <!-- 輪播、焦點訊息 -->
-      <section>
-        <div class="row my-1 my-md-5">
-          <div class="nz-banner col-md-7 mb-5">
-            <div
-              id="bannerCarousel"
-              class="nz-carousel carousel slide carousel-fade"
-              data-ride="carousel"
-            >
-              <ol class="carousel-indicators">
-                <li
-                  data-target="#bannerCarousel"
-                  data-slide-to="0"
-                  class="active"
-                ></li>
-                <li data-target="#bannerCarousel" data-slide-to="1"></li>
-                <li data-target="#bannerCarousel" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    class="nz-img"
-                    src="img/example/img-1.JPG"
-                    alt="輪播圖"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="nz-img"
-                    src="https://college.itri.org.tw/nzschool/assets/images/imgA12.jpg"
-                    alt="輪播圖"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    class="nz-img"
-                    src="img/example/img-3.JPG"
-                    alt="輪播圖"
-                  />
-                </div>
-              </div>
-              <a
-                class="carousel-control-prev"
-                href="#bannerCarousel"
-                role="button"
-                data-slide="prev"
-              >
-                <i class="fas fa-chevron-left"></i>
-              </a>
-              <a
-                class="carousel-control-next"
-                href="#bannerCarousel"
-                role="button"
-                data-slide="next"
-              >
-                <i class="fas fa-chevron-right"></i>
-              </a>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <h1 class="nz-title nz-primary mb-4">焦點訊息</h1>
-            <!-- 焦點訊息-1 -->
-            <div class="nz-focus-item">
-              <a
-                target="_blank"
-                href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9bed486c-699f-4cec-bc8c-9380118e1750"
-              >
-                <h4 class="nz-focus-title nz-black nz-overflow-ellipsis">
-                  碳關稅來襲，企業準備好了嗎？
-                </h4>
-                <div class="nz-focus-date">2022-08-10</div>
-              </a>
-            </div>
-            <!-- 焦點訊息-2 -->
-            <div class="nz-focus-item">
-              <a
-                target="_blank"
-                href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383"
-              >
-                <h4 class="nz-focus-title nz-black nz-overflow-ellipsis">
-                  碳足跡盤查｜為2050年淨零碳排提早佈局，企業綠色轉型享2大優勢
-                </h4>
-                <div class="nz-focus-date">2022-08-10</div>
-              </a>
-            </div>
-            <!-- 焦點訊息-3 -->
-            <div class="nz-focus-item">
-              <a
-                target="_blank"
-                href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/0944c4ca-24a5-4488-a1be-3f5248df7e1a"
-              >
-                <h4 class="nz-focus-title nz-black nz-overflow-ellipsis">
-                  推動淨零碳排，台灣不落人後｜解析企業加入淨零轉型的遠因及助益
-                </h4>
-                <div class="nz-focus-date">2022-08-09</div>
-              </a>
-            </div>
-            <!-- 更多 -->
-            <div class="text-right mt-lg-0 mt-3">
-              <!-- TODO: url -->
-              <a href="#">
-                <button class="btn nz-btn nz-btn-primary">更 多</button>
-              </a>
-            </div>
-          </div>
+        <div class="nz-mobile-menu d-lg-none d-md-block">
+          <button class="nz-menu-bar navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span id="openNav"><i class="fa fa-bars"></i></span>
+            <span id="closeNav" class="d-none"><i class="fa fa-times"></i></span>
+          </button>
         </div>
-      </section>
-
-      <!-- 永續專業課程 -->
-      <section>
-        <h1 class="nz-title nz-primary my-4">永續管理專業課程</h1>
-        <div
-          id="courseCarousel-1"
-          class="carousel slide nz-carousel"
-          data-ride="carousel"
-        >
-          <ol class="carousel-indicators">
-            <li
-              data-target="#courseCarousel-1"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#courseCarousel-1" data-slide-to="1"></li>
-            <li data-target="#courseCarousel-1" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <!-- 輪播頁-1 -->
-            <div class="carousel-item active">
-              <div class="row">
-                <!-- 課程卡片 -->
-                <div class="col-md-6 col-12">
-                  <a
-                    href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828"
-                  >
-                    <div class="nz-course-card d-flex">
-                      <div class="nz-course-img">
-                        <img
-                          class="nz-img"
-                          alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/img0721.jpg"
-                        />
-                      </div>
-                      <div class="nz-course-info">
-                        <h4
-                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
-                        >
-                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
-                        </h4>
-                        <div class="d-flex">
-                          <div class="nz-course-type mr-3 d-none d-lg-flex">
-                            線上同步
-                          </div>
-                          <div class="d-flex">
-                            <div class="nz-course-p nz-black mr-3">
-                              <i class="far fa-calendar-alt"></i>
-                              <span class="mx-1">8/18 ~ 8/19</span>
-                            </div>
-                            <div class="nz-course-p nz-black">
-                              <i class="far fa-clock"></i>
-                              <span class="mx-1">12 hrs</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 課程卡片 -->
-                <div class="col-md-6 col-12">
-                  <a
-                    href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828"
-                  >
-                    <div class="nz-course-card d-flex">
-                      <div class="nz-course-img">
-                        <img
-                          class="nz-img"
-                          alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/imgA06.jpg"
-                        />
-                      </div>
-                      <div class="nz-course-info">
-                        <h4
-                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
-                        >
-                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
-                        </h4>
-                        <div class="d-flex">
-                          <div class="nz-course-type mr-3 d-none d-lg-flex">
-                            線上同步
-                          </div>
-                          <div class="d-flex">
-                            <div class="nz-course-p nz-black mr-3">
-                              <i class="far fa-calendar-alt"></i>
-                              <span class="mx-1">8/18 ~ 8/19</span>
-                            </div>
-                            <div class="nz-course-p nz-black">
-                              <i class="far fa-clock"></i>
-                              <span class="mx-1">12 hrs</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 課程卡片 -->
-                <div class="col-md-6 col-12">
-                  <a
-                    href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828"
-                  >
-                    <div class="nz-course-card d-flex">
-                      <div class="nz-course-img">
-                        <img
-                          class="nz-img"
-                          alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/imgA12.jpg"
-                        />
-                      </div>
-                      <div class="nz-course-info">
-                        <h4
-                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
-                        >
-                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
-                        </h4>
-                        <div class="d-flex">
-                          <div class="nz-course-type mr-3 d-none d-lg-flex">
-                            線上同步
-                          </div>
-                          <div class="d-flex">
-                            <div class="nz-course-p nz-black mr-3">
-                              <i class="far fa-calendar-alt"></i>
-                              <span class="mx-1">8/18 ~ 8/19</span>
-                            </div>
-                            <div class="nz-course-p nz-black">
-                              <i class="far fa-clock"></i>
-                              <span class="mx-1">12 hrs</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 課程卡片 -->
-                <div class="col-md-6 col-12 d-none d-md-block">
-                  <a
-                    href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828"
-                  >
-                    <div class="nz-course-card d-flex">
-                      <div class="nz-course-img">
-                        <img
-                          class="nz-img"
-                          alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/imgA13.jpg"
-                        />
-                      </div>
-                      <div class="nz-course-info">
-                        <h4
-                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
-                        >
-                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
-                        </h4>
-                        <div class="d-flex">
-                          <div class="nz-course-type mr-3 d-none d-lg-flex">
-                            線上同步
-                          </div>
-                          <div class="d-flex">
-                            <div class="nz-course-p nz-black mr-3">
-                              <i class="far fa-calendar-alt"></i>
-                              <span class="mx-1">8/18 ~ 8/19</span>
-                            </div>
-                            <div class="nz-course-p nz-black">
-                              <i class="far fa-clock"></i>
-                              <span class="mx-1">12 hrs</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 課程卡片 -->
-                <div class="col-md-6 col-12 d-none d-md-block">
-                  <a
-                    href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828"
-                  >
-                    <div class="nz-course-card d-flex">
-                      <div class="nz-course-img">
-                        <img
-                          class="nz-img"
-                          alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/img0721.jpg"
-                        />
-                      </div>
-                      <div class="nz-course-info">
-                        <h4
-                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
-                        >
-                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
-                        </h4>
-                        <div class="d-flex">
-                          <div class="nz-course-type mr-3 d-none d-lg-flex">
-                            線上同步
-                          </div>
-                          <div class="d-flex">
-                            <div class="nz-course-p nz-black mr-3">
-                              <i class="far fa-calendar-alt"></i>
-                              <span class="mx-1">8/18 ~ 8/19</span>
-                            </div>
-                            <div class="nz-course-p nz-black">
-                              <i class="far fa-clock"></i>
-                              <span class="mx-1">12 hrs</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 課程卡片 -->
-                <div class="col-md-6 col-12 d-none d-md-block">
-                  <a
-                    href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828"
-                  >
-                    <div class="nz-course-card d-flex">
-                      <div class="nz-course-img">
-                        <img
-                          class="nz-img"
-                          alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/imgA06.jpg"
-                        />
-                      </div>
-                      <div class="nz-course-info">
-                        <h4
-                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
-                        >
-                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
-                        </h4>
-                        <div class="d-flex">
-                          <div class="nz-course-type mr-3 d-none d-lg-flex">
-                            線上同步
-                          </div>
-                          <div class="d-flex">
-                            <div class="nz-course-p nz-black mr-3">
-                              <i class="far fa-calendar-alt"></i>
-                              <span class="mx-1">8/18 ~ 8/19</span>
-                            </div>
-                            <div class="nz-course-p nz-black">
-                              <i class="far fa-clock"></i>
-                              <span class="mx-1">12 hrs</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- 輪播頁-2 -->
-            <div class="carousel-item">
-              <div class="row">
-                <!-- 課程卡片 -->
-                <div class="col-md-6 col-12">
-                  <a
-                    href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828"
-                  >
-                    <div class="nz-course-card d-flex">
-                      <div class="nz-course-img">
-                        <img
-                          class="nz-img"
-                          alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/imgA12.jpg"
-                        />
-                      </div>
-                      <div class="nz-course-info">
-                        <h4
-                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
-                        >
-                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
-                        </h4>
-                        <div class="d-flex">
-                          <div class="nz-course-type mr-3 d-none d-lg-flex">
-                            線上同步
-                          </div>
-                          <div class="d-flex">
-                            <div class="nz-course-p nz-black mr-3">
-                              <i class="far fa-calendar-alt"></i>
-                              <span class="mx-1">8/18 ~ 8/19</span>
-                            </div>
-                            <div class="nz-course-p nz-black">
-                              <i class="far fa-clock"></i>
-                              <span class="mx-1">12 hrs</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 課程卡片 -->
-                <div class="col-md-6 col-12">
-                  <a
-                    href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828"
-                  >
-                    <div class="nz-course-card d-flex">
-                      <div class="nz-course-img">
-                        <img
-                          class="nz-img"
-                          alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/imgA13.jpg"
-                        />
-                      </div>
-                      <div class="nz-course-info">
-                        <h4
-                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
-                        >
-                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
-                        </h4>
-                        <div class="d-flex">
-                          <div class="nz-course-type mr-3 d-none d-lg-flex">
-                            線上同步
-                          </div>
-                          <div class="d-flex">
-                            <div class="nz-course-p nz-black mr-3">
-                              <i class="far fa-calendar-alt"></i>
-                              <span class="mx-1">8/18 ~ 8/19</span>
-                            </div>
-                            <div class="nz-course-p nz-black">
-                              <i class="far fa-clock"></i>
-                              <span class="mx-1">12 hrs</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 課程卡片 -->
-                <div class="col-md-6 col-12">
-                  <a
-                    href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828"
-                  >
-                    <div class="nz-course-card d-flex">
-                      <div class="nz-course-img">
-                        <img
-                          class="nz-img"
-                          alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/img0721.jpg"
-                        />
-                      </div>
-                      <div class="nz-course-info">
-                        <h4
-                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
-                        >
-                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
-                        </h4>
-                        <div class="d-flex">
-                          <div class="nz-course-type mr-3 d-none d-lg-flex">
-                            線上同步
-                          </div>
-                          <div class="d-flex">
-                            <div class="nz-course-p nz-black mr-3">
-                              <i class="far fa-calendar-alt"></i>
-                              <span class="mx-1">8/18 ~ 8/19</span>
-                            </div>
-                            <div class="nz-course-p nz-black">
-                              <i class="far fa-clock"></i>
-                              <span class="mx-1">12 hrs</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 課程卡片 -->
-                <div class="col-md-6 col-12 d-none d-md-block">
-                  <a
-                    href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828"
-                  >
-                    <div class="nz-course-card d-flex">
-                      <div class="nz-course-img">
-                        <img
-                          class="nz-img"
-                          alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/imgA06.jpg"
-                        />
-                      </div>
-                      <div class="nz-course-info">
-                        <h4
-                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
-                        >
-                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
-                        </h4>
-                        <div class="d-flex">
-                          <div class="nz-course-type mr-3 d-none d-lg-flex">
-                            線上同步
-                          </div>
-                          <div class="d-flex">
-                            <div class="nz-course-p nz-black mr-3">
-                              <i class="far fa-calendar-alt"></i>
-                              <span class="mx-1">8/18 ~ 8/19</span>
-                            </div>
-                            <div class="nz-course-p nz-black">
-                              <i class="far fa-clock"></i>
-                              <span class="mx-1">12 hrs</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 課程卡片 -->
-                <div class="col-md-6 col-12 d-none d-md-block">
-                  <a
-                    href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828"
-                  >
-                    <div class="nz-course-card d-flex">
-                      <div class="nz-course-img">
-                        <img
-                          class="nz-img"
-                          alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/img0721.jpg"
-                        />
-                      </div>
-                      <div class="nz-course-info">
-                        <h4
-                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
-                        >
-                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
-                        </h4>
-                        <div class="d-flex">
-                          <div class="nz-course-type mr-3 d-none d-lg-flex">
-                            線上同步
-                          </div>
-                          <div class="d-flex">
-                            <div class="nz-course-p nz-black mr-3">
-                              <i class="far fa-calendar-alt"></i>
-                              <span class="mx-1">8/18 ~ 8/19</span>
-                            </div>
-                            <div class="nz-course-p nz-black">
-                              <i class="far fa-clock"></i>
-                              <span class="mx-1">12 hrs</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 課程卡片 -->
-                <div class="col-md-6 col-12 d-none d-md-block">
-                  <a
-                    href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828"
-                  >
-                    <div class="nz-course-card d-flex">
-                      <div class="nz-course-img">
-                        <img
-                          class="nz-img"
-                          alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/imgA06.jpg"
-                        />
-                      </div>
-                      <div class="nz-course-info">
-                        <h4
-                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
-                        >
-                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
-                        </h4>
-                        <div class="d-flex">
-                          <div class="nz-course-type mr-3 d-none d-lg-flex">
-                            線上同步
-                          </div>
-                          <div class="d-flex">
-                            <div class="nz-course-p nz-black mr-3">
-                              <i class="far fa-calendar-alt"></i>
-                              <span class="mx-1">8/18 ~ 8/19</span>
-                            </div>
-                            <div class="nz-course-p nz-black">
-                              <i class="far fa-clock"></i>
-                              <span class="mx-1">12 hrs</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a
-            class="carousel-control-prev"
-            href="#courseCarousel-1"
-            role="button"
-            data-slide="prev"
-          >
-            <i class="fas fa-chevron-left"></i>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#courseCarousel-1"
-            role="button"
-            data-slide="next"
-          >
-            <i class="fas fa-chevron-right"></i>
-          </a>
-        </div>
-        <!-- 更多 -->
-        <div class="text-right mt-lg-0 mt-3">
-          <!-- TODO: url -->
-          <a href="#">
-            <button class="btn nz-btn nz-btn-primary">更 多</button>
-          </a>
-        </div>
-      </section>
-
-      <!-- 技術解方專業課程 -->
-      <section class="mt-5">
-        <h1 class="nz-title nz-primary my-4">技術解方專業課程</h1>
-        <div
-          id="courseCarousel-2"
-          class="carousel slide nz-carousel"
-          data-ride="carousel"
-        >
-          <ol class="carousel-indicators">
-            <li
-              data-target="#courseCarousel-2"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#courseCarousel-2" data-slide-to="1"></li>
-            <li data-target="#courseCarousel-2" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <!-- 輪播頁-1 -->
-            <div class="carousel-item active">
-              <div class="row">
-                <!-- 課程卡片 -->
-                <div class="col-md-6 col-12">
-                  <a
-                    href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828"
-                  >
-                    <div class="nz-course-card d-flex">
-                      <div class="nz-course-img">
-                        <img
-                          class="nz-img"
-                          alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/img0721.jpg"
-                        />
-                      </div>
-                      <div class="nz-course-info">
-                        <h4
-                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
-                        >
-                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
-                        </h4>
-                        <div class="d-flex">
-                          <div class="nz-course-type mr-3 d-none d-lg-flex">
-                            線上同步
-                          </div>
-                          <div class="d-flex">
-                            <div class="nz-course-p nz-black mr-3">
-                              <i class="far fa-calendar-alt"></i>
-                              <span class="mx-1">8/18 ~ 8/19</span>
-                            </div>
-                            <div class="nz-course-p nz-black">
-                              <i class="far fa-clock"></i>
-                              <span class="mx-1">12 hrs</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 課程卡片 -->
-                <div class="col-md-6 col-12">
-                  <a
-                    href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828"
-                  >
-                    <div class="nz-course-card d-flex">
-                      <div class="nz-course-img">
-                        <img
-                          class="nz-img"
-                          alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/imgA06.jpg"
-                        />
-                      </div>
-                      <div class="nz-course-info">
-                        <h4
-                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
-                        >
-                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
-                        </h4>
-                        <div class="d-flex">
-                          <div class="nz-course-type mr-3 d-none d-lg-flex">
-                            線上同步
-                          </div>
-                          <div class="d-flex">
-                            <div class="nz-course-p nz-black mr-3">
-                              <i class="far fa-calendar-alt"></i>
-                              <span class="mx-1">8/18 ~ 8/19</span>
-                            </div>
-                            <div class="nz-course-p nz-black">
-                              <i class="far fa-clock"></i>
-                              <span class="mx-1">12 hrs</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 課程卡片 -->
-                <div class="col-md-6 col-12">
-                  <a
-                    href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828"
-                  >
-                    <div class="nz-course-card d-flex">
-                      <div class="nz-course-img">
-                        <img
-                          class="nz-img"
-                          alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/imgA12.jpg"
-                        />
-                      </div>
-                      <div class="nz-course-info">
-                        <h4
-                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
-                        >
-                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
-                        </h4>
-                        <div class="d-flex">
-                          <div class="nz-course-type mr-3 d-none d-lg-flex">
-                            線上同步
-                          </div>
-                          <div class="d-flex">
-                            <div class="nz-course-p nz-black mr-3">
-                              <i class="far fa-calendar-alt"></i>
-                              <span class="mx-1">8/18 ~ 8/19</span>
-                            </div>
-                            <div class="nz-course-p nz-black">
-                              <i class="far fa-clock"></i>
-                              <span class="mx-1">12 hrs</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 課程卡片 -->
-                <div class="col-md-6 col-12 d-none d-md-block">
-                  <a
-                    href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828"
-                  >
-                    <div class="nz-course-card d-flex">
-                      <div class="nz-course-img">
-                        <img
-                          class="nz-img"
-                          alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/imgA13.jpg"
-                        />
-                      </div>
-                      <div class="nz-course-info">
-                        <h4
-                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
-                        >
-                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
-                        </h4>
-                        <div class="d-flex">
-                          <div class="nz-course-type mr-3 d-none d-lg-flex">
-                            線上同步
-                          </div>
-                          <div class="d-flex">
-                            <div class="nz-course-p nz-black mr-3">
-                              <i class="far fa-calendar-alt"></i>
-                              <span class="mx-1">8/18 ~ 8/19</span>
-                            </div>
-                            <div class="nz-course-p nz-black">
-                              <i class="far fa-clock"></i>
-                              <span class="mx-1">12 hrs</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 課程卡片 -->
-                <div class="col-md-6 col-12 d-none d-md-block">
-                  <a
-                    href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828"
-                  >
-                    <div class="nz-course-card d-flex">
-                      <div class="nz-course-img">
-                        <img
-                          class="nz-img"
-                          alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/img0721.jpg"
-                        />
-                      </div>
-                      <div class="nz-course-info">
-                        <h4
-                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
-                        >
-                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
-                        </h4>
-                        <div class="d-flex">
-                          <div class="nz-course-type mr-3 d-none d-lg-flex">
-                            線上同步
-                          </div>
-                          <div class="d-flex">
-                            <div class="nz-course-p nz-black mr-3">
-                              <i class="far fa-calendar-alt"></i>
-                              <span class="mx-1">8/18 ~ 8/19</span>
-                            </div>
-                            <div class="nz-course-p nz-black">
-                              <i class="far fa-clock"></i>
-                              <span class="mx-1">12 hrs</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 課程卡片 -->
-                <div class="col-md-6 col-12 d-none d-md-block">
-                  <a
-                    href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828"
-                  >
-                    <div class="nz-course-card d-flex">
-                      <div class="nz-course-img">
-                        <img
-                          class="nz-img"
-                          alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/imgA06.jpg"
-                        />
-                      </div>
-                      <div class="nz-course-info">
-                        <h4
-                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
-                        >
-                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
-                        </h4>
-                        <div class="d-flex">
-                          <div class="nz-course-type mr-3 d-none d-lg-flex">
-                            線上同步
-                          </div>
-                          <div class="d-flex">
-                            <div class="nz-course-p nz-black mr-3">
-                              <i class="far fa-calendar-alt"></i>
-                              <span class="mx-1">8/18 ~ 8/19</span>
-                            </div>
-                            <div class="nz-course-p nz-black">
-                              <i class="far fa-clock"></i>
-                              <span class="mx-1">12 hrs</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <!-- 輪播頁-2 -->
-            <div class="carousel-item">
-              <div class="row">
-                <!-- 課程卡片 -->
-                <div class="col-md-6 col-12">
-                  <a
-                    href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828"
-                  >
-                    <div class="nz-course-card d-flex">
-                      <div class="nz-course-img">
-                        <img
-                          class="nz-img"
-                          alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/imgA12.jpg"
-                        />
-                      </div>
-                      <div class="nz-course-info">
-                        <h4
-                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
-                        >
-                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
-                        </h4>
-                        <div class="d-flex">
-                          <div class="nz-course-type mr-3 d-none d-lg-flex">
-                            線上同步
-                          </div>
-                          <div class="d-flex">
-                            <div class="nz-course-p nz-black mr-3">
-                              <i class="far fa-calendar-alt"></i>
-                              <span class="mx-1">8/18 ~ 8/19</span>
-                            </div>
-                            <div class="nz-course-p nz-black">
-                              <i class="far fa-clock"></i>
-                              <span class="mx-1">12 hrs</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 課程卡片 -->
-                <div class="col-md-6 col-12">
-                  <a
-                    href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828"
-                  >
-                    <div class="nz-course-card d-flex">
-                      <div class="nz-course-img">
-                        <img
-                          class="nz-img"
-                          alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/imgA13.jpg"
-                        />
-                      </div>
-                      <div class="nz-course-info">
-                        <h4
-                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
-                        >
-                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
-                        </h4>
-                        <div class="d-flex">
-                          <div class="nz-course-type mr-3 d-none d-lg-flex">
-                            線上同步
-                          </div>
-                          <div class="d-flex">
-                            <div class="nz-course-p nz-black mr-3">
-                              <i class="far fa-calendar-alt"></i>
-                              <span class="mx-1">8/18 ~ 8/19</span>
-                            </div>
-                            <div class="nz-course-p nz-black">
-                              <i class="far fa-clock"></i>
-                              <span class="mx-1">12 hrs</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 課程卡片 -->
-                <div class="col-md-6 col-12">
-                  <a
-                    href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828"
-                  >
-                    <div class="nz-course-card d-flex">
-                      <div class="nz-course-img">
-                        <img
-                          class="nz-img"
-                          alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/img0721.jpg"
-                        />
-                      </div>
-                      <div class="nz-course-info">
-                        <h4
-                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
-                        >
-                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
-                        </h4>
-                        <div class="d-flex">
-                          <div class="nz-course-type mr-3 d-none d-lg-flex">
-                            線上同步
-                          </div>
-                          <div class="d-flex">
-                            <div class="nz-course-p nz-black mr-3">
-                              <i class="far fa-calendar-alt"></i>
-                              <span class="mx-1">8/18 ~ 8/19</span>
-                            </div>
-                            <div class="nz-course-p nz-black">
-                              <i class="far fa-clock"></i>
-                              <span class="mx-1">12 hrs</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 課程卡片 -->
-                <div class="col-md-6 col-12 d-none d-md-block">
-                  <a
-                    href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828"
-                  >
-                    <div class="nz-course-card d-flex">
-                      <div class="nz-course-img">
-                        <img
-                          class="nz-img"
-                          alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/imgA06.jpg"
-                        />
-                      </div>
-                      <div class="nz-course-info">
-                        <h4
-                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
-                        >
-                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
-                        </h4>
-                        <div class="d-flex">
-                          <div class="nz-course-type mr-3 d-none d-lg-flex">
-                            線上同步
-                          </div>
-                          <div class="d-flex">
-                            <div class="nz-course-p nz-black mr-3">
-                              <i class="far fa-calendar-alt"></i>
-                              <span class="mx-1">8/18 ~ 8/19</span>
-                            </div>
-                            <div class="nz-course-p nz-black">
-                              <i class="far fa-clock"></i>
-                              <span class="mx-1">12 hrs</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 課程卡片 -->
-                <div class="col-md-6 col-12 d-none d-md-block">
-                  <a
-                    href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828"
-                  >
-                    <div class="nz-course-card d-flex">
-                      <div class="nz-course-img">
-                        <img
-                          class="nz-img"
-                          alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/img0721.jpg"
-                        />
-                      </div>
-                      <div class="nz-course-info">
-                        <h4
-                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
-                        >
-                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
-                        </h4>
-                        <div class="d-flex">
-                          <div class="nz-course-type mr-3 d-none d-lg-flex">
-                            線上同步
-                          </div>
-                          <div class="d-flex">
-                            <div class="nz-course-p nz-black mr-3">
-                              <i class="far fa-calendar-alt"></i>
-                              <span class="mx-1">8/18 ~ 8/19</span>
-                            </div>
-                            <div class="nz-course-p nz-black">
-                              <i class="far fa-clock"></i>
-                              <span class="mx-1">12 hrs</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                <!-- 課程卡片 -->
-                <div class="col-md-6 col-12 d-none d-md-block">
-                  <a
-                    href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828"
-                  >
-                    <div class="nz-course-card d-flex">
-                      <div class="nz-course-img">
-                        <img
-                          class="nz-img"
-                          alt="課程圖片"
-                          src="https://college.itri.org.tw/nzschool/assets/images/imgA06.jpg"
-                        />
-                      </div>
-                      <div class="nz-course-info">
-                        <h4
-                          class="nz-course-title nz-overflow-ellipsis-2 nz-black"
-                        >
-                          淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
-                        </h4>
-                        <div class="d-flex">
-                          <div class="nz-course-type mr-3 d-none d-lg-flex">
-                            線上同步
-                          </div>
-                          <div class="d-flex">
-                            <div class="nz-course-p nz-black mr-3">
-                              <i class="far fa-calendar-alt"></i>
-                              <span class="mx-1">8/18 ~ 8/19</span>
-                            </div>
-                            <div class="nz-course-p nz-black">
-                              <i class="far fa-clock"></i>
-                              <span class="mx-1">12 hrs</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a
-            class="carousel-control-prev"
-            href="#courseCarousel-2"
-            role="button"
-            data-slide="prev"
-          >
-            <i class="fas fa-chevron-left"></i>
-          </a>
-          <a
-            class="carousel-control-next"
-            href="#courseCarousel-2"
-            role="button"
-            data-slide="next"
-          >
-            <i class="fas fa-chevron-right"></i>
-          </a>
-        </div>
-        <!-- 更多 -->
-        <div class="text-right mt-lg-0 mt-3">
-          <!-- TODO: url -->
-          <a href="#">
-            <button class="btn nz-btn nz-btn-primary">更 多</button>
-          </a>
-        </div>
-      </section>
+      </div>
     </div>
-    <!-- 淨零知識 -->
-    <div class="nz-bg-gray mt-5">
-      <div class="container py-3">
-        <section>
-          <h1 class="nz-title nz-primary my-4">
-            淨零知識<strong class="nz-subtitle"><免費觀看></strong>
-          </h1>
-          <!-- 分類 -->
-          <div class="row">
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="nz-know-theme">
-                <a href="knowledge.html">
-                  <img class="nz-img" src="img/knowledge/them-1.jpg" />
-                  <div class="nz-mask">
-                    <div class="nz-img-word">
-                      <h2>搞懂零碳排<br />系列</h2>
-                      <p>搞懂零碳排搞懂零碳排搞懂零碳排搞懂零碳排搞懂零碳排</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="nz-know-theme">
-                <a href="knowledge.html">
-                  <img class="nz-img" src="img/knowledge/them-2.jpg" />
-                  <div class="nz-mask">
-                    <div class="nz-img-word">
-                      <h2>生活碳足跡<br />系列</h2>
-                      <p>
-                        瞭解如何將減碳新科技，融入生活食衣住行育樂，打造時尚的減碳未來新生活。
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="nz-know-theme">
-                <a href="knowledge.html">
-                  <img class="nz-img" src="img/knowledge/them-3.jpg" />
-                  <div class="nz-mask">
-                    <div class="nz-img-word">
-                      <h2>永續能源<br />8 堂課</h2>
-                      <p>
-                        拆解淨零永續生活的驅動關鍵 - 再生能源、低碳科技
-                        將複雜的永續技術轉成最生活化環保行動
-                      </p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="nz-know-theme">
-                <a href="knowledge.html">
-                  <img class="nz-img" src="img/knowledge/them-4.jpg" />
-                  <div class="nz-mask">
-                    <div class="nz-img-word">
-                      <h2>掌握企業<br />零碳解方</h2>
-                      <p>工研院幫您打造淨零時代競爭力，提供企業淨零減碳解方</p>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- 知識卡片輪播 -->
-          <div
-            id="knowCarousel"
-            class="carousel nz-carousel slide"
-            data-ride="carousel"
-          >
+    <nav>
+      <!-- 電腦版 menu -->
+      <div class="nz-menu d-none d-lg-block">
+        <ul class="nav container justify-content-between">
+          <!-- TODO: url -->
+          <li><a href="knowledge.html">淨零知識</a></li>
+          <li><a href="">專業課程</a></li>
+          <li><a href="">案例與加值服務</a></li>
+          <li><a href="">焦點訊息</a></li>
+          <li><a href="">關於我們</a></li>
+        </ul>
+      </div>
+      <!-- 手機版 menu -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav nz-navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="knowledge.html">淨零知識</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">專業課程</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">案例與加值服務</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">焦點訊息</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">關於我們</a>
+          </li>
+          <li class="nav-item">
+            <hr />
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">會員登入</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://college.itri.org.tw/">產業學習網</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container mb-5">
+    <!-- 輪播、焦點訊息 -->
+    <section>
+      <div class="row my-1 my-md-5">
+        <div class="nz-banner col-md-7 mb-5">
+          <div id="bannerCarousel" class="nz-carousel carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
-              <li
-                data-target="#knowCarousel"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li data-target="#knowCarousel" data-slide-to="1"></li>
+              <li data-target="#bannerCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#bannerCarousel" data-slide-to="1"></li>
+              <li data-target="#bannerCarousel" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-              <!-- 輪播-1 -->
               <div class="carousel-item active">
-                <div class="row">
-                  <!-- 卡片 -->
-                  <div class="col-sm-6 col-md-4">
-                    <div class="nz-know-card">
-                      <a
-                        href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383"
-                      >
-                        <div class="nz-know-card-img">
-                          <img
-                            class="nz-img"
-                            src="https://college.itri.org.tw/nzschool/assets/images/img0721.jpg"
-                            alt="文章封面"
-                          />
-                          <div class="nz-flag">FREE</div>
-                        </div>
-                        <div class="nz-know-card-info">
-                          <div class="nz-know-type">生活碳足跡</div>
-                          <h5
-                            class="nz-know-card-title nz-black nz-overflow-ellipsis"
-                          >
-                            推動淨零碳排，台灣不落人後解析企業加入淨零轉型的遠因及助益
-                          </h5>
-                          <p class="nz-overflow-ellipsis-3">
-                            根據聯合國IPCC《第六次氣候變遷評估報告（AR6）》分析指出：未來20年內，全球平均氣溫將上升1.5℃。面對全球暖化的嚴峻挑戰，我國政府著眼於環境永續發展，及代工出口導向的經濟戰略，與全球136個國家一同推動淨零碳排轉型，預計在2050年達成目標。
-                          </p>
-                          <div class="nz-know-date">2022/08/05</div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- 卡片 -->
-                  <div class="col-sm-6 col-md-4">
-                    <div class="nz-know-card">
-                      <a
-                        href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383"
-                      >
-                        <div class="nz-know-card-img">
-                          <img
-                            class="nz-img"
-                            src="https://college.itri.org.tw/api/TM_AttFile_Attachment_Download?attNo=6794f5c7-73df-4cbe-9557-1b08b06684d3"
-                            alt="文章封面"
-                          />
-                          <div class="nz-flag">FREE</div>
-                        </div>
-                        <div class="nz-know-card-info">
-                          <div class="nz-know-type">生活碳足跡</div>
-                          <h5
-                            class="nz-know-card-title nz-black nz-overflow-ellipsis"
-                          >
-                            推動淨零碳排，台灣不落人後解析企業加入淨零轉型的遠因及助益
-                          </h5>
-                          <p class="nz-overflow-ellipsis-3">
-                            根據聯合國IPCC《第六次氣候變遷評估報告（AR6）》分析指出：未來20年內，全球平均氣溫將上升1.5℃。面對全球暖化的嚴峻挑戰，我國政府著眼於環境永續發展，及代工出口導向的經濟戰略，與全球136個國家一同推動淨零碳排轉型，預計在2050年達成目標。
-                          </p>
-                          <div class="nz-know-date">2022/08/05</div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- 卡片 -->
-                  <div class="col-sm-6 col-md-4">
-                    <div class="nz-know-card">
-                      <a
-                        href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383"
-                      >
-                        <div class="nz-know-card-img">
-                          <img
-                            class="nz-img"
-                            src="img/example/img-3.JPG"
-                            alt="文章封面"
-                          />
-                          <div class="nz-flag">FREE</div>
-                        </div>
-                        <div class="nz-know-card-info">
-                          <div class="nz-know-type">生活碳足跡</div>
-                          <h5
-                            class="nz-know-card-title nz-black nz-overflow-ellipsis"
-                          >
-                            推動淨零碳排，台灣不落人後解析企業加入淨零轉型的遠因及助益
-                          </h5>
-                          <p class="nz-overflow-ellipsis-3">
-                            根據聯合國IPCC《第六次氣候變遷評估報告（AR6）》分析指出：未來20年內，全球平均氣溫將上升1.5℃。面對全球暖化的嚴峻挑戰，我國政府著眼於環境永續發展，及代工出口導向的經濟戰略，與全球136個國家一同推動淨零碳排轉型，預計在2050年達成目標。
-                          </p>
-                          <div class="nz-know-date">2022/08/05</div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+                <img class="nz-img" src="img/example/img-1.JPG" alt="輪播圖" />
               </div>
-              <!-- 輪播-2 -->
               <div class="carousel-item">
-                <div class="row">
-                  <!-- 卡片 -->
-                  <div class="col-sm-6 col-md-4">
-                    <div class="nz-know-card">
-                      <a
-                        href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383"
-                      >
-                        <div class="nz-know-card-img">
-                          <img
-                            class="nz-img"
-                            src="https://college.itri.org.tw/api/TM_AttFile_Attachment_Download?attNo=83856d33-4021-4b26-acc6-006114911d74"
-                            alt="文章封面"
-                          />
-                          <div class="nz-flag">FREE</div>
-                        </div>
-                        <div class="nz-know-card-info">
-                          <div class="nz-know-type">生活碳足跡</div>
-                          <h5
-                            class="nz-know-card-title nz-black nz-overflow-ellipsis"
-                          >
-                            推動淨零碳排，台灣不落人後解析企業加入淨零轉型的遠因及助益
-                          </h5>
-                          <p class="nz-overflow-ellipsis-3">
-                            根據聯合國IPCC《第六次氣候變遷評估報告（AR6）》分析指出：未來20年內，全球平均氣溫將上升1.5℃。面對全球暖化的嚴峻挑戰，我國政府著眼於環境永續發展，及代工出口導向的經濟戰略，與全球136個國家一同推動淨零碳排轉型，預計在2050年達成目標。
-                          </p>
-                          <div class="nz-know-date">2022/08/05</div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- 卡片 -->
-                  <div class="col-sm-6 col-md-4">
-                    <div class="nz-know-card">
-                      <a
-                        href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383"
-                      >
-                        <div class="nz-know-card-img">
-                          <img
-                            class="nz-img"
-                            src="https://college.itri.org.tw/api/TM_AttFile_Attachment_Download?attNo=e4e73c44-5556-478a-963a-be8d77262d3e"
-                            alt="文章封面"
-                          />
-                          <div class="nz-flag">FREE</div>
-                        </div>
-                        <div class="nz-know-card-info">
-                          <div class="nz-know-type">生活碳足跡</div>
-                          <h5
-                            class="nz-know-card-title nz-black nz-overflow-ellipsis"
-                          >
-                            推動淨零碳排，台灣不落人後解析企業加入淨零轉型的遠因及助益
-                          </h5>
-                          <p class="nz-overflow-ellipsis-3">
-                            根據聯合國IPCC《第六次氣候變遷評估報告（AR6）》分析指出：未來20年內，全球平均氣溫將上升1.5℃。面對全球暖化的嚴峻挑戰，我國政府著眼於環境永續發展，及代工出口導向的經濟戰略，與全球136個國家一同推動淨零碳排轉型，預計在2050年達成目標。
-                          </p>
-                          <div class="nz-know-date">2022/08/05</div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                  <!-- 卡片 -->
-                  <div class="col-sm-6 col-md-4">
-                    <div class="nz-know-card">
-                      <a
-                        href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383"
-                      >
-                        <div class="nz-know-card-img">
-                          <img
-                            class="nz-img"
-                            src="https://college.itri.org.tw/api/TM_AttFile_Attachment_Download?attNo=8b4bb860-c860-4b66-9880-82c0118fb9d7"
-                            alt="文章封面"
-                          />
-                          <div class="nz-flag">FREE</div>
-                        </div>
-                        <div class="nz-know-card-info">
-                          <div class="nz-know-type">生活碳足跡</div>
-                          <h5
-                            class="nz-know-card-title nz-black nz-overflow-ellipsis"
-                          >
-                            推動淨零碳排，台灣不落人後解析企業加入淨零轉型的遠因及助益
-                          </h5>
-                          <p class="nz-overflow-ellipsis-3">
-                            根據聯合國IPCC《第六次氣候變遷評估報告（AR6）》分析指出：未來20年內，全球平均氣溫將上升1.5℃。面對全球暖化的嚴峻挑戰，我國政府著眼於環境永續發展，及代工出口導向的經濟戰略，與全球136個國家一同推動淨零碳排轉型，預計在2050年達成目標。
-                          </p>
-                          <div class="nz-know-date">2022/08/05</div>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
+                <img class="nz-img" src="https://college.itri.org.tw/nzschool/assets/images/imgA12.jpg" alt="輪播圖" />
+              </div>
+              <div class="carousel-item">
+                <img class="nz-img" src="img/example/img-3.JPG" alt="輪播圖" />
               </div>
             </div>
-            <a
-              class="carousel-control-prev"
-              href="#knowCarousel"
-              role="button"
-              data-slide="prev"
-            >
+            <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-slide="prev">
               <i class="fas fa-chevron-left"></i>
             </a>
-            <a
-              class="carousel-control-next"
-              href="#knowCarousel"
-              role="button"
-              data-slide="next"
-            >
+            <a class="carousel-control-next" href="#bannerCarousel" role="button" data-slide="next">
               <i class="fas fa-chevron-right"></i>
             </a>
           </div>
+        </div>
+        <div class="col-md-5">
+          <h1 class="nz-title nz-primary mb-4">焦點訊息</h1>
+          <!-- 焦點訊息-1 -->
+          <div class="nz-focus-item">
+            <a target="_blank"
+              href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9bed486c-699f-4cec-bc8c-9380118e1750">
+              <h4 class="nz-focus-title nz-black nz-overflow-ellipsis">
+                碳關稅來襲，企業準備好了嗎？
+              </h4>
+              <div class="nz-focus-date">2022-08-10</div>
+            </a>
+          </div>
+          <!-- 焦點訊息-2 -->
+          <div class="nz-focus-item">
+            <a target="_blank"
+              href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383">
+              <h4 class="nz-focus-title nz-black nz-overflow-ellipsis">
+                碳足跡盤查｜為2050年淨零碳排提早佈局，企業綠色轉型享2大優勢
+              </h4>
+              <div class="nz-focus-date">2022-08-10</div>
+            </a>
+          </div>
+          <!-- 焦點訊息-3 -->
+          <div class="nz-focus-item">
+            <a target="_blank"
+              href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/0944c4ca-24a5-4488-a1be-3f5248df7e1a">
+              <h4 class="nz-focus-title nz-black nz-overflow-ellipsis">
+                推動淨零碳排，台灣不落人後｜解析企業加入淨零轉型的遠因及助益
+              </h4>
+              <div class="nz-focus-date">2022-08-09</div>
+            </a>
+          </div>
           <!-- 更多 -->
-          <div class="text-right mt-lg-0 mt-3 mb-4">
+          <div class="text-right mt-lg-0 mt-3">
             <!-- TODO: url -->
             <a href="#">
               <button class="btn nz-btn nz-btn-primary">更 多</button>
             </a>
           </div>
-        </section>
-      </div>
-    </div>
-
-    <!-- 人才聯盟成員 -->
-    <div class="container my-5">
-      <h1 class="nz-title nz-primary my-4">人才聯盟成員</h1>
-      <div class="row nz-member-row">
-        <div class="col-md-4 col-6 nz-member-logo">
-          <img src="img/members/member-1.png" alt="中華民國全國工業總會Logo" />
-        </div>
-        <div class="col-md-4 col-6 nz-member-logo">
-          <img
-            src="img/members/member-2.png"
-            alt="台灣區電機電子工業同業公會Logo"
-          />
-        </div>
-        <div class="col-md-4 col-6 nz-member-logo">
-          <img src="img/members/member-3.png" alt="台灣機械工業同業公會Logo" />
-        </div>
-        <div class="col-md-4 col-6 nz-member-logo">
-          <img src="img/members/member-4.png" alt="台灣電路板協會Logo" />
-        </div>
-        <div class="col-md-4 col-6 nz-member-logo">
-          <img src="img/members/member-5.png" alt="工業技術研究院Logo" />
-        </div>
-        <div class="col-md-4 col-6 nz-member-logo">
-          <img src="img/members/member-6.png" alt="台灣化學產業協會Logo" />
-        </div>
-        <div class="col-md-4 col-6 nz-member-logo">
-          <img src="img/members/member-7.png" alt="中華民國工商協進會Logo" />
-        </div>
-        <div class="col-md-4 col-6 nz-member-logo">
-          <img src="img/members/member-8.png" alt="循環台灣Logo" />
-        </div>
-        <div class="col-md-4 col-6 nz-member-logo">
-          <img
-            src="img/members/member-9.png"
-            alt="台灣區絲織工業同業公會Logo"
-          />
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- footer -->
-    <footer class="mt-4">
-      <div class="container">
+    <!-- 永續專業課程 -->
+    <section>
+      <h1 class="nz-title nz-primary my-4">永續管理專業課程</h1>
+      <div id="courseCarousel-1" class="carousel slide nz-carousel" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#courseCarousel-1" data-slide-to="0" class="active"></li>
+          <li data-target="#courseCarousel-1" data-slide-to="1"></li>
+          <li data-target="#courseCarousel-1" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <!-- 輪播頁-1 -->
+          <div class="carousel-item active">
+            <div class="row">
+              <!-- 課程卡片 -->
+              <div class="col-md-6 col-12">
+                <a href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828">
+                  <div class="nz-course-card d-flex">
+                    <div class="nz-course-img">
+                      <img class="nz-img" alt="課程圖片"
+                        src="https://college.itri.org.tw/nzschool/assets/images/img0721.jpg" />
+                    </div>
+                    <div class="nz-course-info">
+                      <h4 class="nz-course-title nz-overflow-ellipsis-2 nz-black">
+                        淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                      </h4>
+                      <div class="d-flex">
+                        <div class="nz-course-type mr-3 d-none d-lg-flex">
+                          線上同步
+                        </div>
+                        <div class="d-flex">
+                          <div class="nz-course-p nz-black mr-3">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="mx-1">8/18 ~ 8/19</span>
+                          </div>
+                          <div class="nz-course-p nz-black">
+                            <i class="far fa-clock"></i>
+                            <span class="mx-1">12 hrs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 課程卡片 -->
+              <div class="col-md-6 col-12">
+                <a href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828">
+                  <div class="nz-course-card d-flex">
+                    <div class="nz-course-img">
+                      <img class="nz-img" alt="課程圖片"
+                        src="https://college.itri.org.tw/nzschool/assets/images/imgA06.jpg" />
+                    </div>
+                    <div class="nz-course-info">
+                      <h4 class="nz-course-title nz-overflow-ellipsis-2 nz-black">
+                        淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                      </h4>
+                      <div class="d-flex">
+                        <div class="nz-course-type mr-3 d-none d-lg-flex">
+                          線上同步
+                        </div>
+                        <div class="d-flex">
+                          <div class="nz-course-p nz-black mr-3">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="mx-1">8/18 ~ 8/19</span>
+                          </div>
+                          <div class="nz-course-p nz-black">
+                            <i class="far fa-clock"></i>
+                            <span class="mx-1">12 hrs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 課程卡片 -->
+              <div class="col-md-6 col-12">
+                <a href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828">
+                  <div class="nz-course-card d-flex">
+                    <div class="nz-course-img">
+                      <img class="nz-img" alt="課程圖片"
+                        src="https://college.itri.org.tw/nzschool/assets/images/imgA12.jpg" />
+                    </div>
+                    <div class="nz-course-info">
+                      <h4 class="nz-course-title nz-overflow-ellipsis-2 nz-black">
+                        淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                      </h4>
+                      <div class="d-flex">
+                        <div class="nz-course-type mr-3 d-none d-lg-flex">
+                          線上同步
+                        </div>
+                        <div class="d-flex">
+                          <div class="nz-course-p nz-black mr-3">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="mx-1">8/18 ~ 8/19</span>
+                          </div>
+                          <div class="nz-course-p nz-black">
+                            <i class="far fa-clock"></i>
+                            <span class="mx-1">12 hrs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 課程卡片 -->
+              <div class="col-md-6 col-12 d-none d-md-block">
+                <a href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828">
+                  <div class="nz-course-card d-flex">
+                    <div class="nz-course-img">
+                      <img class="nz-img" alt="課程圖片"
+                        src="https://college.itri.org.tw/nzschool/assets/images/imgA13.jpg" />
+                    </div>
+                    <div class="nz-course-info">
+                      <h4 class="nz-course-title nz-overflow-ellipsis-2 nz-black">
+                        淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                      </h4>
+                      <div class="d-flex">
+                        <div class="nz-course-type mr-3 d-none d-lg-flex">
+                          線上同步
+                        </div>
+                        <div class="d-flex">
+                          <div class="nz-course-p nz-black mr-3">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="mx-1">8/18 ~ 8/19</span>
+                          </div>
+                          <div class="nz-course-p nz-black">
+                            <i class="far fa-clock"></i>
+                            <span class="mx-1">12 hrs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 課程卡片 -->
+              <div class="col-md-6 col-12 d-none d-md-block">
+                <a href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828">
+                  <div class="nz-course-card d-flex">
+                    <div class="nz-course-img">
+                      <img class="nz-img" alt="課程圖片"
+                        src="https://college.itri.org.tw/nzschool/assets/images/img0721.jpg" />
+                    </div>
+                    <div class="nz-course-info">
+                      <h4 class="nz-course-title nz-overflow-ellipsis-2 nz-black">
+                        淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                      </h4>
+                      <div class="d-flex">
+                        <div class="nz-course-type mr-3 d-none d-lg-flex">
+                          線上同步
+                        </div>
+                        <div class="d-flex">
+                          <div class="nz-course-p nz-black mr-3">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="mx-1">8/18 ~ 8/19</span>
+                          </div>
+                          <div class="nz-course-p nz-black">
+                            <i class="far fa-clock"></i>
+                            <span class="mx-1">12 hrs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 課程卡片 -->
+              <div class="col-md-6 col-12 d-none d-md-block">
+                <a href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828">
+                  <div class="nz-course-card d-flex">
+                    <div class="nz-course-img">
+                      <img class="nz-img" alt="課程圖片"
+                        src="https://college.itri.org.tw/nzschool/assets/images/imgA06.jpg" />
+                    </div>
+                    <div class="nz-course-info">
+                      <h4 class="nz-course-title nz-overflow-ellipsis-2 nz-black">
+                        淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                      </h4>
+                      <div class="d-flex">
+                        <div class="nz-course-type mr-3 d-none d-lg-flex">
+                          線上同步
+                        </div>
+                        <div class="d-flex">
+                          <div class="nz-course-p nz-black mr-3">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="mx-1">8/18 ~ 8/19</span>
+                          </div>
+                          <div class="nz-course-p nz-black">
+                            <i class="far fa-clock"></i>
+                            <span class="mx-1">12 hrs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- 輪播頁-2 -->
+          <div class="carousel-item">
+            <div class="row">
+              <!-- 課程卡片 -->
+              <div class="col-md-6 col-12">
+                <a href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828">
+                  <div class="nz-course-card d-flex">
+                    <div class="nz-course-img">
+                      <img class="nz-img" alt="課程圖片"
+                        src="https://college.itri.org.tw/nzschool/assets/images/imgA12.jpg" />
+                    </div>
+                    <div class="nz-course-info">
+                      <h4 class="nz-course-title nz-overflow-ellipsis-2 nz-black">
+                        淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                      </h4>
+                      <div class="d-flex">
+                        <div class="nz-course-type mr-3 d-none d-lg-flex">
+                          線上同步
+                        </div>
+                        <div class="d-flex">
+                          <div class="nz-course-p nz-black mr-3">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="mx-1">8/18 ~ 8/19</span>
+                          </div>
+                          <div class="nz-course-p nz-black">
+                            <i class="far fa-clock"></i>
+                            <span class="mx-1">12 hrs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 課程卡片 -->
+              <div class="col-md-6 col-12">
+                <a href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828">
+                  <div class="nz-course-card d-flex">
+                    <div class="nz-course-img">
+                      <img class="nz-img" alt="課程圖片"
+                        src="https://college.itri.org.tw/nzschool/assets/images/imgA13.jpg" />
+                    </div>
+                    <div class="nz-course-info">
+                      <h4 class="nz-course-title nz-overflow-ellipsis-2 nz-black">
+                        淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                      </h4>
+                      <div class="d-flex">
+                        <div class="nz-course-type mr-3 d-none d-lg-flex">
+                          線上同步
+                        </div>
+                        <div class="d-flex">
+                          <div class="nz-course-p nz-black mr-3">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="mx-1">8/18 ~ 8/19</span>
+                          </div>
+                          <div class="nz-course-p nz-black">
+                            <i class="far fa-clock"></i>
+                            <span class="mx-1">12 hrs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 課程卡片 -->
+              <div class="col-md-6 col-12">
+                <a href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828">
+                  <div class="nz-course-card d-flex">
+                    <div class="nz-course-img">
+                      <img class="nz-img" alt="課程圖片"
+                        src="https://college.itri.org.tw/nzschool/assets/images/img0721.jpg" />
+                    </div>
+                    <div class="nz-course-info">
+                      <h4 class="nz-course-title nz-overflow-ellipsis-2 nz-black">
+                        淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                      </h4>
+                      <div class="d-flex">
+                        <div class="nz-course-type mr-3 d-none d-lg-flex">
+                          線上同步
+                        </div>
+                        <div class="d-flex">
+                          <div class="nz-course-p nz-black mr-3">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="mx-1">8/18 ~ 8/19</span>
+                          </div>
+                          <div class="nz-course-p nz-black">
+                            <i class="far fa-clock"></i>
+                            <span class="mx-1">12 hrs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 課程卡片 -->
+              <div class="col-md-6 col-12 d-none d-md-block">
+                <a href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828">
+                  <div class="nz-course-card d-flex">
+                    <div class="nz-course-img">
+                      <img class="nz-img" alt="課程圖片"
+                        src="https://college.itri.org.tw/nzschool/assets/images/imgA06.jpg" />
+                    </div>
+                    <div class="nz-course-info">
+                      <h4 class="nz-course-title nz-overflow-ellipsis-2 nz-black">
+                        淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                      </h4>
+                      <div class="d-flex">
+                        <div class="nz-course-type mr-3 d-none d-lg-flex">
+                          線上同步
+                        </div>
+                        <div class="d-flex">
+                          <div class="nz-course-p nz-black mr-3">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="mx-1">8/18 ~ 8/19</span>
+                          </div>
+                          <div class="nz-course-p nz-black">
+                            <i class="far fa-clock"></i>
+                            <span class="mx-1">12 hrs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 課程卡片 -->
+              <div class="col-md-6 col-12 d-none d-md-block">
+                <a href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828">
+                  <div class="nz-course-card d-flex">
+                    <div class="nz-course-img">
+                      <img class="nz-img" alt="課程圖片"
+                        src="https://college.itri.org.tw/nzschool/assets/images/img0721.jpg" />
+                    </div>
+                    <div class="nz-course-info">
+                      <h4 class="nz-course-title nz-overflow-ellipsis-2 nz-black">
+                        淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                      </h4>
+                      <div class="d-flex">
+                        <div class="nz-course-type mr-3 d-none d-lg-flex">
+                          線上同步
+                        </div>
+                        <div class="d-flex">
+                          <div class="nz-course-p nz-black mr-3">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="mx-1">8/18 ~ 8/19</span>
+                          </div>
+                          <div class="nz-course-p nz-black">
+                            <i class="far fa-clock"></i>
+                            <span class="mx-1">12 hrs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 課程卡片 -->
+              <div class="col-md-6 col-12 d-none d-md-block">
+                <a href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828">
+                  <div class="nz-course-card d-flex">
+                    <div class="nz-course-img">
+                      <img class="nz-img" alt="課程圖片"
+                        src="https://college.itri.org.tw/nzschool/assets/images/imgA06.jpg" />
+                    </div>
+                    <div class="nz-course-info">
+                      <h4 class="nz-course-title nz-overflow-ellipsis-2 nz-black">
+                        淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                      </h4>
+                      <div class="d-flex">
+                        <div class="nz-course-type mr-3 d-none d-lg-flex">
+                          線上同步
+                        </div>
+                        <div class="d-flex">
+                          <div class="nz-course-p nz-black mr-3">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="mx-1">8/18 ~ 8/19</span>
+                          </div>
+                          <div class="nz-course-p nz-black">
+                            <i class="far fa-clock"></i>
+                            <span class="mx-1">12 hrs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#courseCarousel-1" role="button" data-slide="prev">
+          <i class="fas fa-chevron-left"></i>
+        </a>
+        <a class="carousel-control-next" href="#courseCarousel-1" role="button" data-slide="next">
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+      <!-- 更多 -->
+      <div class="text-right mt-lg-0 mt-3">
+        <!-- TODO: url -->
+        <a href="#">
+          <button class="btn nz-btn nz-btn-primary">更 多</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- 技術解方專業課程 -->
+    <section class="mt-5">
+      <h1 class="nz-title nz-primary my-4">技術解方專業課程</h1>
+      <div id="courseCarousel-2" class="carousel slide nz-carousel" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#courseCarousel-2" data-slide-to="0" class="active"></li>
+          <li data-target="#courseCarousel-2" data-slide-to="1"></li>
+          <li data-target="#courseCarousel-2" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <!-- 輪播頁-1 -->
+          <div class="carousel-item active">
+            <div class="row">
+              <!-- 課程卡片 -->
+              <div class="col-md-6 col-12">
+                <a href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828">
+                  <div class="nz-course-card d-flex">
+                    <div class="nz-course-img">
+                      <img class="nz-img" alt="課程圖片"
+                        src="https://college.itri.org.tw/nzschool/assets/images/img0721.jpg" />
+                    </div>
+                    <div class="nz-course-info">
+                      <h4 class="nz-course-title nz-overflow-ellipsis-2 nz-black">
+                        淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                      </h4>
+                      <div class="d-flex">
+                        <div class="nz-course-type mr-3 d-none d-lg-flex">
+                          線上同步
+                        </div>
+                        <div class="d-flex">
+                          <div class="nz-course-p nz-black mr-3">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="mx-1">8/18 ~ 8/19</span>
+                          </div>
+                          <div class="nz-course-p nz-black">
+                            <i class="far fa-clock"></i>
+                            <span class="mx-1">12 hrs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 課程卡片 -->
+              <div class="col-md-6 col-12">
+                <a href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828">
+                  <div class="nz-course-card d-flex">
+                    <div class="nz-course-img">
+                      <img class="nz-img" alt="課程圖片"
+                        src="https://college.itri.org.tw/nzschool/assets/images/imgA06.jpg" />
+                    </div>
+                    <div class="nz-course-info">
+                      <h4 class="nz-course-title nz-overflow-ellipsis-2 nz-black">
+                        淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                      </h4>
+                      <div class="d-flex">
+                        <div class="nz-course-type mr-3 d-none d-lg-flex">
+                          線上同步
+                        </div>
+                        <div class="d-flex">
+                          <div class="nz-course-p nz-black mr-3">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="mx-1">8/18 ~ 8/19</span>
+                          </div>
+                          <div class="nz-course-p nz-black">
+                            <i class="far fa-clock"></i>
+                            <span class="mx-1">12 hrs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 課程卡片 -->
+              <div class="col-md-6 col-12">
+                <a href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828">
+                  <div class="nz-course-card d-flex">
+                    <div class="nz-course-img">
+                      <img class="nz-img" alt="課程圖片"
+                        src="https://college.itri.org.tw/nzschool/assets/images/imgA12.jpg" />
+                    </div>
+                    <div class="nz-course-info">
+                      <h4 class="nz-course-title nz-overflow-ellipsis-2 nz-black">
+                        淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                      </h4>
+                      <div class="d-flex">
+                        <div class="nz-course-type mr-3 d-none d-lg-flex">
+                          線上同步
+                        </div>
+                        <div class="d-flex">
+                          <div class="nz-course-p nz-black mr-3">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="mx-1">8/18 ~ 8/19</span>
+                          </div>
+                          <div class="nz-course-p nz-black">
+                            <i class="far fa-clock"></i>
+                            <span class="mx-1">12 hrs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 課程卡片 -->
+              <div class="col-md-6 col-12 d-none d-md-block">
+                <a href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828">
+                  <div class="nz-course-card d-flex">
+                    <div class="nz-course-img">
+                      <img class="nz-img" alt="課程圖片"
+                        src="https://college.itri.org.tw/nzschool/assets/images/imgA13.jpg" />
+                    </div>
+                    <div class="nz-course-info">
+                      <h4 class="nz-course-title nz-overflow-ellipsis-2 nz-black">
+                        淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                      </h4>
+                      <div class="d-flex">
+                        <div class="nz-course-type mr-3 d-none d-lg-flex">
+                          線上同步
+                        </div>
+                        <div class="d-flex">
+                          <div class="nz-course-p nz-black mr-3">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="mx-1">8/18 ~ 8/19</span>
+                          </div>
+                          <div class="nz-course-p nz-black">
+                            <i class="far fa-clock"></i>
+                            <span class="mx-1">12 hrs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 課程卡片 -->
+              <div class="col-md-6 col-12 d-none d-md-block">
+                <a href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828">
+                  <div class="nz-course-card d-flex">
+                    <div class="nz-course-img">
+                      <img class="nz-img" alt="課程圖片"
+                        src="https://college.itri.org.tw/nzschool/assets/images/img0721.jpg" />
+                    </div>
+                    <div class="nz-course-info">
+                      <h4 class="nz-course-title nz-overflow-ellipsis-2 nz-black">
+                        淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                      </h4>
+                      <div class="d-flex">
+                        <div class="nz-course-type mr-3 d-none d-lg-flex">
+                          線上同步
+                        </div>
+                        <div class="d-flex">
+                          <div class="nz-course-p nz-black mr-3">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="mx-1">8/18 ~ 8/19</span>
+                          </div>
+                          <div class="nz-course-p nz-black">
+                            <i class="far fa-clock"></i>
+                            <span class="mx-1">12 hrs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 課程卡片 -->
+              <div class="col-md-6 col-12 d-none d-md-block">
+                <a href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828">
+                  <div class="nz-course-card d-flex">
+                    <div class="nz-course-img">
+                      <img class="nz-img" alt="課程圖片"
+                        src="https://college.itri.org.tw/nzschool/assets/images/imgA06.jpg" />
+                    </div>
+                    <div class="nz-course-info">
+                      <h4 class="nz-course-title nz-overflow-ellipsis-2 nz-black">
+                        淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                      </h4>
+                      <div class="d-flex">
+                        <div class="nz-course-type mr-3 d-none d-lg-flex">
+                          線上同步
+                        </div>
+                        <div class="d-flex">
+                          <div class="nz-course-p nz-black mr-3">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="mx-1">8/18 ~ 8/19</span>
+                          </div>
+                          <div class="nz-course-p nz-black">
+                            <i class="far fa-clock"></i>
+                            <span class="mx-1">12 hrs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- 輪播頁-2 -->
+          <div class="carousel-item">
+            <div class="row">
+              <!-- 課程卡片 -->
+              <div class="col-md-6 col-12">
+                <a href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828">
+                  <div class="nz-course-card d-flex">
+                    <div class="nz-course-img">
+                      <img class="nz-img" alt="課程圖片"
+                        src="https://college.itri.org.tw/nzschool/assets/images/imgA12.jpg" />
+                    </div>
+                    <div class="nz-course-info">
+                      <h4 class="nz-course-title nz-overflow-ellipsis-2 nz-black">
+                        淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                      </h4>
+                      <div class="d-flex">
+                        <div class="nz-course-type mr-3 d-none d-lg-flex">
+                          線上同步
+                        </div>
+                        <div class="d-flex">
+                          <div class="nz-course-p nz-black mr-3">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="mx-1">8/18 ~ 8/19</span>
+                          </div>
+                          <div class="nz-course-p nz-black">
+                            <i class="far fa-clock"></i>
+                            <span class="mx-1">12 hrs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 課程卡片 -->
+              <div class="col-md-6 col-12">
+                <a href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828">
+                  <div class="nz-course-card d-flex">
+                    <div class="nz-course-img">
+                      <img class="nz-img" alt="課程圖片"
+                        src="https://college.itri.org.tw/nzschool/assets/images/imgA13.jpg" />
+                    </div>
+                    <div class="nz-course-info">
+                      <h4 class="nz-course-title nz-overflow-ellipsis-2 nz-black">
+                        淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                      </h4>
+                      <div class="d-flex">
+                        <div class="nz-course-type mr-3 d-none d-lg-flex">
+                          線上同步
+                        </div>
+                        <div class="d-flex">
+                          <div class="nz-course-p nz-black mr-3">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="mx-1">8/18 ~ 8/19</span>
+                          </div>
+                          <div class="nz-course-p nz-black">
+                            <i class="far fa-clock"></i>
+                            <span class="mx-1">12 hrs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 課程卡片 -->
+              <div class="col-md-6 col-12">
+                <a href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828">
+                  <div class="nz-course-card d-flex">
+                    <div class="nz-course-img">
+                      <img class="nz-img" alt="課程圖片"
+                        src="https://college.itri.org.tw/nzschool/assets/images/img0721.jpg" />
+                    </div>
+                    <div class="nz-course-info">
+                      <h4 class="nz-course-title nz-overflow-ellipsis-2 nz-black">
+                        淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                      </h4>
+                      <div class="d-flex">
+                        <div class="nz-course-type mr-3 d-none d-lg-flex">
+                          線上同步
+                        </div>
+                        <div class="d-flex">
+                          <div class="nz-course-p nz-black mr-3">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="mx-1">8/18 ~ 8/19</span>
+                          </div>
+                          <div class="nz-course-p nz-black">
+                            <i class="far fa-clock"></i>
+                            <span class="mx-1">12 hrs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 課程卡片 -->
+              <div class="col-md-6 col-12 d-none d-md-block">
+                <a href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828">
+                  <div class="nz-course-card d-flex">
+                    <div class="nz-course-img">
+                      <img class="nz-img" alt="課程圖片"
+                        src="https://college.itri.org.tw/nzschool/assets/images/imgA06.jpg" />
+                    </div>
+                    <div class="nz-course-info">
+                      <h4 class="nz-course-title nz-overflow-ellipsis-2 nz-black">
+                        淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                      </h4>
+                      <div class="d-flex">
+                        <div class="nz-course-type mr-3 d-none d-lg-flex">
+                          線上同步
+                        </div>
+                        <div class="d-flex">
+                          <div class="nz-course-p nz-black mr-3">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="mx-1">8/18 ~ 8/19</span>
+                          </div>
+                          <div class="nz-course-p nz-black">
+                            <i class="far fa-clock"></i>
+                            <span class="mx-1">12 hrs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 課程卡片 -->
+              <div class="col-md-6 col-12 d-none d-md-block">
+                <a href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828">
+                  <div class="nz-course-card d-flex">
+                    <div class="nz-course-img">
+                      <img class="nz-img" alt="課程圖片"
+                        src="https://college.itri.org.tw/nzschool/assets/images/img0721.jpg" />
+                    </div>
+                    <div class="nz-course-info">
+                      <h4 class="nz-course-title nz-overflow-ellipsis-2 nz-black">
+                        淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                      </h4>
+                      <div class="d-flex">
+                        <div class="nz-course-type mr-3 d-none d-lg-flex">
+                          線上同步
+                        </div>
+                        <div class="d-flex">
+                          <div class="nz-course-p nz-black mr-3">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="mx-1">8/18 ~ 8/19</span>
+                          </div>
+                          <div class="nz-course-p nz-black">
+                            <i class="far fa-clock"></i>
+                            <span class="mx-1">12 hrs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- 課程卡片 -->
+              <div class="col-md-6 col-12 d-none d-md-block">
+                <a href="https://college.itri.org.tw/Home/LessonData/5A4B831A-53DD-4BAF-AE61-43C73A816828">
+                  <div class="nz-course-card d-flex">
+                    <div class="nz-course-img">
+                      <img class="nz-img" alt="課程圖片"
+                        src="https://college.itri.org.tw/nzschool/assets/images/imgA06.jpg" />
+                    </div>
+                    <div class="nz-course-info">
+                      <h4 class="nz-course-title nz-overflow-ellipsis-2 nz-black">
+                        淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次淨零行動關鍵【溫室氣體盤查實作研習班】第二梯次
+                      </h4>
+                      <div class="d-flex">
+                        <div class="nz-course-type mr-3 d-none d-lg-flex">
+                          線上同步
+                        </div>
+                        <div class="d-flex">
+                          <div class="nz-course-p nz-black mr-3">
+                            <i class="far fa-calendar-alt"></i>
+                            <span class="mx-1">8/18 ~ 8/19</span>
+                          </div>
+                          <div class="nz-course-p nz-black">
+                            <i class="far fa-clock"></i>
+                            <span class="mx-1">12 hrs</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#courseCarousel-2" role="button" data-slide="prev">
+          <i class="fas fa-chevron-left"></i>
+        </a>
+        <a class="carousel-control-next" href="#courseCarousel-2" role="button" data-slide="next">
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+      <!-- 更多 -->
+      <div class="text-right mt-lg-0 mt-3">
+        <!-- TODO: url -->
+        <a href="#">
+          <button class="btn nz-btn nz-btn-primary">更 多</button>
+        </a>
+      </div>
+    </section>
+  </div>
+  <!-- 淨零知識 -->
+  <div class="nz-bg-gray mt-5">
+    <div class="container py-3">
+      <section>
+        <h1 class="nz-title nz-primary my-4">
+          淨零知識<strong class="nz-subtitle">
+            <免費觀看>
+          </strong>
+        </h1>
+        <!-- 分類 -->
+        <!-- TODO:換大圖 -->
         <div class="row">
-          <div class="col-lg-6 col-md-5">
-            <h4 class="nz-footer-title">工研院產業學院</h4>
-            <div class="d-flex align-content-center my-3 nz-community-div">
-              <a
-                target="_blank"
-                href="https://page.line.me/750xsesc?openQrModal=true"
-              >
-                <div class="nz-community-i mr-3">
-                  <i class="fab fa-line"></i>
-                </div>
-              </a>
-              <a
-                target="_blank"
-                href="https://www.linkedin.com/company/itricollege"
-              >
-                <div class="nz-community-i mr-3">
-                  <i class="fab fa-linkedin"></i>
-                </div>
-              </a>
-              <a
-                target="_blank"
-                href="https://www.facebook.com/itricollege.fans"
-              >
-                <div class="nz-community-i mr-3">
-                  <i class="fab fa-facebook-square"></i>
-                </div>
-              </a>
-              <a
-                target="_blank"
-                href="https://www.youtube.com/channel/UCwccRxh1jrez5YfSRdXUB2A"
-              >
-                <div class="nz-community-i">
-                  <i class="fab fa-youtube"></i>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="nz-know-theme">
+              <a href="#">
+                <img class="nz-img" src="img/knowledge/them-1.png" />
+                <div class="nz-mask">
+                  <div class="nz-img-word">
+                    <h2>搞懂零碳排<br />系列</h2>
+                    <p></p>
+                    <!--TODO: 待補文字-->
+                  </div>
                 </div>
               </a>
             </div>
           </div>
-          <!-- 聯絡窗口 -->
-          <div class="col-lg-6 col-md-7 h-auto">
-            <div class="d-md-flex justify-content-between h-100">
-              <div class="nz-connection mt-md-1 mt-3">
-                <div>聯絡窗口 - 張小姐</div>
-                <div class="mt-1">
-                  <i class="fas fa-phone-alt"></i>
-                  <a class="nz-a-white ml-2" href="tel:03-5919333"
-                    >03-5918044</a
-                  >
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="nz-know-theme">
+              <a href="#">
+                <img class="nz-img" src="img/knowledge/them-2.png" />
+                <div class="nz-mask">
+                  <div class="nz-img-word">
+                    <h2>生活碳足跡<br />系列</h2>
+                    <p>
+                      瞭解如何將減碳新科技，融入生活食衣住行育樂，打造時尚的減碳未來新生活。
+                    </p>
+                  </div>
                 </div>
-                <div class="mt-1">
-                  <i class="fas fa-envelope"></i>
-                  <a class="nz-a-white ml-2" href="mailto:AngelC@itri.org.tw"
-                    >AngelC@itri.org.tw</a
-                  >
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="nz-know-theme">
+              <a href="#">
+                <img class="nz-img" src="img/knowledge/them-3.png" />
+                <div class="nz-mask">
+                  <div class="nz-img-word">
+                    <h2>永續能源<br />8 堂課</h2>
+                    <p>
+                      拆解淨零永續生活的驅動關鍵 - 再生能源、低碳科技
+                      將複雜的永續技術轉成最生活化環保行動
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="d-none d-md-block nz-vertical-line"></div>
-              <div class="nz-connection mt-md-1 mt-3">
-                <div>聯絡窗口 - 張小姐</div>
-                <div class="mt-1">
-                  <i class="fas fa-phone-alt"></i>
-                  <a class="nz-a-white ml-2" href="tel:03-5919333"
-                    >03-5919333</a
-                  >
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="nz-know-theme">
+              <a href="#">
+                <img class="nz-img" src="img/knowledge/them-4.png" />
+                <div class="nz-mask">
+                  <div class="nz-img-word">
+                    <h2>掌握企業<br />零碳解方</h2>
+                    <p>工研院幫您打造淨零時代競爭力，提供企業淨零減碳解方</p>
+                  </div>
                 </div>
-                <div class="mt-1">
-                  <i class="fas fa-envelope"></i>
-                  <a
-                    class="nz-a-white ml-2"
-                    href="mailto:itri536598@itri.org.tw"
-                    >itri536598@itri.org.tw</a
-                  >
-                </div>
-              </div>
+              </a>
             </div>
           </div>
         </div>
-        <hr class="nz-hr" />
-        <div class="d-md-flex justify-content-between mt-4">
-          <div class="d-flex justify-content-between">
-            <img
-              class="nz-footer-logo"
-              src="img/layout/footer_logo.png"
-              alt="工業技術研究院logo"
-            />
-            <div class="ml-3">
-              <div class="mb-1">
-                <a
-                  class="nz-a-white"
-                  href="https://www.itri.org.tw/ListStyle.aspx?DisplayStyle=20&SiteID=1&MmmID=1036712133204351167"
-                >
-                  法律聲明
-                </a>
+        <!-- 知識卡片輪播 -->
+        <div id="knowCarousel" class="carousel nz-carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#knowCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#knowCarousel" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <!-- 輪播-1 -->
+            <div class="carousel-item active">
+              <div class="row">
+                <!-- 卡片 -->
+                <div class="col-sm-6 col-md-4">
+                  <div class="nz-know-card">
+                    <a
+                      href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383">
+                      <div class="nz-know-card-img">
+                        <img class="nz-img" src="https://college.itri.org.tw/nzschool/assets/images/img0721.jpg"
+                          alt="文章封面" />
+                        <div class="nz-flag">FREE</div>
+                      </div>
+                      <div class="nz-know-card-info">
+                        <div class="nz-know-type">生活碳足跡</div>
+                        <h5 class="nz-know-card-title nz-black nz-overflow-ellipsis">
+                          推動淨零碳排，台灣不落人後解析企業加入淨零轉型的遠因及助益
+                        </h5>
+                        <p class="nz-overflow-ellipsis-3">
+                          根據聯合國IPCC《第六次氣候變遷評估報告（AR6）》分析指出：未來20年內，全球平均氣溫將上升1.5℃。面對全球暖化的嚴峻挑戰，我國政府著眼於環境永續發展，及代工出口導向的經濟戰略，與全球136個國家一同推動淨零碳排轉型，預計在2050年達成目標。
+                        </p>
+                        <div class="nz-know-date">2022/08/05</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- 卡片 -->
+                <div class="col-sm-6 col-md-4">
+                  <div class="nz-know-card">
+                    <a
+                      href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383">
+                      <div class="nz-know-card-img">
+                        <img class="nz-img"
+                          src="https://college.itri.org.tw/api/TM_AttFile_Attachment_Download?attNo=6794f5c7-73df-4cbe-9557-1b08b06684d3"
+                          alt="文章封面" />
+                        <div class="nz-flag">FREE</div>
+                      </div>
+                      <div class="nz-know-card-info">
+                        <div class="nz-know-type">生活碳足跡</div>
+                        <h5 class="nz-know-card-title nz-black nz-overflow-ellipsis">
+                          推動淨零碳排，台灣不落人後解析企業加入淨零轉型的遠因及助益
+                        </h5>
+                        <p class="nz-overflow-ellipsis-3">
+                          根據聯合國IPCC《第六次氣候變遷評估報告（AR6）》分析指出：未來20年內，全球平均氣溫將上升1.5℃。面對全球暖化的嚴峻挑戰，我國政府著眼於環境永續發展，及代工出口導向的經濟戰略，與全球136個國家一同推動淨零碳排轉型，預計在2050年達成目標。
+                        </p>
+                        <div class="nz-know-date">2022/08/05</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- 卡片 -->
+                <div class="col-sm-6 col-md-4">
+                  <div class="nz-know-card">
+                    <a
+                      href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383">
+                      <div class="nz-know-card-img">
+                        <img class="nz-img" src="img/example/img-3.JPG" alt="文章封面" />
+                        <div class="nz-flag">FREE</div>
+                      </div>
+                      <div class="nz-know-card-info">
+                        <div class="nz-know-type">生活碳足跡</div>
+                        <h5 class="nz-know-card-title nz-black nz-overflow-ellipsis">
+                          推動淨零碳排，台灣不落人後解析企業加入淨零轉型的遠因及助益
+                        </h5>
+                        <p class="nz-overflow-ellipsis-3">
+                          根據聯合國IPCC《第六次氣候變遷評估報告（AR6）》分析指出：未來20年內，全球平均氣溫將上升1.5℃。面對全球暖化的嚴峻挑戰，我國政府著眼於環境永續發展，及代工出口導向的經濟戰略，與全球136個國家一同推動淨零碳排轉型，預計在2050年達成目標。
+                        </p>
+                        <div class="nz-know-date">2022/08/05</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div class="mb-1">
-                <a
-                  class="nz-a-white"
-                  href="https://college.itri.org.tw/Home/ContactusList"
-                >
-                  聯絡資訊
-                </a>
+            </div>
+            <!-- 輪播-2 -->
+            <div class="carousel-item">
+              <div class="row">
+                <!-- 卡片 -->
+                <div class="col-sm-6 col-md-4">
+                  <div class="nz-know-card">
+                    <a
+                      href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383">
+                      <div class="nz-know-card-img">
+                        <img class="nz-img"
+                          src="https://college.itri.org.tw/api/TM_AttFile_Attachment_Download?attNo=83856d33-4021-4b26-acc6-006114911d74"
+                          alt="文章封面" />
+                        <div class="nz-flag">FREE</div>
+                      </div>
+                      <div class="nz-know-card-info">
+                        <div class="nz-know-type">生活碳足跡</div>
+                        <h5 class="nz-know-card-title nz-black nz-overflow-ellipsis">
+                          推動淨零碳排，台灣不落人後解析企業加入淨零轉型的遠因及助益
+                        </h5>
+                        <p class="nz-overflow-ellipsis-3">
+                          根據聯合國IPCC《第六次氣候變遷評估報告（AR6）》分析指出：未來20年內，全球平均氣溫將上升1.5℃。面對全球暖化的嚴峻挑戰，我國政府著眼於環境永續發展，及代工出口導向的經濟戰略，與全球136個國家一同推動淨零碳排轉型，預計在2050年達成目標。
+                        </p>
+                        <div class="nz-know-date">2022/08/05</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- 卡片 -->
+                <div class="col-sm-6 col-md-4">
+                  <div class="nz-know-card">
+                    <a
+                      href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383">
+                      <div class="nz-know-card-img">
+                        <img class="nz-img"
+                          src="https://college.itri.org.tw/api/TM_AttFile_Attachment_Download?attNo=e4e73c44-5556-478a-963a-be8d77262d3e"
+                          alt="文章封面" />
+                        <div class="nz-flag">FREE</div>
+                      </div>
+                      <div class="nz-know-card-info">
+                        <div class="nz-know-type">生活碳足跡</div>
+                        <h5 class="nz-know-card-title nz-black nz-overflow-ellipsis">
+                          推動淨零碳排，台灣不落人後解析企業加入淨零轉型的遠因及助益
+                        </h5>
+                        <p class="nz-overflow-ellipsis-3">
+                          根據聯合國IPCC《第六次氣候變遷評估報告（AR6）》分析指出：未來20年內，全球平均氣溫將上升1.5℃。面對全球暖化的嚴峻挑戰，我國政府著眼於環境永續發展，及代工出口導向的經濟戰略，與全球136個國家一同推動淨零碳排轉型，預計在2050年達成目標。
+                        </p>
+                        <div class="nz-know-date">2022/08/05</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- 卡片 -->
+                <div class="col-sm-6 col-md-4">
+                  <div class="nz-know-card">
+                    <a
+                      href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383">
+                      <div class="nz-know-card-img">
+                        <img class="nz-img"
+                          src="https://college.itri.org.tw/api/TM_AttFile_Attachment_Download?attNo=8b4bb860-c860-4b66-9880-82c0118fb9d7"
+                          alt="文章封面" />
+                        <div class="nz-flag">FREE</div>
+                      </div>
+                      <div class="nz-know-card-info">
+                        <div class="nz-know-type">生活碳足跡</div>
+                        <h5 class="nz-know-card-title nz-black nz-overflow-ellipsis">
+                          推動淨零碳排，台灣不落人後解析企業加入淨零轉型的遠因及助益
+                        </h5>
+                        <p class="nz-overflow-ellipsis-3">
+                          根據聯合國IPCC《第六次氣候變遷評估報告（AR6）》分析指出：未來20年內，全球平均氣溫將上升1.5℃。面對全球暖化的嚴峻挑戰，我國政府著眼於環境永續發展，及代工出口導向的經濟戰略，與全球136個國家一同推動淨零碳排轉型，預計在2050年達成目標。
+                        </p>
+                        <div class="nz-know-date">2022/08/05</div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="text-right nz-footer-right">
-            <div>© ITRI. 屬工業技術研究院</div>
-            <div>僅由產業學院維護</div>
-            <div>建議瀏覽器 Chrome、Edge、Firefox、Safari</div>
+          <a class="carousel-control-prev" href="#knowCarousel" role="button" data-slide="prev">
+            <i class="fas fa-chevron-left"></i>
+          </a>
+          <a class="carousel-control-next" href="#knowCarousel" role="button" data-slide="next">
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+        <!-- 更多 -->
+        <div class="text-right mt-lg-0 mt-3 mb-4">
+          <!-- TODO: url -->
+          <a href="#">
+            <button class="btn nz-btn nz-btn-primary">更 多</button>
+          </a>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- 人才聯盟成員 -->
+  <div class="container my-5">
+    <h1 class="nz-title nz-primary my-4">人才聯盟成員</h1>
+    <div class="row nz-member-row">
+      <div class="col-md-4 col-6 nz-member-logo">
+        <img src="img/members/member-1.png" alt="中華民國全國工業總會Logo" />
+      </div>
+      <div class="col-md-4 col-6 nz-member-logo">
+        <img src="img/members/member-2.png" alt="台灣區電機電子工業同業公會Logo" />
+      </div>
+      <div class="col-md-4 col-6 nz-member-logo">
+        <img src="img/members/member-3.png" alt="台灣機械工業同業公會Logo" />
+      </div>
+      <div class="col-md-4 col-6 nz-member-logo">
+        <img src="img/members/member-4.png" alt="台灣電路板協會Logo" />
+      </div>
+      <div class="col-md-4 col-6 nz-member-logo">
+        <img src="img/members/member-5.png" alt="工業技術研究院Logo" />
+      </div>
+      <div class="col-md-4 col-6 nz-member-logo">
+        <img src="img/members/member-6.png" alt="台灣化學產業協會Logo" />
+      </div>
+      <div class="col-md-4 col-6 nz-member-logo">
+        <img src="img/members/member-7.png" alt="中華民國工商協進會Logo" />
+      </div>
+      <div class="col-md-4 col-6 nz-member-logo">
+        <img src="img/members/member-8.png" alt="循環台灣Logo" />
+      </div>
+      <div class="col-md-4 col-6 nz-member-logo">
+        <img src="img/members/member-9.png" alt="台灣區絲織工業同業公會Logo" />
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-5">
+          <h4 class="nz-footer-title">工研院產業學院</h4>
+          <div class="d-flex align-content-center my-3 nz-community-div">
+            <a target="_blank" href="https://page.line.me/750xsesc?openQrModal=true">
+              <div class="nz-community-i mr-3">
+                <i class="fab fa-line"></i>
+              </div>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/company/itricollege">
+              <div class="nz-community-i mr-3">
+                <i class="fab fa-linkedin"></i>
+              </div>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/itricollege.fans">
+              <div class="nz-community-i mr-3">
+                <i class="fab fa-facebook-square"></i>
+              </div>
+            </a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCwccRxh1jrez5YfSRdXUB2A">
+              <div class="nz-community-i">
+                <i class="fab fa-youtube"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- 聯絡窗口 -->
+        <div class="col-lg-6 col-md-7 h-auto">
+          <div class="d-md-flex justify-content-between h-100">
+            <div class="nz-connection mt-md-1 mt-3">
+              <div>聯絡窗口 - 張小姐</div>
+              <div class="mt-1">
+                <i class="fas fa-phone-alt"></i>
+                <a class="nz-a-white ml-2" href="tel:03-5919333">03-5918044</a>
+              </div>
+              <div class="mt-1">
+                <i class="fas fa-envelope"></i>
+                <a class="nz-a-white ml-2" href="mailto:AngelC@itri.org.tw">AngelC@itri.org.tw</a>
+              </div>
+            </div>
+            <div class="d-none d-md-block nz-vertical-line"></div>
+            <div class="nz-connection mt-md-1 mt-3">
+              <div>聯絡窗口 - 張小姐</div>
+              <div class="mt-1">
+                <i class="fas fa-phone-alt"></i>
+                <a class="nz-a-white ml-2" href="tel:03-5919333">03-5919333</a>
+              </div>
+              <div class="mt-1">
+                <i class="fas fa-envelope"></i>
+                <a class="nz-a-white ml-2" href="mailto:itri536598@itri.org.tw">itri536598@itri.org.tw</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
-  </body>
+      <hr class="nz-hr" />
+      <div class="d-md-flex justify-content-between mt-4">
+        <div class="d-flex justify-content-between">
+          <img class="nz-footer-logo" src="img/layout/footer_logo.png" alt="工業技術研究院logo" />
+          <div class="ml-3">
+            <div class="mb-1">
+              <a class="nz-a-white"
+                href="https://www.itri.org.tw/ListStyle.aspx?DisplayStyle=20&SiteID=1&MmmID=1036712133204351167">
+                法律聲明
+              </a>
+            </div>
+            <div class="mb-1">
+              <a class="nz-a-white" href="https://college.itri.org.tw/Home/ContactusList">
+                聯絡資訊
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="text-right nz-footer-right">
+          <div>© ITRI. 屬工業技術研究院</div>
+          <div>僅由產業學院維護</div>
+          <div>建議瀏覽器 Chrome、Edge、Firefox、Safari</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
