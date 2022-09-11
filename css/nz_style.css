@@ -253,8 +253,18 @@ a .nz-black:hover {
     color: #ffffff;
 }
 
-.nz-navbar-nav .active a {
+.nz-navbar-nav .active > a {
     color: #fff500;
+}
+
+.nz-navbar-collapse {
+    height: 100vh;
+    overflow: auto;
+    background-color: #45904d;
+}
+
+.nz-navbar-collapse > .nz-navbar-nav {
+    padding-bottom: 120px;
 }
 
 .nav-item hr {
@@ -361,6 +371,7 @@ a .nz-black:hover {
     font-size: 18px;
     font-weight: 600;
     line-height: 1.4;
+    min-height: 50.3px;
 }
 
 .nz-course-type {
@@ -474,6 +485,7 @@ a .nz-black:hover {
 .nz-know-card-info p {
     font-size: 14px;
     color: #898989;
+    min-height: 60px;
 }
 
 .nz-know-type {
