@@ -1,19 +1,30 @@
+// 淨零學校的 js
 $(document).ready(function () {
   // 偵測滾輪
   window.onscroll = function () {
     scrollFunction()
   };
 
+  // 初始化 bootstrap tooltip 提示功能
+  $('[data-toggle="tooltip"]').tooltip();
+
+  // 初始化下拉選單功能
+  $('.dropdown-toggle').dropdown();
+
   // 手機版顯示 menu
-  $('#navbarNav').on('show.bs.collapse', function () {
-    $("#openNav").addClass("d-none");
-    $("#closeNav").removeClass("d-none");
+  $('#navbarNav.navbar-collapse').on('show.bs.collapse', function (e) {
+    if (e.target.id === 'navbarNav') {
+      $("#openNav").addClass("d-none");
+      $("#closeNav").removeClass("d-none");
+    }
   });
 
   // 手機版隱藏 menu
-  $('#navbarNav').on('hide.bs.collapse', function () {
-    $("#openNav").removeClass("d-none");
-    $("#closeNav").addClass("d-none");
+  $('#navbarNav.navbar-collapse').on('hide.bs.collapse', function (e) {
+    if (e.target.id === 'navbarNav') {
+      $("#openNav").removeClass("d-none");
+      $("#closeNav").addClass("d-none");
+    }
   });
 });
 

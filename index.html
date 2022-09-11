@@ -20,11 +20,17 @@
 
   <title>工研院淨零永續學校-縮短你與淨零的距離</title>
   <link id="linkIco" rel="shortcut icon" href="img/layout/favicon.ico" />
+  <!-- bootstrap css -->
   <link rel="stylesheet" href="css/plugin/bootstrap.min.css" />
+  <!-- icon 圖示 -->
   <link rel="stylesheet" href="css/plugin/fontawesome-free-5.11.2-web/css/all.min.css" />
   <!-- 淨零永續學校 css -->
   <link rel="stylesheet" href="css/nz_style.css" />
+  <!-- jQuery js -->
   <script src="js/plugin/jQuery-v3.3.1.miin.js"></script>
+  <!-- popper - 提示 tooltip js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <!-- bootstrap js -->
   <script src="js/plugin/bootstrap.min.js"></script>
   <!-- 淨零永續學校通用 js -->
   <script src="js/nz-script.js"></script>
@@ -40,7 +46,9 @@
         <div class="d-none d-lg-block">
           <ul class="nav justify-content-end align-items-center font-weight-bold">
             <li class="nz-nav-item">
-              <a class="nz-primary active" href="#">會員登入</a>
+              <a class="nz-primary active" href="#" data-toggle="tooltip" data-placement="top" title="前往會員登入頁">
+                <div class="nz-user"><i class="fas fa-user"></i></div>
+              </a>
             </li>
             <li class="nz-gray">|</li>
             <li class="nz-nav-item">
@@ -62,8 +70,22 @@
       <div class="nz-menu d-none d-lg-block">
         <div class="container">
           <ul class="nav justify-content-between">
-            <li><a href="knowledge.html">淨零知識</a></li>
-            <li><a href="">專業課程</a></li>
+            <li class="dropdown nz-dropdown">
+              <a class="dropdown-toggle" href="knowledge.html">淨零知識</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="knowledge.html">搞懂零碳排系列</a>
+                <a class="dropdown-item" href="knowledge.html">生活碳足跡系列</a>
+                <a class="dropdown-item" href="knowledge.html">永續能源 8 堂課</a>
+                <a class="dropdown-item" href="knowledge.html">掌握企業零碳解方</a>
+              </div>
+            </li>
+            <li class="dropdown nz-dropdown">
+              <a class="dropdown-toggle" href="">專業課程</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">永續管理</a>
+                <a class="dropdown-item" href="#">技術解方</a>
+              </div>
+            </li>
             <li><a href="">案例與加值服務</a></li>
             <li><a href="">焦點訊息</a></li>
             <li><a href="">關於我們</a></li>
@@ -74,10 +96,52 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav nz-navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="knowledge.html">淨零知識</a>
+            <a class="nav-link d-flex align-items-center" href="#">
+              <div class="nz-user"><i class="fas fa-user"></i></div>
+              <span>登入會員</span>
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">專業課程</a>
+            <a class="nav-link" href="https://college.itri.org.tw/">產業學習網</a>
+          </li>
+          <li class="nav-item">
+            <hr />
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" href="#mobileMemucollapse-1" role="button" aria-expanded="false" aria-controls="mobileMemucollapse-1">
+              淨零知識
+              <span class="nz-caret-down">
+                <i class="fas fa-caret-down"></i>
+              </span>
+              <span class="nz-caret-up">
+                <i class="fas fa-caret-up"></i>
+              </span>
+            </a>
+            <div class="collapse nz-child-menu" id="mobileMemucollapse-1">
+              <ul class="navbar-nav nz-navbar-nav">
+                <li class="nav-item">搞懂零碳排系列</li>
+                <li class="nav-item">生活碳足跡系列</li>
+                <li class="nav-item">永續能源 8 堂課</li>
+                <li class="nav-item">掌握企業零碳解方</li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" href="#mobileMemucollapse-2" role="button" aria-expanded="false" aria-controls="mobileMemucollapse-2">
+              專業課程
+              <span class="nz-caret-down">
+                <i class="fas fa-caret-down"></i>
+              </span>
+              <span class="nz-caret-up">
+                <i class="fas fa-caret-up"></i>
+              </span>
+            </a>
+            <div class="collapse nz-child-menu" id="mobileMemucollapse-2">
+              <ul class="navbar-nav nz-navbar-nav">
+                <li class="nav-item">永續管理</li>
+                <li class="nav-item">技術解方</li>
+              </ul>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">案例與加值服務</a>
@@ -87,15 +151,6 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">關於我們</a>
-          </li>
-          <li class="nav-item">
-            <hr />
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">會員登入</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://college.itri.org.tw/">產業學習網</a>
           </li>
         </ul>
       </div>
@@ -125,10 +180,14 @@
               </div>
             </div>
             <a class="carousel-control-prev" href="#bannerCarousel" role="button" data-slide="prev">
-              <i class="fas fa-chevron-left"></i>
+              <div class="nz-carousel-btn">
+                <i class="fas fa-chevron-left"></i>
+              </div>
             </a>
             <a class="carousel-control-next" href="#bannerCarousel" role="button" data-slide="next">
-              <i class="fas fa-chevron-right"></i>
+              <div class="nz-carousel-btn">
+                <i class="fas fa-chevron-right"></i>
+              </div>
             </a>
           </div>
         </div>
@@ -569,10 +628,14 @@
           </div>
         </div>
         <a class="carousel-control-prev" href="#courseCarousel-1" role="button" data-slide="prev">
-          <i class="fas fa-chevron-left"></i>
+          <div class="nz-carousel-btn">
+            <i class="fas fa-chevron-left"></i>
+          </div>
         </a>
         <a class="carousel-control-next" href="#courseCarousel-1" role="button" data-slide="next">
-          <i class="fas fa-chevron-right"></i>
+          <div class="nz-carousel-btn">
+            <i class="fas fa-chevron-right"></i>
+          </div>
         </a>
       </div>
       <!-- 更多 -->
@@ -978,10 +1041,14 @@
           </div>
         </div>
         <a class="carousel-control-prev" href="#courseCarousel-2" role="button" data-slide="prev">
-          <i class="fas fa-chevron-left"></i>
+          <div class="nz-carousel-btn">
+            <i class="fas fa-chevron-left"></i>
+          </div>
         </a>
         <a class="carousel-control-next" href="#courseCarousel-2" role="button" data-slide="next">
-          <i class="fas fa-chevron-right"></i>
+          <div class="nz-carousel-btn">
+            <i class="fas fa-chevron-right"></i>
+          </div>
         </a>
       </div>
       <!-- 更多 -->
@@ -1062,171 +1129,149 @@
             </div>
           </div>
         </div>
-        <!-- 知識卡片輪播 -->
-        <div id="knowCarousel" class="carousel nz-carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#knowCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#knowCarousel" data-slide-to="1"></li>
-          </ol>
-          <div class="carousel-inner">
-            <!-- 輪播-1 -->
-            <div class="carousel-item active">
-              <div class="row">
-                <!-- 卡片 -->
-                <div class="col-sm-6 col-md-4">
-                  <div class="nz-know-card">
-                    <a
-                      href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383">
-                      <div class="nz-know-card-img">
-                        <img class="nz-img" src="https://college.itri.org.tw/nzschool/assets/images/img0721.jpg"
-                          alt="文章封面" />
-                        <div class="nz-flag">FREE</div>
-                      </div>
-                      <div class="nz-know-card-info">
-                        <div class="nz-know-type">生活碳足跡</div>
-                        <h5 class="nz-know-card-title nz-black nz-overflow-ellipsis">
-                          推動淨零碳排，台灣不落人後解析企業加入淨零轉型的遠因及助益
-                        </h5>
-                        <p class="nz-overflow-ellipsis-3">
-                          根據聯合國IPCC《第六次氣候變遷評估報告（AR6）》分析指出：未來20年內，全球平均氣溫將上升1.5℃。面對全球暖化的嚴峻挑戰，我國政府著眼於環境永續發展，及代工出口導向的經濟戰略，與全球136個國家一同推動淨零碳排轉型，預計在2050年達成目標。
-                        </p>
-                        <div class="nz-know-date">2022/08/05</div>
-                      </div>
-                    </a>
-                  </div>
+        <!-- 知識卡片 -->
+        <div class="row">
+          <!-- 卡片 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="nz-know-card">
+              <a
+                href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383">
+                <div class="nz-know-card-img">
+                  <img class="nz-img" src="https://college.itri.org.tw/nzschool/assets/images/img0721.jpg"
+                    alt="文章封面" />
+                  <div class="nz-flag">FREE</div>
                 </div>
-                <!-- 卡片 -->
-                <div class="col-sm-6 col-md-4">
-                  <div class="nz-know-card">
-                    <a
-                      href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383">
-                      <div class="nz-know-card-img">
-                        <img class="nz-img"
-                          src="https://college.itri.org.tw/api/TM_AttFile_Attachment_Download?attNo=6794f5c7-73df-4cbe-9557-1b08b06684d3"
-                          alt="文章封面" />
-                        <div class="nz-flag">FREE</div>
-                      </div>
-                      <div class="nz-know-card-info">
-                        <div class="nz-know-type">生活碳足跡</div>
-                        <h5 class="nz-know-card-title nz-black nz-overflow-ellipsis">
-                          推動淨零碳排，台灣不落人後解析企業加入淨零轉型的遠因及助益
-                        </h5>
-                        <p class="nz-overflow-ellipsis-3">
-                          根據聯合國IPCC《第六次氣候變遷評估報告（AR6）》分析指出：未來20年內，全球平均氣溫將上升1.5℃。面對全球暖化的嚴峻挑戰，我國政府著眼於環境永續發展，及代工出口導向的經濟戰略，與全球136個國家一同推動淨零碳排轉型，預計在2050年達成目標。
-                        </p>
-                        <div class="nz-know-date">2022/08/05</div>
-                      </div>
-                    </a>
-                  </div>
+                <div class="nz-know-card-info">
+                  <div class="nz-know-type">生活碳足跡</div>
+                  <h5 class="nz-know-card-title nz-black nz-overflow-ellipsis">
+                    推動淨零碳排，台灣不落人後解析企業加入淨零轉型的遠因及助益
+                  </h5>
+                  <p class="nz-overflow-ellipsis-3">
+                    根據聯合國IPCC《第六次氣候變遷評估報告（AR6）》分析指出：未來20年內，全球平均氣溫將上升1.5℃。面對全球暖化的嚴峻挑戰，我國政府著眼於環境永續發展，及代工出口導向的經濟戰略，與全球136個國家一同推動淨零碳排轉型，預計在2050年達成目標。
+                  </p>
+                  <div class="nz-know-date">2022/08/05</div>
                 </div>
-                <!-- 卡片 -->
-                <div class="col-sm-6 col-md-4">
-                  <div class="nz-know-card">
-                    <a
-                      href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383">
-                      <div class="nz-know-card-img">
-                        <img class="nz-img" src="img/example/img-3.JPG" alt="文章封面" />
-                        <div class="nz-flag">FREE</div>
-                      </div>
-                      <div class="nz-know-card-info">
-                        <div class="nz-know-type">生活碳足跡</div>
-                        <h5 class="nz-know-card-title nz-black nz-overflow-ellipsis">
-                          推動淨零碳排，台灣不落人後解析企業加入淨零轉型的遠因及助益
-                        </h5>
-                        <p class="nz-overflow-ellipsis-3">
-                          根據聯合國IPCC《第六次氣候變遷評估報告（AR6）》分析指出：未來20年內，全球平均氣溫將上升1.5℃。面對全球暖化的嚴峻挑戰，我國政府著眼於環境永續發展，及代工出口導向的經濟戰略，與全球136個國家一同推動淨零碳排轉型，預計在2050年達成目標。
-                        </p>
-                        <div class="nz-know-date">2022/08/05</div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- 輪播-2 -->
-            <div class="carousel-item">
-              <div class="row">
-                <!-- 卡片 -->
-                <div class="col-sm-6 col-md-4">
-                  <div class="nz-know-card">
-                    <a
-                      href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383">
-                      <div class="nz-know-card-img">
-                        <img class="nz-img"
-                          src="https://college.itri.org.tw/api/TM_AttFile_Attachment_Download?attNo=83856d33-4021-4b26-acc6-006114911d74"
-                          alt="文章封面" />
-                        <div class="nz-flag">FREE</div>
-                      </div>
-                      <div class="nz-know-card-info">
-                        <div class="nz-know-type">生活碳足跡</div>
-                        <h5 class="nz-know-card-title nz-black nz-overflow-ellipsis">
-                          推動淨零碳排，台灣不落人後解析企業加入淨零轉型的遠因及助益
-                        </h5>
-                        <p class="nz-overflow-ellipsis-3">
-                          根據聯合國IPCC《第六次氣候變遷評估報告（AR6）》分析指出：未來20年內，全球平均氣溫將上升1.5℃。面對全球暖化的嚴峻挑戰，我國政府著眼於環境永續發展，及代工出口導向的經濟戰略，與全球136個國家一同推動淨零碳排轉型，預計在2050年達成目標。
-                        </p>
-                        <div class="nz-know-date">2022/08/05</div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <!-- 卡片 -->
-                <div class="col-sm-6 col-md-4">
-                  <div class="nz-know-card">
-                    <a
-                      href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383">
-                      <div class="nz-know-card-img">
-                        <img class="nz-img"
-                          src="https://college.itri.org.tw/api/TM_AttFile_Attachment_Download?attNo=e4e73c44-5556-478a-963a-be8d77262d3e"
-                          alt="文章封面" />
-                        <div class="nz-flag">FREE</div>
-                      </div>
-                      <div class="nz-know-card-info">
-                        <div class="nz-know-type">生活碳足跡</div>
-                        <h5 class="nz-know-card-title nz-black nz-overflow-ellipsis">
-                          推動淨零碳排，台灣不落人後解析企業加入淨零轉型的遠因及助益
-                        </h5>
-                        <p class="nz-overflow-ellipsis-3">
-                          根據聯合國IPCC《第六次氣候變遷評估報告（AR6）》分析指出：未來20年內，全球平均氣溫將上升1.5℃。面對全球暖化的嚴峻挑戰，我國政府著眼於環境永續發展，及代工出口導向的經濟戰略，與全球136個國家一同推動淨零碳排轉型，預計在2050年達成目標。
-                        </p>
-                        <div class="nz-know-date">2022/08/05</div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <!-- 卡片 -->
-                <div class="col-sm-6 col-md-4">
-                  <div class="nz-know-card">
-                    <a
-                      href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383">
-                      <div class="nz-know-card-img">
-                        <img class="nz-img"
-                          src="https://college.itri.org.tw/api/TM_AttFile_Attachment_Download?attNo=8b4bb860-c860-4b66-9880-82c0118fb9d7"
-                          alt="文章封面" />
-                        <div class="nz-flag">FREE</div>
-                      </div>
-                      <div class="nz-know-card-info">
-                        <div class="nz-know-type">生活碳足跡</div>
-                        <h5 class="nz-know-card-title nz-black nz-overflow-ellipsis">
-                          推動淨零碳排，台灣不落人後解析企業加入淨零轉型的遠因及助益
-                        </h5>
-                        <p class="nz-overflow-ellipsis-3">
-                          根據聯合國IPCC《第六次氣候變遷評估報告（AR6）》分析指出：未來20年內，全球平均氣溫將上升1.5℃。面對全球暖化的嚴峻挑戰，我國政府著眼於環境永續發展，及代工出口導向的經濟戰略，與全球136個國家一同推動淨零碳排轉型，預計在2050年達成目標。
-                        </p>
-                        <div class="nz-know-date">2022/08/05</div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
+              </a>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#knowCarousel" role="button" data-slide="prev">
-            <i class="fas fa-chevron-left"></i>
-          </a>
-          <a class="carousel-control-next" href="#knowCarousel" role="button" data-slide="next">
-            <i class="fas fa-chevron-right"></i>
-          </a>
+          <!-- 卡片 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="nz-know-card">
+              <a
+                href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383">
+                <div class="nz-know-card-img">
+                  <img class="nz-img"
+                    src="https://college.itri.org.tw/api/TM_AttFile_Attachment_Download?attNo=6794f5c7-73df-4cbe-9557-1b08b06684d3"
+                    alt="文章封面" />
+                  <div class="nz-flag">FREE</div>
+                </div>
+                <div class="nz-know-card-info">
+                  <div class="nz-know-type">生活碳足跡</div>
+                  <h5 class="nz-know-card-title nz-black nz-overflow-ellipsis">
+                    推動淨零碳排，台灣不落人後解析企業加入淨零轉型的遠因及助益
+                  </h5>
+                  <p class="nz-overflow-ellipsis-3">
+                    根據聯合國IPCC《第六次氣候變遷評估報告（AR6）》分析指出：未來20年內，全球平均氣溫將上升1.5℃。面對全球暖化的嚴峻挑戰，我國政府著眼於環境永續發展，及代工出口導向的經濟戰略，與全球136個國家一同推動淨零碳排轉型，預計在2050年達成目標。
+                  </p>
+                  <div class="nz-know-date">2022/08/05</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- 卡片 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="nz-know-card">
+              <a
+                href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383">
+                <div class="nz-know-card-img">
+                  <img class="nz-img" src="img/example/img-3.JPG" alt="文章封面" />
+                  <div class="nz-flag">FREE</div>
+                </div>
+                <div class="nz-know-card-info">
+                  <div class="nz-know-type">生活碳足跡</div>
+                  <h5 class="nz-know-card-title nz-black nz-overflow-ellipsis">
+                    推動淨零碳排，台灣不落人後解析企業加入淨零轉型的遠因及助益
+                  </h5>
+                  <p class="nz-overflow-ellipsis-3">
+                    根據聯合國IPCC《第六次氣候變遷評估報告（AR6）》分析指出：未來20年內，全球平均氣溫將上升1.5℃。面對全球暖化的嚴峻挑戰，我國政府著眼於環境永續發展，及代工出口導向的經濟戰略，與全球136個國家一同推動淨零碳排轉型，預計在2050年達成目標。
+                  </p>
+                  <div class="nz-know-date">2022/08/05</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- 卡片 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="nz-know-card">
+              <a
+                href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383">
+                <div class="nz-know-card-img">
+                  <img class="nz-img"
+                    src="https://college.itri.org.tw/api/TM_AttFile_Attachment_Download?attNo=83856d33-4021-4b26-acc6-006114911d74"
+                    alt="文章封面" />
+                  <div class="nz-flag">FREE</div>
+                </div>
+                <div class="nz-know-card-info">
+                  <div class="nz-know-type">生活碳足跡</div>
+                  <h5 class="nz-know-card-title nz-black nz-overflow-ellipsis">
+                    推動淨零碳排，台灣不落人後解析企業加入淨零轉型的遠因及助益
+                  </h5>
+                  <p class="nz-overflow-ellipsis-3">
+                    根據聯合國IPCC《第六次氣候變遷評估報告（AR6）》分析指出：未來20年內，全球平均氣溫將上升1.5℃。面對全球暖化的嚴峻挑戰，我國政府著眼於環境永續發展，及代工出口導向的經濟戰略，與全球136個國家一同推動淨零碳排轉型，預計在2050年達成目標。
+                  </p>
+                  <div class="nz-know-date">2022/08/05</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- 卡片 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="nz-know-card">
+              <a
+                href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383">
+                <div class="nz-know-card-img">
+                  <img class="nz-img"
+                    src="https://college.itri.org.tw/api/TM_AttFile_Attachment_Download?attNo=e4e73c44-5556-478a-963a-be8d77262d3e"
+                    alt="文章封面" />
+                  <div class="nz-flag">FREE</div>
+                </div>
+                <div class="nz-know-card-info">
+                  <div class="nz-know-type">生活碳足跡</div>
+                  <h5 class="nz-know-card-title nz-black nz-overflow-ellipsis">
+                    推動淨零碳排，台灣不落人後解析企業加入淨零轉型的遠因及助益
+                  </h5>
+                  <p class="nz-overflow-ellipsis-3">
+                    根據聯合國IPCC《第六次氣候變遷評估報告（AR6）》分析指出：未來20年內，全球平均氣溫將上升1.5℃。面對全球暖化的嚴峻挑戰，我國政府著眼於環境永續發展，及代工出口導向的經濟戰略，與全球136個國家一同推動淨零碳排轉型，預計在2050年達成目標。
+                  </p>
+                  <div class="nz-know-date">2022/08/05</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- 卡片 -->
+          <div class="col-sm-6 col-md-4">
+            <div class="nz-know-card">
+              <a
+                href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383">
+                <div class="nz-know-card-img">
+                  <img class="nz-img"
+                    src="https://college.itri.org.tw/api/TM_AttFile_Attachment_Download?attNo=8b4bb860-c860-4b66-9880-82c0118fb9d7"
+                    alt="文章封面" />
+                  <div class="nz-flag">FREE</div>
+                </div>
+                <div class="nz-know-card-info">
+                  <div class="nz-know-type">生活碳足跡</div>
+                  <h5 class="nz-know-card-title nz-black nz-overflow-ellipsis">
+                    推動淨零碳排，台灣不落人後解析企業加入淨零轉型的遠因及助益
+                  </h5>
+                  <p class="nz-overflow-ellipsis-3">
+                    根據聯合國IPCC《第六次氣候變遷評估報告（AR6）》分析指出：未來20年內，全球平均氣溫將上升1.5℃。面對全球暖化的嚴峻挑戰，我國政府著眼於環境永續發展，及代工出口導向的經濟戰略，與全球136個國家一同推動淨零碳排轉型，預計在2050年達成目標。
+                  </p>
+                  <div class="nz-know-date">2022/08/05</div>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
         <!-- 更多 -->
         <div class="text-right mt-lg-0 mt-3 mb-4">
@@ -1243,31 +1288,49 @@
     <h1 class="nz-title nz-primary my-4">人才聯盟成員</h1>
     <div class="row nz-member-row">
       <div class="col-md-4 col-6 nz-member-logo">
-        <img src="img/members/member-1.png" alt="中華民國全國工業總會Logo" />
+        <a href="http://www.cnfi.org.tw/front/bin/home.phtml" target="_blank" title="連結到中華民國全國工業總會網站">
+          <img src="img/members/member-1.png" alt="中華民國全國工業總會Logo" />
+        </a>
       </div>
       <div class="col-md-4 col-6 nz-member-logo">
-        <img src="img/members/member-2.png" alt="台灣區電機電子工業同業公會Logo" />
+        <a href="https://www.teema.org.tw/" target="_blank" title="連結到台灣區電機電子工業同業公會網站">
+          <img src="img/members/member-2.png" alt="台灣區電機電子工業同業公會Logo" />
+        </a>
       </div>
       <div class="col-md-4 col-6 nz-member-logo">
-        <img src="img/members/member-3.png" alt="台灣機械工業同業公會Logo" />
+        <a href="http://www.tami.org.tw/" target="_blank" title="連結到台灣機械工業同業公會網站">
+          <img src="img/members/member-3.png" alt="台灣機械工業同業公會Logo" />
+        </a>
       </div>
       <div class="col-md-4 col-6 nz-member-logo">
-        <img src="img/members/member-4.png" alt="台灣電路板協會Logo" />
+        <a href="https://www.tpca.org.tw/" target="_blank" title="連結到台灣電路板協會網站">
+          <img src="img/members/member-4.png" alt="台灣電路板協會Logo" />
+        </a>
       </div>
       <div class="col-md-4 col-6 nz-member-logo">
-        <img src="img/members/member-5.png" alt="工業技術研究院Logo" />
+        <a href="http://www.itri.org.tw/" target="_blank" title="連結到工業技術研究院網站">
+          <img src="img/members/member-5.png" alt="工業技術研究院Logo" />
+        </a>
       </div>
       <div class="col-md-4 col-6 nz-member-logo">
-        <img src="img/members/member-6.png" alt="台灣化學產業協會Logo" />
+        <a href="https://www.twcia.org.tw/" target="_blank" title="連結到TCIA化學協會網站">
+          <img src="img/members/member-6.png" alt="台灣化學產業協會Logo" />
+        </a>
       </div>
       <div class="col-md-4 col-6 nz-member-logo">
-        <img src="img/members/member-7.png" alt="中華民國工商協進會Logo" />
+        <a href="http://www.cnaic.org/zh-tw/" target="_blank" title="連結到中華民國工商協進會網站">
+          <img src="img/members/member-7.png" alt="中華民國工商協進會Logo" />
+        </a>
       </div>
       <div class="col-md-4 col-6 nz-member-logo">
-        <img src="img/members/member-8.png" alt="循環台灣Logo" />
+        <a href="https://circular-taiwan.org/" target="_blank" title="連結到循環台灣網站">
+          <img src="img/members/member-8.png" alt="循環台灣Logo" />
+        </a>
       </div>
       <div class="col-md-4 col-6 nz-member-logo">
-        <img src="img/members/member-9.png" alt="台灣區絲織工業同業公會Logo" />
+        <a href="https://www.filaweaving.org.tw/" target="_blank" title="連結到台灣區絲織工業同業公會網站">
+          <img src="img/members/member-9.png" alt="台灣區絲織工業同業公會Logo" />
+        </a>
       </div>
     </div>
   </div>
