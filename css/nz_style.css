@@ -58,6 +58,10 @@ a .nz-black:hover {
     text-decoration: none;
 }
 
+.btn:focus {
+    box-shadow: none;
+}
+
 /* 通用按鈕 */
 .nz-btn {
     padding: 5px 20px;
@@ -71,7 +75,8 @@ a .nz-black:hover {
 
 .nz-btn-primary:hover,
 .nz-btn-primary:active,
-.nz-btn-primary:focus {
+.nz-btn-primary:focus,
+.active.nz-btn-primary {
     background-color: #45904d;
     color: #ffffff;
 }
@@ -608,6 +613,110 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 14px;
+}
+
+/* ---------------------- 淨零知識 --------------- */
+/* table  */
+.nz-rwd-table {
+    overflow: hidden;
+    width: 100%;
+}
+
+.nz-rwd-table tbody tr:nth-of-type(odd) {
+    background-color: #e8f0e9;
+}
+
+.nz-rwd-table th {
+    border-top: #e8f0e9 solid 3px;
+}
+
+.nz-rwd-table th:first-child {
+    border-radius: 11px 0 0 0;
+}
+
+.nz-rwd-table th:last-child {
+    border-radius: 0 11px 0 0;
+}
+
+.nz-rwd-table td:before {
+    display: none;
+}
+.nz-rwd-table th,
+.nz-rwd-table td {
+    display: table-cell;
+    padding: 0.25em 0.5em;
+}
+/* .nz-rwd-table th:first-child,
+.nz-rwd-table td:first-child {
+    padding-left: 0;
+}
+.nz-rwd-table th:last-child,
+.nz-rwd-table td:last-child {
+    padding-right: 0;
+} */
+.nz-rwd-table th,
+.nz-rwd-table td {
+    padding: 1em;
+}
+
+.nz-table-title a {
+    color: #555555;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.nz-table-title a:hover {
+    color: #649e68;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+@media(max-width: 767.98px) {
+    /* --------- table rwd --------- */
+    .nz-rwd-table th,
+    .nz-rwd-table td {
+        margin: 0px;
+        padding: 10px;
+    }
+    
+    .nz-rwd-table th {
+        display: none;
+    }
+    
+    .nz-rwd-table td {
+        display: block;
+    }
+    
+    .nz-rwd-table td:before {
+        content: attr(data-th) " : ";
+        font-weight: bold;
+        width: 6.5em;
+        display: inline-block;
+    }
+
+    .nz-table-title a {
+        font-size: 22px;
+        color: #649e68;
+    }
+    
+    .nz-rwd-table .nz-table-title:before {
+        content: none;
+    }
+    
+    .nz-rwd-table th,
+    .nz-rwd-table td {
+        text-align: left;
+    }
+    
+    .nz-rwd-table th,
+    .nz-rwd-table td:before {
+        color: #333;
+        font-weight: bold;
+    }
+    
+    .nz-rwd-table tr {
+        border-bottom: solid 3px #eee;
+    }
 }
 
 /* RWD */
