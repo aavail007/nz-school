@@ -641,19 +641,13 @@ footer {
 .nz-rwd-table td:before {
     display: none;
 }
+
 .nz-rwd-table th,
 .nz-rwd-table td {
     display: table-cell;
     padding: 0.25em 0.5em;
 }
-/* .nz-rwd-table th:first-child,
-.nz-rwd-table td:first-child {
-    padding-left: 0;
-}
-.nz-rwd-table th:last-child,
-.nz-rwd-table td:last-child {
-    padding-right: 0;
-} */
+
 .nz-rwd-table th,
 .nz-rwd-table td {
     padding: 1em;
@@ -671,6 +665,46 @@ footer {
     text-decoration: none;
 }
 
+/* ---------- 分頁 ---------- */
+.nz-page-info {
+    font-size: 20px;
+    color: #808080;
+}
+.nz-page-item {
+    margin: 4px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.nz-page-ellipsis {
+    margin: 8px;
+    font-size: 20px;
+    color: #808080;
+}
+
+.nz-page-item:hover {
+    background-color: #e8f0e9;
+}
+
+.nz-page-item.active {
+    background-color: #649e68;
+    color: #ffffff;
+}
+
+.nz-page-item a {
+    color: #808080;
+}
+
+.nz-page-item.active a {
+    color: #ffffff;
+}
 @media(max-width: 767.98px) {
     /* --------- table rwd --------- */
     .nz-rwd-table th,
@@ -789,5 +823,17 @@ footer {
 @media(max-width: 1199.98px) {
     .nz-course-type {
         padding: 2px 10px;
+    }
+
+    /* 頁數 */
+    .nz-page-info {
+        font-size: 16px;
+    }
+
+    .nz-page-item {
+        margin: 0;
+        font-size: 18px;
+        width: 30px;
+        height: 30px;
     }
 }
