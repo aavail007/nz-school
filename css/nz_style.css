@@ -827,11 +827,11 @@ footer {
 
     /* 頁數 */
     .nz-page-info {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .nz-page-item {
-        margin: 0;
+        margin: 2px;
         font-size: 18px;
         width: 30px;
         height: 30px;
