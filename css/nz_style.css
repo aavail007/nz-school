@@ -15,7 +15,8 @@ header {
     background-color: #f4f4f4;
 }
 
-a {
+a:link,
+a:visited {
     color: #45904d;
 }
 
@@ -68,7 +69,8 @@ a .nz-black:hover {
     border-radius: 6px;
 }
 
-.nz-btn-primary {
+.nz-btn-primary,
+.nz-btn-primary:link {
     background-color: #649e68;
     color: #ffffff;
 }
@@ -181,6 +183,11 @@ a .nz-black:hover {
     padding: 10px 0 10px 15px;
 }
 
+.nz-user-pc {
+    color: #898989;
+    margin-right: 5px;
+}
+
 .nz-user {
     background-color: #898989;
     color: #ffffff;
@@ -207,7 +214,8 @@ a .nz-black:hover {
     background-color: #45904d;
 }
 
-.nz-menu a {
+.nz-menu a:link,
+.nz-menu li a:visited {
     color: #ffffff;
 }
 .nz-menu li:hover a,
@@ -563,13 +571,15 @@ footer {
     border-top: 1px solid #ffffff;
 }
 
-.nz-a-white {
+a.nz-a-white:link,
+a.nz-a-white:visited {
     color: #ffffff;
 }
 
-.nz-a-white:hover {
+a.nz-a-white:hover,
+a.nz-a-white:active {
     opacity: 0.8;
-    color: #ffffff;
+    color: #f3f3f3;
 }
 
 .nz-footer-logo {
@@ -594,13 +604,18 @@ footer {
     align-items: center;
 }
 
-.nz-breadcrumb a {
+.nz-breadcrumb a:link,
+.nz-breadcrumb a:visited {
     color: #898989;
 }
 
 .nz-breadcrumb a:hover,
 .nz-breadcrumb .active a {
     color: #7FB77E;
+}
+
+.nz-breadcrumb a:active {
+    color: #408347;
 }
 
 .nz-home-i {
@@ -653,16 +668,24 @@ footer {
     padding: 1em;
 }
 
-.nz-table-title a {
+.nz-table-title a:link {
     color: #555555;
     font-weight: 600;
     font-size: 18px;
 }
 
+.nz-table-title a:visited {
+    color: #45904d;
+}
+
 .nz-table-title a:hover {
     color: #649e68;
-    transition: 0.3s;
+    transition: 0.2s;
     text-decoration: none;
+}
+
+.nz-table-title a:active {
+    color: #408347;
 }
 
 /* ---------- 分頁 ---------- */
@@ -695,16 +718,17 @@ footer {
 
 .nz-page-item.active {
     background-color: #649e68;
+}
+
+.nz-page-item.active a:link,
+.nz-page-item.active a:visited {
     color: #ffffff;
 }
 
-.nz-page-item a {
+.nz-page-item a:link {
     color: #808080;
 }
 
-.nz-page-item.active a {
-    color: #ffffff;
-}
 @media(max-width: 767.98px) {
     /* --------- table rwd --------- */
     .nz-rwd-table th,
