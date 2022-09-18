@@ -852,6 +852,11 @@ a.nz-a-white:active {
     .nz-rwd-table tbody tr {
         border-bottom: solid 1px #c9c9c9;
     }
+
+    .nz-know-type,
+    .nz-course-status {
+        font-size: 16px;
+    }
 }
 
 /* RWD */
@@ -918,6 +923,13 @@ a.nz-a-white:active {
     .nz-carousel .carousel-control-prev,
     .nz-banner .nz-carousel .carousel-control-prev {
         left: 15px;
+    }
+
+    /* 專業課程 tabs RWD */
+    .nz-type-tab .nav-link {
+        min-height: 66px;
+        display: flex;
+        align-items: center;
     }
 }
 

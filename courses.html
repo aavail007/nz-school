@@ -194,58 +194,29 @@
         <h1 class="nz-title nz-primary my-4">專業課程</h1>
         <!-- 分類 -->
         <div class="row">
-          <div class="col-lg-3 col-md-6 col-12">
+          <div class="col-md-6 col-12">
             <div class="nz-know-theme">
               <a href="#">
-                <img class="nz-img" src="img/knowledge/them-1.jpg" />
+                <img class="nz-img" src="img/course/course_type1.jpeg" />
                 <div class="nz-mask">
                   <div class="nz-img-word">
-                    <h2>搞懂零碳排<br />系列</h2>
-                    <p>搞懂零碳排搞懂零碳排搞懂零碳排搞懂零碳排</p>
+                    <h2>永續管理</h2>
+                    <p>永續管理永續管理永續管理永續管理...</p>
                   </div>
                 </div>
               </a>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-12">
+          <div class="col-md-6 col-12">
             <div class="nz-know-theme">
               <a href="#">
-                <img class="nz-img" src="img/knowledge/them-2.jpg" />
+                <img class="nz-img" src="img/course/course_type2.jpeg" />
                 <div class="nz-mask">
                   <div class="nz-img-word">
-                    <h2>生活碳足跡<br />系列</h2>
+                    <h2>技術解方</h2>
                     <p>
-                      瞭解如何將減碳新科技，融入生活食衣住行育樂，打造時尚的減碳未來新生活。
+                      技術解方技術解方技術解方技術解方...
                     </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-12">
-            <div class="nz-know-theme">
-              <a href="#">
-                <img class="nz-img" src="img/knowledge/them-3.jpg" />
-                <div class="nz-mask">
-                  <div class="nz-img-word">
-                    <h2>永續能源<br />8 堂課</h2>
-                    <p>
-                      拆解淨零永續生活的驅動關鍵 - 再生能源、低碳科技
-                      將複雜的永續技術轉成最生活化環保行動
-                    </p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-12">
-            <div class="nz-know-theme">
-              <a href="#">
-                <img class="nz-img" src="img/knowledge/them-4.jpg" />
-                <div class="nz-mask">
-                  <div class="nz-img-word">
-                    <h2>掌握企業<br />零碳解方</h2>
-                    <p>工研院幫您打造淨零時代競爭力，提供企業淨零減碳解方</p>
                   </div>
                 </div>
               </a>
@@ -254,32 +225,50 @@
         </div>
         <div class="mt-5">
           <h4 class="nz-title-2 nz-black">課程總覽</h4>
-          <div class="d-flex justify-content-between align-content-center mt-4">
+          <div class="d-block d-sm-flex justify-content-between align-content-center mt-4">
             <ul class="nz-type-tab nav nav-pills mb-3">
               <li id="allTab" class="nav-item" onclick="showTypeTab('allTab')">
                 <a class="nav-link active">全部</a>
               </li>
               <li id="entityTab" class="nav-item" onclick="showTypeTab('entityTab')">
-                <a class="nav-link">實體課程</a>
+                <a class="nav-link">
+                  <span class="d-none d-lg-block">實體課程</span>
+                  <span class="d-lg-none d-block">實體<br>課程</span>
+                </a>
               </li>
               <li id="digitTab" class="nav-item" onclick="showTypeTab('digitTab')">
-                <a class="nav-link">數位直播</a>
+                <a class="nav-link">
+                  <span class="d-none d-lg-block">數位直播</span>
+                  <span class="d-lg-none d-block">數位<br>直播</span>
+                </a>
               </li>
               <li id="mixedTab" class="nav-item" onclick="showTypeTab('mixedTab')">
                 <a class="nav-link">混成</a>
               </li>
               <li id="cloudTab" class="nav-item" onclick="showTypeTab('cloudTab')">
-                <a class="nav-link">雲端自學</a>
+                <a class="nav-link">
+                  <span class="d-none d-lg-block">雲端自學</span>
+                  <span class="d-lg-none d-block">雲端<br>自學</span>
+                </a>
               </li>
             </ul>
-            <nav>
-              <div class="nav nav-tabs btn-group" role="tablist">
-                <a id="courseListCardTab" class="btn nz-btn-primary active" data-toggle="tab" href="#courseListCard"
-                  role="tab" aria-controls="courseListCard" aria-selected="true"><i class="fas fa-th-large"></i></a>
-                <a id="courseListTableTab" class="btn nz-btn-primary" data-toggle="tab" href="#courseListTable"
-                  role="tab" aria-controls="courseListTable" aria-selected="false"><i class="fas fa-list"></i></a>
-              </div>
-            </nav>
+            <div class="row col-lg-3 col-sm-5 col-12">
+              <select class="col-5 form-control">
+                <option selected>排序</option>
+                <option>日期由新至舊</option>
+                <option>日期由舊至新</option>
+                <option>時數由多至少</option>
+                <option>時數由少至多</option>
+              </select>
+              <nav class="col-7">
+                <div class="nav nav-tabs btn-group" role="tablist">
+                  <a id="courseListCardTab" class="btn nz-btn-primary active" data-toggle="tab" href="#courseListCard"
+                    role="tab" aria-controls="courseListCard" aria-selected="true"><i class="fas fa-th-large"></i></a>
+                  <a id="courseListTableTab" class="btn nz-btn-primary" data-toggle="tab" href="#courseListTable"
+                    role="tab" aria-controls="courseListTable" aria-selected="false"><i class="fas fa-list"></i></a>
+                </div>
+              </nav>
+            </div>
           </div>
         </div>
         <!-- tab 內容 -->
@@ -559,7 +548,7 @@
                   <td data-th="起迄日期">2022/09/27 ~ 2022/09/28</td>
                   <td data-th="時數">2hr</td>
                 </tr>
-                <!-- 其餘12筆由 js 塞入於此，請搜尋 appendCourseListTableData 方法 -->
+                <!-- 其餘11筆由 js 塞入於此，請搜尋 appendCourseListTableData 方法 -->
               </tbody>
             </table>
             <!-- 分頁 -->
@@ -753,7 +742,7 @@
         }
       ]
       let resultHtml = '';
-      for (let i = 0; i < 12; i++) {
+      for (let i = 0; i < 11; i++) {
         let index = i < 2 ? i : Math.floor(Math.random() * (3 - 0));
         let html = `
           <tr>
