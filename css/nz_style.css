@@ -794,6 +794,18 @@ a.nz-a-white:active {
     cursor: pointer;
 }
 
+.nz-sort-select {
+    min-width: 70px;
+    max-width: 150px;
+    width: 40%
+}
+
+.nz-course-list-tab {
+    min-width: 80px;
+    max-width: 200px;
+    width: 45%
+}
+
 /* -------- 文章內頁 -------- */
 .nz-share {
     display: flex;
@@ -834,8 +846,6 @@ a.nz-a-white:active {
 .nz-article-main-cont img {
     max-width: 100%;
 }
-
-
 
 @media(max-width: 767.98px) {
     /* --------- table rwd --------- */

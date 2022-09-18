@@ -225,42 +225,46 @@
         </div>
         <div class="mt-5">
           <h4 class="nz-title-2 nz-black">課程總覽</h4>
-          <div class="d-block d-sm-flex justify-content-between align-content-center mt-4">
-            <ul class="nz-type-tab nav nav-pills mb-3">
-              <li id="allTab" class="nav-item" onclick="showTypeTab('allTab')">
-                <a class="nav-link active">全部</a>
-              </li>
-              <li id="entityTab" class="nav-item" onclick="showTypeTab('entityTab')">
-                <a class="nav-link">
-                  <span class="d-none d-lg-block">實體課程</span>
-                  <span class="d-lg-none d-block">實體<br>課程</span>
-                </a>
-              </li>
-              <li id="digitTab" class="nav-item" onclick="showTypeTab('digitTab')">
-                <a class="nav-link">
-                  <span class="d-none d-lg-block">數位直播</span>
-                  <span class="d-lg-none d-block">數位<br>直播</span>
-                </a>
-              </li>
-              <li id="mixedTab" class="nav-item" onclick="showTypeTab('mixedTab')">
-                <a class="nav-link">混成</a>
-              </li>
-              <li id="cloudTab" class="nav-item" onclick="showTypeTab('cloudTab')">
-                <a class="nav-link">
-                  <span class="d-none d-lg-block">雲端自學</span>
-                  <span class="d-lg-none d-block">雲端<br>自學</span>
-                </a>
-              </li>
-            </ul>
-            <div class="row col-lg-3 col-sm-5 col-12">
-              <select class="col-5 form-control">
-                <option selected>排序</option>
-                <option>日期由新至舊</option>
-                <option>日期由舊至新</option>
-                <option>時數由多至少</option>
-                <option>時數由少至多</option>
-              </select>
-              <nav class="col-7">
+          <div class="d-block d-sm-flex row justify-content-between align-content-center mt-4">
+            <div class="d-flex col-lg-9 col-md-7 col-12">
+              <ul class="nz-type-tab nav nav-pills mb-3">
+                <li id="allTab" class="nav-item" onclick="showTypeTab('allTab')">
+                  <a class="nav-link active">全部</a>
+                </li>
+                <li id="entityTab" class="nav-item" onclick="showTypeTab('entityTab')">
+                  <a class="nav-link">
+                    <span class="d-none d-lg-block">實體課程</span>
+                    <span class="d-lg-none d-block">實體<br>課程</span>
+                  </a>
+                </li>
+                <li id="digitTab" class="nav-item" onclick="showTypeTab('digitTab')">
+                  <a class="nav-link">
+                    <span class="d-none d-lg-block">數位直播</span>
+                    <span class="d-lg-none d-block">數位<br>直播</span>
+                  </a>
+                </li>
+                <li id="mixedTab" class="nav-item" onclick="showTypeTab('mixedTab')">
+                  <a class="nav-link">混成</a>
+                </li>
+                <li id="cloudTab" class="nav-item" onclick="showTypeTab('cloudTab')">
+                  <a class="nav-link">
+                    <span class="d-none d-lg-block">雲端自學</span>
+                    <span class="d-lg-none d-block">雲端<br>自學</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="d-flex col-lg-3 col-md-5 col-12 justify-content-end">
+              <div class="nz-sort-select mr-2">
+                <select class="form-control">
+                  <option selected>排序</option>
+                  <option>日期由新至舊</option>
+                  <option>日期由舊至新</option>
+                  <option>時數由多至少</option>
+                  <option>時數由少至多</option>
+                </select>
+              </div>
+              <nav class="nz-course-list-tab">
                 <div class="nav nav-tabs btn-group" role="tablist">
                   <a id="courseListCardTab" class="btn nz-btn-primary active" data-toggle="tab" href="#courseListCard"
                     role="tab" aria-controls="courseListCard" aria-selected="true"><i class="fas fa-th-large"></i></a>
