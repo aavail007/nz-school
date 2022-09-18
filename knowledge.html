@@ -29,7 +29,9 @@
   <!-- jQuery js -->
   <script src="js/plugin/jQuery-v3.3.1.miin.js"></script>
   <!-- popper - 提示 tooltip js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+  </script>
   <!-- bootstrap js -->
   <script src="js/plugin/bootstrap.min.js"></script>
   <!-- 淨零永續學校通用 js -->
@@ -52,7 +54,8 @@
             </li>
             <li class="nz-gray">|</li>
             <li class="nz-nav-item">
-              <a class="nz-primary d-flex" href="https://college.itri.org.tw/" data-toggle="tooltip" data-placement="top" title="前往產業學習網">
+              <a class="nz-primary d-flex" href="https://college.itri.org.tw/" data-toggle="tooltip"
+                data-placement="top" title="前往產業學習網">
                 <div class="nz-user-pc"><i class="fas fa-globe"></i></div>產業學習網
               </a>
             </li>
@@ -113,7 +116,8 @@
             <hr />
           </li>
           <li class="nav-item active">
-            <a class="nav-link d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" href="#mobileMemucollapse-1" role="button" aria-expanded="false" aria-controls="mobileMemucollapse-1">
+            <a class="nav-link d-flex justify-content-between align-items-center collapsed" data-toggle="collapse"
+              href="#mobileMemucollapse-1" role="button" aria-expanded="false" aria-controls="mobileMemucollapse-1">
               淨零知識
               <span class="nz-caret-down">
                 <i class="fas fa-caret-down"></i>
@@ -132,7 +136,8 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link d-flex justify-content-between align-items-center collapsed" data-toggle="collapse" href="#mobileMemucollapse-2" role="button" aria-expanded="false" aria-controls="mobileMemucollapse-2">
+            <a class="nav-link d-flex justify-content-between align-items-center collapsed" data-toggle="collapse"
+              href="#mobileMemucollapse-2" role="button" aria-expanded="false" aria-controls="mobileMemucollapse-2">
               專業課程
               <span class="nz-caret-down">
                 <i class="fas fa-caret-down"></i>
@@ -255,15 +260,18 @@
           <h4 class="nz-title-2 nz-black">最新上架</h4>
           <nav>
             <div class="nav nav-tabs btn-group" role="tablist">
-              <a id="articleListCardTab" class="btn nz-btn-primary active" data-toggle="tab" href="#articleListCard" role="tab" aria-controls="articleListCard" aria-selected="true"><i class="fas fa-th-large"></i></a>
-              <a id="articleListTableTab" class="btn nz-btn-primary"  data-toggle="tab" href="#articleListTable" role="tab" aria-controls="articleListTable" aria-selected="false"><i class="fas fa-list"></i></a>
+              <a id="articleListCardTab" class="btn nz-btn-primary active" data-toggle="tab" href="#articleListCard"
+                role="tab" aria-controls="articleListCard" aria-selected="true"><i class="fas fa-th-large"></i></a>
+              <a id="articleListTableTab" class="btn nz-btn-primary" data-toggle="tab" href="#articleListTable"
+                role="tab" aria-controls="articleListTable" aria-selected="false"><i class="fas fa-list"></i></a>
             </div>
           </nav>
         </div>
         <!-- tab 內容 -->
         <div class="tab-content">
           <!-- 文章清單(圖文) -->
-          <div class="tab-pane fade show active" id="articleListCard" role="tabpanel" aria-labelledby="articleListCardTab">
+          <div class="tab-pane fade show active" id="articleListCard" role="tabpanel"
+            aria-labelledby="articleListCardTab">
             <div id="newArticleDiv" class="row">
               <!-- 卡片 -->
               <div class="col-sm-6 col-md-4">
@@ -271,7 +279,8 @@
                   <a
                     href="https://college.itri.org.tw/Home/InfoData/f6e19f2d-f81c-421c-bc36-ea6409ba0a5d/9177d9f9-b9ca-424a-b5ac-c8a414a20383">
                     <div class="nz-know-card-img">
-                      <img class="nz-img" src="https://college.itri.org.tw/nzschool/assets/images/img0721.jpg" alt="文章封面" />
+                      <img class="nz-img" src="https://college.itri.org.tw/nzschool/assets/images/img0721.jpg"
+                        alt="文章封面" />
                       <div class="nz-flag">FREE</div>
                     </div>
                     <div class="nz-know-card-info">
@@ -419,31 +428,37 @@
               </thead>
               <tbody id="articleTbody">
                 <tr>
-                  <td data-th="張貼日期">2022/09/17</td>
+                  <td class="d-none d-lg-block" data-th="張貼日期">2022/09/17</td>
                   <td class="nz-table-title">
                     <a href="https://college.itri.org.tw/Home/LessonData/69F2F45A-15C4-475A-9115-DBF5B50DCD4C">
                       新興生醫檢測技術的趨勢與實現
                     </a>
                   </td>
-                    <td data-th="類別">永續能源 8 堂課</td>
+                  <!-- 手機版時顯示 -->
+                  <td class="d-lg-none d-block" data-th="張貼日期">2022/09/17</td>
+                  <td data-th="類別">永續能源 8 堂課</td>
                 </tr>
                 <tr>
-                  <td data-th="張貼日期">2022/09/17</td>
+                  <td class="d-none d-lg-block" data-th="張貼日期">2022/09/17</td>
                   <td class="nz-table-title">
                     <a href="https://college.itri.org.tw/Home/LessonData/69F2F45A-15C4-475A-9115-DBF5B50DCD4C?0917">
                       歐盟醫療器材/體外診斷醫療器材法規解析系列課程
                     </a>
                   </td>
-                    <td data-th="類別">掌握企業零碳解方</td>
+                  <!-- 手機版時顯示 -->
+                  <td class="d-lg-none d-block" data-th="張貼日期">2022/09/17</td>
+                  <td data-th="類別">掌握企業零碳解方</td>
                 </tr>
                 <tr>
-                  <td data-th="張貼日期">2022/09/17</td>
+                  <td class="d-none d-lg-block" data-th="張貼日期">2022/09/17</td>
                   <td class="nz-table-title">
                     <a href="https://college.itri.org.tw/Home/LessonData/69F2F45A-15C4-475A-9115-DBF5B50DCD4C?0917-2">
                       以案例剖析AI智慧醫療影像辨識技術
                     </a>
                   </td>
-                    <td data-th="類別">搞懂淨零排碳系列</td>
+                  <!-- 手機版時顯示 -->
+                  <td class="d-lg-none d-block" data-th="張貼日期">2022/09/17</td>
+                  <td data-th="類別">搞懂淨零排碳系列</td>
                 </tr>
                 <!-- 其餘12筆由 js 塞入於此，請搜尋 appendArticleListTableData 方法 -->
               </tbody>
@@ -610,8 +625,7 @@
     // 塞 table 假資料
     function appendArticleListTableData() {
       // 假資料，之後可以刪掉
-      const fakeData = [
-        {
+      const fakeData = [{
           title: "以案例剖析AI智慧醫療影像辨識技術",
           url: "https://college.itri.org.tw/Home/LessonData/69F2F45A-15C4-475A-9115-DBF5B50DCD4C?0917-3",
           date: "2022/09/15",
@@ -632,16 +646,18 @@
       ]
       let resultHtml = '';
       for (let i = 0; i < 12; i++) {
-        let index = i < 2 ? i : Math.floor(Math.random()*(3-0));
+        let index = i < 2 ? i : Math.floor(Math.random() * (3 - 0));
         let html = `
           <tr>
-            <td data-th="張貼日期">${fakeData[index].date}</td>
+            <td class="d-none d-lg-block" data-th="張貼日期">${fakeData[index].date}</td>
             <td class="nz-table-title">
               <a href="${fakeData[index].url}">
                 ${fakeData[index].title}
               </a>
             </td>
-              <td data-th="類別">	${fakeData[index].type}</td>
+            <!-- 手機版時顯示 -->
+            <td class="d-lg-none d-block" data-th="張貼日期">2022/09/17</td>
+            <td data-th="類別">	${fakeData[index].type}</td>
           </tr>
         `
         resultHtml += html;
@@ -650,4 +666,5 @@
     }
   </script>
 </body>
+
 </html>
