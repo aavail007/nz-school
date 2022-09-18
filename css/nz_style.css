@@ -12,7 +12,31 @@ header {
 }
 
 .nz-bg-gray {
-    background-color: #f4f4f4;
+    background-color: #f4f4f4 !important;
+}
+
+.nz-bg-primary {
+    background-color: #649e68 !important;
+}
+
+.nz-bg-danger {
+    background-color: #e86a6a !important;
+}
+
+.nz-bg-warning {
+    background-color: #ff8b32 !important;
+}
+
+.nz-bg-success {
+    background-color: #5abb7b !important;
+}
+
+.nz-bg-success {
+    background-color: #5abb7b !important;
+}
+
+.nz-bg-dark-gray {
+    background-color: #959494 !important;
 }
 
 a:link,
@@ -452,8 +476,9 @@ a .nz-black:hover {
     background: rgb(0 0 0 / 50%);
 }
 
-/* 淨零知識卡片 */
-.nz-know-card {
+/* 淨零知識 + 專業課程卡片 */
+.nz-know-card,
+.nz-course-bg-card {
     background-color: #fff;
     border-radius: 11px;
     overflow: hidden;
@@ -461,7 +486,8 @@ a .nz-black:hover {
     margin: 15px 0;
     box-shadow: 0 6px 27px rgba(0, 0, 0, 0.08);
 }
-.nz-know-card-img {
+.nz-know-card-img,
+.nz-course-bg-card-img {
     width: 100%;
     height: 180px;
     position: relative;
@@ -469,11 +495,13 @@ a .nz-black:hover {
     transition: 0.3s;
 }
 
-.nz-know-card-img img {
+.nz-know-card-img img,
+.nz-course-bg-card-img img {
     transition: 0.3s;
 }
 
-.nz-know-card:hover .nz-know-card-img img {
+.nz-know-card:hover .nz-know-card-img img,
+.nz-course-bg-card:hover .nz-course-bg-card-img img {
     transform: scale(1.1);
     transition: 0.3s;
 }
@@ -491,17 +519,20 @@ a .nz-black:hover {
     font-family: sans-serif;
 }
 
-.nz-know-card-info {
+.nz-know-card-info,
+.nz-course-bg-card-info {
     padding: 10px 15px;
 }
 
-.nz-know-card-info p {
+.nz-know-card-info p,
+.nz-course-bg-card-info p {
     font-size: 14px;
     color: #898989;
     min-height: 60px;
 }
 
-.nz-know-type {
+.nz-know-type,
+.nz-course-status {
     display: inline-block;
     background-color: #7fb77e;
     color: #ffffff;
@@ -511,12 +542,14 @@ a .nz-black:hover {
     margin: 5px 0;
 }
 
-.nz-know-card-title {
+.nz-know-card-title,
+.nz-course-bg-card-title {
     font-weight: 600;
     margin-top: 5px;
 }
 
-.nz-know-date {
+.nz-know-date,
+.nz-course-date {
     font-size: 12px;
     color: #a1a1a1;
 }
@@ -727,6 +760,34 @@ a.nz-a-white:active {
 
 .nz-page-item a:link {
     color: #808080;
+}
+
+/* --------------- 專業課程 ------------ */
+.nz-type-tab a:link,
+.nz-type-tab a,
+.nz-type-tab a:visited {
+    color: #45904d;;
+}
+
+.nz-type-tab a:hover,
+.nz-type-tab a:focus {
+    color: #649e68;;
+}
+
+.nz-type-tab a:active {
+    color: #408347;;
+}
+
+.nz-type-tab .nav-link.active,
+.nz-type-tab .show>.nav-link {
+    background-color: #45904d;
+}
+
+.nz-type-tab .nav-link {
+    border-bottom: solid 2px #45904d;
+    border-radius: 0;
+    border-radius: 3px 3px 0 0;
+    cursor: pointer;
 }
 
 @media(max-width: 767.98px) {
