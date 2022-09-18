@@ -794,6 +794,49 @@ a.nz-a-white:active {
     cursor: pointer;
 }
 
+/* -------- 文章內頁 -------- */
+.nz-share {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 5px;
+}
+.nz-share-btn {
+    font-size: 14px;
+    border-radius: 25px;
+    padding: 2px 14px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.nz-share-btn:hover {
+    opacity: 0.7;
+}
+
+.nz-share-btn:link,
+.nz-share-btn:visited,
+.nz-share-btn:hover,
+.nz-share-btn:active {
+    color: #ffffff;
+}
+
+.nz-line {
+    background-color: #00c300;
+}
+
+.nz-fb {
+    background-color: #1877f2;
+}
+
+.nz-mail {
+    background-color: #898989;
+}
+
+.nz-article-main-cont img {
+    max-width: 100%;
+}
+
+
+
 @media(max-width: 767.98px) {
     /* --------- table rwd --------- */
     .nz-rwd-table th,
