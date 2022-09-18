@@ -421,43 +421,43 @@
             <table class="nz-rwd-table table-striped mt-3">
               <thead>
                 <tr>
-                  <th>張貼日期</th>
+                  <th>日期</th>
                   <th>標題</th>
                   <th>類別</th>
                 </tr>
               </thead>
               <tbody id="articleTbody">
                 <tr>
-                  <td class="d-none d-lg-block" data-th="張貼日期">2022/09/17</td>
+                  <td class="d-none d-lg-block" data-th="日期">2022/09/17</td>
                   <td class="nz-table-title">
                     <a href="https://college.itri.org.tw/Home/LessonData/69F2F45A-15C4-475A-9115-DBF5B50DCD4C">
                       新興生醫檢測技術的趨勢與實現
                     </a>
                   </td>
                   <!-- 手機版時顯示 -->
-                  <td class="d-lg-none d-block" data-th="張貼日期">2022/09/17</td>
+                  <td class="d-lg-none d-block" data-th="日期">2022/09/17</td>
                   <td data-th="類別">永續能源 8 堂課</td>
                 </tr>
                 <tr>
-                  <td class="d-none d-lg-block" data-th="張貼日期">2022/09/17</td>
+                  <td class="d-none d-lg-block" data-th="日期">2022/09/17</td>
                   <td class="nz-table-title">
                     <a href="https://college.itri.org.tw/Home/LessonData/69F2F45A-15C4-475A-9115-DBF5B50DCD4C?0917">
                       歐盟醫療器材/體外診斷醫療器材法規解析系列課程
                     </a>
                   </td>
                   <!-- 手機版時顯示 -->
-                  <td class="d-lg-none d-block" data-th="張貼日期">2022/09/17</td>
+                  <td class="d-lg-none d-block" data-th="日期">2022/09/17</td>
                   <td data-th="類別">掌握企業零碳解方</td>
                 </tr>
                 <tr>
-                  <td class="d-none d-lg-block" data-th="張貼日期">2022/09/17</td>
+                  <td class="d-none d-lg-block" data-th="日期">2022/09/17</td>
                   <td class="nz-table-title">
                     <a href="https://college.itri.org.tw/Home/LessonData/69F2F45A-15C4-475A-9115-DBF5B50DCD4C?0917-2">
                       以案例剖析AI智慧醫療影像辨識技術
                     </a>
                   </td>
                   <!-- 手機版時顯示 -->
-                  <td class="d-lg-none d-block" data-th="張貼日期">2022/09/17</td>
+                  <td class="d-lg-none d-block" data-th="日期">2022/09/17</td>
                   <td data-th="類別">搞懂淨零排碳系列</td>
                 </tr>
                 <!-- 其餘12筆由 js 塞入於此，請搜尋 appendArticleListTableData 方法 -->
@@ -649,14 +649,14 @@
         let index = i < 2 ? i : Math.floor(Math.random() * (3 - 0));
         let html = `
           <tr>
-            <td class="d-none d-lg-block" data-th="張貼日期">${fakeData[index].date}</td>
+            <td class="d-none d-lg-block" data-th="日期">${fakeData[index].date}</td>
             <td class="nz-table-title">
               <a href="${fakeData[index].url}">
                 ${fakeData[index].title}
               </a>
             </td>
             <!-- 手機版時顯示 -->
-            <td class="d-lg-none d-block" data-th="張貼日期">2022/09/17</td>
+            <td class="d-lg-none d-block" data-th="日期">2022/09/17</td>
             <td data-th="類別">	${fakeData[index].type}</td>
           </tr>
         `
