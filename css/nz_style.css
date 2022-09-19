@@ -907,13 +907,40 @@ a.nz-a-white:active {
 }
 
 /* -------- 文章內頁 - 文章內容定義 -------- */
+.nz-article-main-cont {
+    word-break: break-word;
+}
 .nz-article-main-cont h1 {
     font-size: 2.5rem;
 }
 
+.nz-article-main-cont h2 {
+    font-size: 2rem;
+}
+
+.nz-article-main-cont h3 {
+    font-size: 1.75rem;
+}
+
+.nz-article-main-cont h4 {
+    font-size: 1.5rem;
+}
+
+.nz-article-main-cont h5 {
+    font-size: 1.25rem;
+}
+
+.nz-article-main-cont h6 {
+    font-size: 1rem;
+}
+
+.nz-article-main-cont p {
+    margin-top: 1rem;
+    color: #333333;
+}
+
 .nz-article-main-cont img {
     max-width: 100%;
-    /* width: 100%; */
 }
 
 /* -------- 文章內頁 - 文章內容定義 - Table -------- */
@@ -931,6 +958,11 @@ a.nz-a-white:active {
     padding: 0.75rem;
     vertical-align: top;
     border-top: 1px solid #dee2e6;
+}
+
+.nz-article-main-cont th { 
+    background-color: #488f50;
+    color: #ffffff;
 }
 
 
