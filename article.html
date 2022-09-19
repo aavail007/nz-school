@@ -22,6 +22,10 @@
 	<link id="linkIco" rel="shortcut icon" href="img/layout/favicon.ico" />
 	<!-- bootstrap css -->
 	<link rel="stylesheet" href="css/plugin/bootstrap.min.css" />
+	<!-- 圖片預覽功能 css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+		integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- icon 圖示 -->
 	<link rel="stylesheet" href="css/plugin/fontawesome-free-5.11.2-web/css/all.min.css" />
 	<!-- 淨零永續學校 css -->
@@ -34,6 +38,10 @@
 	</script>
 	<!-- bootstrap js -->
 	<script src="js/plugin/bootstrap.min.js"></script>
+	<!-- 圖片預覽功能 js -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+		integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<!-- 淨零永續學校通用 js -->
 	<script src="js/nz-script.js"></script>
 </head>
@@ -209,12 +217,59 @@
 					<i class="fas fa-envelope"></i>
 					<span class="small" langkey="分享">分享</span>
 				</a>
-
 			</div>
 			<!-- 文章標題 -->
 			<h3 id="h3Title" class="col-12 my-3 px-0"></h3>
 			<!-- 文章主要內容 -->
 			<div id="MainContent" class="nz-article-main-cont"></div>
+			<!-- 附件夾檔 -->
+			<div class="nz-folder">
+				<div class="nz-folder-title">附件下載</div>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="nz-folder-card">
+							<a class="nz-folder-img" href="img/example/img-1.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+								<img src="img/example/img-1.JPG">
+							</a>
+							<div class="nz-file-name nz-overflow-ellipsis-2">附件圖片1.jpg</div>
+							<div class="d-flex justify-content-around nz-file-tool">
+								<div class="nz-file-tool-btn" data-toggle="tooltip" data-placement="top" title="預覽">
+									<i class="far fa-eye"></i>
+								</div>
+								<div class="nz-file-tool-btn nz-download" data-toggle="tooltip" data-placement="top" title="下載">
+									<i class="fas fa-download"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 nz-folder-card">
+						<a class="nz-folder-img" href="img/example/img-2.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+							<img src="img/example/img-2.JPG">
+							<p class="nz-file-name nz-overflow-ellipsis">附件圖片2.jpg</p>
+						</a>
+					</div>
+					<div class="col-md-3 nz-folder-card">
+						<a class="nz-folder-img" href="img/example/img-3.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+							<img src="img/example/img-3.JPG">
+						</a>
+					</div>
+					<div class="col-md-3 nz-folder-card">
+						<a class="nz-folder-img" href="img/example/img-4.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+							<img src="img/example/img-4.JPG">
+						</a>
+					</div>
+					<div class="col-md-3 nz-folder-card">
+						<a class="nz-folder-img" href="img/example/img-5.JPG" data-toggle="lightbox" data-gallery="example-gallery">
+							<img src="img/example/img-5.JPG">
+						</a>
+					</div>
+					<div class="col-md-3 nz-folder-card">
+						<a class="nz-folder-img" href="#">
+							<i class="fas fa-file-word"></i>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -308,6 +363,17 @@
 		$(document).ready(function () {
 			getArticleHtml();
 
+			// 圖片預覽功能初始化
+			$(document).on('click', '[data-toggle="lightbox"]', function (event) {
+				event.preventDefault();
+				$(this).ekkoLightbox();
+			});
+
+			document.getElementsByClassName('nz-download').onclick = function (ev){
+				ev.preventDefault();
+				alert('已經攔截');
+			}
+
 		});
 
 		// 取得文章 html
@@ -324,7 +390,12 @@
 			$("#h3Title").append(articleDataObj.Title);
 			$("#MainContent").append(articleHtml);
 			$("#articleBreadcrumb").append(articleDataObj.Title);
+		}
 
+		// 下載檔案
+		function download(event) {
+			event.preventDefault();
+			event.stopPropagation();
 		}
 	</script>
 </body>
