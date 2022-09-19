@@ -874,7 +874,7 @@ a.nz-a-white:active {
     .nz-rwd-table td:before {
         content: attr(data-th) " : ";
         font-weight: bold;
-        width: 6.5em;
+        width: 4em;
         display: inline-block;
     }
 

@@ -463,13 +463,13 @@
                 <tr>
                   <th>地點</th>
                   <th>課程名稱</th>
-                  <th>起迄日期</th>
+                  <th>日期</th>
                   <th>時數</th>
                 </tr>
               </thead>
               <tbody id="articleTbody">
                 <tr>
-                  <td class="d-none d-lg-block" data-th="地點">
+                  <td class="d-none d-md-block" data-th="地點">
                     <div class="d-inline-block nz-dark-gray" data-toggle="tooltip" data-placement="top" title="直播">
                       <i class="fas fa-cloud"></i><span class="mx-1">/</span><i class="fas fa-video"></i>
                     </div>
@@ -482,16 +482,16 @@
                     </a>
                   </td>
                   <!-- 手機版時顯示 -->
-                  <td class="d-lg-none d-block" data-th="地點">
+                  <td class="d-md-none d-block" data-th="地點">
                     <div class="d-inline-block nz-dark-gray" data-toggle="tooltip" data-placement="top" title="直播">
                       <i class="fas fa-cloud"></i><span class="mx-1">/</span><i class="fas fa-video"></i>
                     </div>
                   </td>
-                  <td data-th="起迄日期">2022/09/27 ~ 2022/09/28</td>
+                  <td data-th="日期">2022/09/27 ~ 2022/09/28</td>
                   <td data-th="時數">2hr</td>
                 </tr>
                 <tr>
-                  <td class="d-none d-lg-block" data-th="地點">
+                  <td class="d-none d-md-block" data-th="地點">
                     <div class="d-inline-block nz-dark-gray" data-toggle="tooltip" data-placement="top" title="混成">
                       <i class="fas fa-video"></i><span class="mx-1">/</span>新竹
                     </div>
@@ -504,16 +504,16 @@
                     </a>
                   </td>
                   <!-- 手機版時顯示 -->
-                  <td class="d-lg-none d-block" data-th="地點">
+                  <td class="d-md-none d-block" data-th="地點">
                     <div class="d-inline-block nz-dark-gray" data-toggle="tooltip" data-placement="top" title="混成">
                       <i class="fas fa-video"></i><span class="mx-1">/</span>新竹
                     </div>
                   </td>
-                  <td data-th="起迄日期">2022/09/27 ~ 2022/09/28</td>
+                  <td data-th="日期">2022/09/27 ~ 2022/09/28</td>
                   <td data-th="時數">2hr</td>
                 </tr>
                 <tr>
-                  <td class="d-none d-lg-block" data-th="地點">
+                  <td class="d-none d-md-block" data-th="地點">
                     <div class="d-inline-block nz-dark-gray" data-toggle="tooltip" data-placement="top"
                       title="雲端自學">
                       <i class="fas fa-cloud"></i><span class="mx-1">/</span><i class="far fa-play-circle"></i>
@@ -527,16 +527,16 @@
                     </a>
                   </td>
                   <!-- 手機版時顯示 -->
-                  <td class="d-lg-none d-block" data-th="地點">
+                  <td class="d-md-none d-block" data-th="地點">
                     <div class="d-inline-block nz-dark-gray" data-toggle="tooltip" data-placement="top" title="雲端自學">
                       <i class="fas fa-cloud"></i><span class="mx-1">/</span><i class="far fa-play-circle"></i>
                     </div>
                   </td>
-                  <td data-th="起迄日期">2022/09/27 ~ 2022/09/28</td>
+                  <td data-th="日期">2022/09/27 ~ 2022/09/28</td>
                   <td data-th="時數">2hr</td>
                 </tr>
                 <tr>
-                  <td class="d-none d-lg-block" data-th="地點">
+                  <td class="d-none d-md-block" data-th="地點">
                     <div class="d-inline-block nz-dark-gray" data-toggle="tooltip" data-placement="top" title="台北實體">台北</div>
                   </td>
                   <td class="nz-table-title">
@@ -546,10 +546,10 @@
                     </a>
                   </td>
                   <!-- 手機版時顯示 -->
-                  <td class="d-lg-none d-block" data-th="地點">
+                  <td class="d-md-none d-block" data-th="地點">
                     <div class="d-inline-block nz-dark-gray" data-toggle="tooltip" data-placement="top" title="台北實體">台北</div>
                   </td>
-                  <td data-th="起迄日期">2022/09/27 ~ 2022/09/28</td>
+                  <td data-th="日期">2022/09/27 ~ 2022/09/28</td>
                   <td data-th="時數">2hr</td>
                 </tr>
                 <!-- 其餘11筆由 js 塞入於此，請搜尋 appendCourseListTableData 方法 -->
@@ -750,7 +750,7 @@
         let index = i < 2 ? i : Math.floor(Math.random() * (3 - 0));
         let html = `
           <tr>
-            <td class="d-none d-lg-block" data-th="地點">
+            <td class="d-none d-md-block" data-th="地點">
               <div class="d-inline-block nz-dark-gray" data-toggle="tooltip" data-placement="top" title="${fakeData[index].typeTitle}">${fakeData[index].type}</div>
             </td>
             <td class="nz-table-title">
@@ -759,12 +759,12 @@
                 <div class="d-lg-inline-block d-block">${fakeData[index].title}</div>
               </a>
             </td>
-            <td class="d-lg-none d-block" data-th="地點">
+            <td class="d-md-none d-block" data-th="地點">
               <div class="d-inline-block nz-dark-gray" data-toggle="tooltip" data-placement="top" title="${fakeData[index].typeTitle}">
                 ${fakeData[index].type}
               </div>
             </td>
-            <td data-th="起迄日期">${fakeData[index].date}</td>
+            <td data-th="日期">${fakeData[index].date}</td>
             <td data-th="時數">2hr</td>
           </tr>
         `
