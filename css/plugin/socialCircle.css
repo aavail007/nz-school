@@ -1,0 +1,55 @@
+/* 社群分享按鈕 */
+.socialCircle-item {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    background: #333;
+    margin: 50%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .socialCircle-item:hover {
+      opacity: 0.8;
+      color: #ffffff;
+  }
+  
+  .socialCircle-container {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    z-index: 99;
+  }
+  
+  .socialCircle-center {
+    width: 40px;
+    height: 40px;
+    background: #fd8b3f;
+    margin: 50%;
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .open.socialCircle-center {
+      background-color: #898989;
+  }
+
+  .socialCircle-open,
+  .socialCircle-closed {
+      display: none;
+  }
+
+  .closed .socialCircle-open {
+      display: block;
+  }
+
+  .open .socialCircle-closed {
+    display: block;
+}
+

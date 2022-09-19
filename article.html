@@ -28,6 +28,8 @@
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- icon 圖示 -->
 	<link rel="stylesheet" href="css/plugin/fontawesome-free-5.11.2-web/css/all.min.css" />
+	<!-- 社群媒體分享 css -->
+	<link rel="stylesheet" href="css/plugin/socialCircle.css">
 	<!-- 淨零永續學校 css -->
 	<link rel="stylesheet" href="css/nz_style.css" />
 	<!-- jQuery js -->
@@ -42,6 +44,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
 		integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!-- 社群媒體動畫效果 js -->
+	<script src="js/plugin/socialCircle.js"></script>
 	<!-- 淨零永續學校通用 js -->
 	<script src="js/nz-script.js"></script>
 </head>
@@ -203,25 +207,57 @@
 
 	<section>
 		<div class="container pb-3">
-			<!-- 分享 -->
-			<div class="nz-share">
-				<a class="nz-share-btn nz-line mr-3">
-					<i class="fab fa-line"></i>
-					<span class="small" langkey="分享">分享</span>
-				</a>
-				<a class="nz-share-btn nz-fb mr-3">
-					<i class="fab fa-facebook-square"></i>
-					<span class="small" langkey="分享">分享</span>
-				</a>
-				<a class="nz-share-btn nz-mail mr-3">
-					<i class="fas fa-envelope"></i>
-					<span class="small" langkey="分享">分享</span>
-				</a>
-			</div>
 			<!-- 文章標題 -->
-			<h3 id="h3Title" class="col-12 my-3 px-0"></h3>
+			<h3 id="h3Title" class="col-12 my-0 py-3 px-0 nz-article-title"></h3>
+			<!-- 文章資訊 -->
+			<div class="nz-article-info-div">
+				<div class="nz-article-info">
+					<div class="mr-3">
+						<i class="fas fa-folder-open"></i>
+						<span class="mx-1">科技新知</span>
+					</div>
+					<div class="mr-3">
+						<i class="far fa-calendar-alt"></i>
+						<span>2022/09/19</span>
+					</div>
+					<div class="mr-3">
+						<i class="far fa-eye"></i>
+						<span>9501</span>
+					</div>
+					<div class="mr-3 nz-tags">
+						<i class="fas fa-tags"></i>
+						<a href="#">淨零</a>
+						<a href="#">排碳</a>
+						<a href="#">轉型</a>
+					</div>
+				</div>
+				<!-- 分享 -->
+				<div class="nz-share">
+					<div class="socialCircle-container mr-3">
+						<a class="socialCircle-item nz-mail"><i class="fas fa-envelope"></i></a>
+						<a class="socialCircle-item nz-fb"><i class="fab fa-facebook-square"></i></a>
+						<a class="socialCircle-item nz-line"><i class="fab fa-line"></i></a>
+						<div class="socialCircle-center closed" data-toggle="tooltip" data-placement="bottom"
+							title="社群分享">
+							<span class="socialCircle-open"><i class="fa fa-share-alt"></i></span>
+							<span class="socialCircle-closed"><i class="fa fa-times"></i></span>
+						</div>
+					</div>
+					<a href="#" class="nz-contact-btn" data-toggle="tooltip" data-placement="bottom" title="聯絡我們">
+						<i class="fas fa-comment-alt"></i>
+					</a>
+				</div>
+			</div>
 			<!-- 文章主要內容 -->
 			<div id="MainContent" class="nz-article-main-cont"></div>
+			<!-- 文章轉載自 -->
+			<a class="article_place my-4" target="_blank"
+				href="https://www.itri.org.tw/ListStyle.aspx?DisplayStyle=18_content&SiteID=1&MmmID=1036452026061075714&MGID=1073255522611155031">
+				<div class="nz-article-reprint">
+					<i class="fas fa-share-square"></i>
+					<span class="ml-2">文章轉載自工業技術研究院工業技術與資訊月刊</span>
+				</div>
+			</a>
 			<!-- 附件夾檔 -->
 			<div class="nz-folder">
 				<div class="nz-folder-title">附件下載</div>
@@ -231,17 +267,20 @@
 						<div class="nz-folder-card">
 							<div class="nz-folder-img">
 								<a href="img/example/img-1.JPG" data-toggle="lightbox" data-gallery="img-gallery">
-									<img src="img/example/img-1.JPG">
+									<img alt="附件圖片" src="img/example/img-1.JPG">
 									<div class="nz-file-mask">
-										<div class="nz-file-name nz-overflow-ellipsis" data-toggle="tooltip" data-placement="bottom" title="附件圖片1.jpg">附件圖片1.jpg</div>
+										<div class="nz-file-name nz-overflow-ellipsis" data-toggle="tooltip" data-placement="bottom"
+											title="附件圖片1.jpg">附件圖片1.jpg</div>
 									</div>
 								</a>
 							</div>
 							<div class="d-flex justify-content-around nz-file-tool">
-								<a href="img/example/img-1.JPG" class="nz-file-tool-btn" data-toggle="lightbox" data-gallery="img-gallery-2">
+								<a href="img/example/img-1.JPG" class="nz-file-tool-btn" data-toggle="lightbox"
+									data-gallery="img-gallery-2">
 									<i class="far fa-eye" data-toggle="tooltip" data-placement="bottom" title="預覽"></i>
 								</a>
-								<a href="#" class="nz-file-tool-btn nz-download" data-toggle="tooltip" data-placement="bottom" title="下載">
+								<a href="#" class="nz-file-tool-btn nz-download" data-toggle="tooltip" data-placement="bottom"
+									title="下載">
 									<i class="fas fa-download"></i>
 								</a>
 							</div>
@@ -252,17 +291,20 @@
 						<div class="nz-folder-card">
 							<div class="nz-folder-img">
 								<a href="img/example/img-2.JPG" data-toggle="lightbox" data-gallery="img-gallery">
-									<img src="img/example/img-2.JPG">
+									<img alt="附件圖片" src="img/example/img-2.JPG">
 									<div class="nz-file-mask">
-										<div class="nz-file-name nz-overflow-ellipsis" data-toggle="tooltip" data-placement="bottom" title="附件圖片2附件圖片2附件圖片2.jpg">附件圖片2附件圖片2附件圖片2.jpg</div>
+										<div class="nz-file-name nz-overflow-ellipsis" data-toggle="tooltip" data-placement="bottom"
+											title="附件圖片2附件圖片2附件圖片2.jpg">附件圖片2附件圖片2附件圖片2.jpg</div>
 									</div>
 								</a>
 							</div>
 							<div class="d-flex justify-content-around nz-file-tool">
-								<a href="img/example/img-2.JPG" class="nz-file-tool-btn" data-toggle="lightbox" data-gallery="img-gallery-2">
+								<a href="img/example/img-2.JPG" class="nz-file-tool-btn" data-toggle="lightbox"
+									data-gallery="img-gallery-2">
 									<i class="far fa-eye" data-toggle="tooltip" data-placement="bottom" title="預覽"></i>
 								</a>
-								<a href="#" class="nz-file-tool-btn nz-download" data-toggle="tooltip" data-placement="bottom" title="下載">
+								<a href="#" class="nz-file-tool-btn nz-download" data-toggle="tooltip" data-placement="bottom"
+									title="下載">
 									<i class="fas fa-download"></i>
 								</a>
 							</div>
@@ -275,7 +317,8 @@
 								<a>
 									<div class="nz-file-office">
 										<i class="fas fa-file-alt"></i>
-										<div class="nz-file-name nz-overflow-ellipsis" data-toggle="tooltip" data-placement="bottom" title="課程報名簡章_20220919.pptx">課程報名簡章_20220919.pptx</div>
+										<div class="nz-file-name nz-overflow-ellipsis" data-toggle="tooltip" data-placement="bottom"
+											title="課程報名簡章_20220919.pptx">課程報名簡章_20220919.pptx</div>
 									</div>
 								</a>
 							</div>
@@ -293,7 +336,8 @@
 								<a>
 									<div class="nz-file-office">
 										<i class="fas fa-file-alt"></i>
-										<div class="nz-file-name nz-overflow-ellipsis" data-toggle="tooltip" data-placement="bottom" title="課程報名表_20220919.xels">課程報名表_20220919.xlsx</div>
+										<div class="nz-file-name nz-overflow-ellipsis" data-toggle="tooltip" data-placement="bottom"
+											title="課程報名表_20220919.xels">課程報名表_20220919.xlsx</div>
 									</div>
 								</a>
 							</div>
@@ -394,7 +438,7 @@
 		</div>
 	</footer>
 
-	<script src="demoArticle/articleData.js"></script>
+	<script src="demoData/articleData.js"></script>
 	<script>
 		$(document).ready(function () {
 			getArticleHtml();
@@ -405,10 +449,22 @@
 				$(this).ekkoLightbox();
 			});
 
-			document.getElementsByClassName('nz-download').onclick = function (ev){
-				ev.preventDefault();
-				alert('已經攔截');
-			}
+			$(".socialCircle-center").socialCircle({
+
+				// Rotate in degrees around the circle 0 to 360
+				rotate: 90,
+
+				// Distance of icons from the center
+				radius: 50,
+
+				// Divide circle by
+				circleSize: 2,
+
+				// <a href="https://www.jqueryscript.net/animation/">Animation</a> speed
+				speed: 500
+
+			});
+
 
 		});
 
@@ -426,12 +482,6 @@
 			$("#h3Title").append(articleDataObj.Title);
 			$("#MainContent").append(articleHtml);
 			$("#articleBreadcrumb").append(articleDataObj.Title);
-		}
-
-		// 下載檔案
-		function download(event) {
-			event.preventDefault();
-			event.stopPropagation();
 		}
 	</script>
 </body>

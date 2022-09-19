@@ -809,10 +809,11 @@ a.nz-a-white:active {
 /* -------- 文章內頁 -------- */
 .nz-share {
     display: flex;
-    justify-content: start;
+    justify-content: end;
     margin-bottom: 5px;
+    align-items: center;
 }
-.nz-share-btn {
+/* .nz-share-btn {
     font-size: 14px;
     border-radius: 25px;
     padding: 2px 14px;
@@ -829,7 +830,7 @@ a.nz-a-white:active {
 .nz-share-btn:hover,
 .nz-share-btn:active {
     color: #ffffff;
-}
+} */
 
 .nz-line {
     background-color: #00c300;
@@ -840,11 +841,71 @@ a.nz-a-white:active {
 }
 
 .nz-mail {
-    background-color: #898989;
+    background-color: #61c1c2;
+}
+
+.nz-contact-btn {
+    width: 40px;
+    height: 40px;
+    background: #45904d;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    line-height: 40px;
+}
+
+.nz-contact-btn:link,
+.nz-contact-btn:visited,
+.nz-contact-btn:hover,
+.nz-contact-btn:active {
+    color: #ffffff;
 }
 
 .nz-article-main-cont img {
     max-width: 100%;
+}
+
+.nz-article-title {
+    border-top: solid 2px #eee;
+}
+
+.nz-article-info-div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:  20px;
+    align-items: center;
+}
+
+.nz-article-info {
+    display: flex;
+    color: #898989;
+    flex-wrap: wrap
+}
+
+.nz-tags a{
+    text-decoration: underline;
+    margin: 0 2px;
+}
+
+/* 文章內頁 - 文章轉載 */
+.nz-article-reprint {
+    min-width: 200px;
+    width: 50%;
+    background-color: #ff8b32;
+    border-radius: 25px;
+    padding: 8px 10px;
+    color: #ffffff;
+    margin: 10px auto;
+    text-align: center
+}
+
+.nz-article-reprint a {
+    color: #ffffff;
+}
+
+.nz-article-reprint:hover {
+    opacity: 0.8;
 }
 
 /* -------- 文章內頁 - 附件夾檔 -------- */
@@ -852,9 +913,11 @@ a.nz-a-white:active {
     border-top: solid 5px #898989;
     background-color: #e8f0e9;
     padding: 15px;
+    margin-top: 20px;
 }
 
 .nz-folder-title {
+    color: #555555;
     font-size: 20px;
     font-weight: bold;
     margin-top: 10px;
