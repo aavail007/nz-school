@@ -813,24 +813,14 @@ a.nz-a-white:active {
     margin-bottom: 5px;
     align-items: center;
 }
-/* .nz-share-btn {
-    font-size: 14px;
-    border-radius: 25px;
-    padding: 2px 14px;
-    color: #ffffff;
-    cursor: pointer;
-}
 
-.nz-share-btn:hover {
-    opacity: 0.7;
+.nz-share.fixed {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    z-index: 999;
+    flex-direction: column-reverse;
 }
-
-.nz-share-btn:link,
-.nz-share-btn:visited,
-.nz-share-btn:hover,
-.nz-share-btn:active {
-    color: #ffffff;
-} */
 
 .nz-line {
     background-color: #00c300;
@@ -844,26 +834,34 @@ a.nz-a-white:active {
     background-color: #61c1c2;
 }
 
-.nz-contact-btn {
+.nz-contact-btn:link {
+    display: block;
     width: 40px;
     height: 40px;
-    background: #45904d;
+    background: #7FB77E;
     text-align: center;
     font-size: 15px;
     cursor: pointer;
     border-radius: 50%;
     line-height: 40px;
+    color: #ffffff;
+    margin-left: 10px;
 }
 
-.nz-contact-btn:link,
 .nz-contact-btn:visited,
 .nz-contact-btn:hover,
 .nz-contact-btn:active {
     color: #ffffff;
+    opacity: 0.9;
 }
 
-.nz-article-main-cont img {
-    max-width: 100%;
+.fixed .nz-contact-btn {
+    margin-bottom: 25px;
+    margin-left: 0;
+}
+
+.fixed .nz-fixed-hide.nz-contact-btn {
+    display: none;
 }
 
 .nz-article-title {
@@ -891,12 +889,12 @@ a.nz-a-white:active {
 /* 文章內頁 - 文章轉載 */
 .nz-article-reprint {
     min-width: 200px;
-    width: 50%;
+    width: 55%;
     background-color: #ff8b32;
     border-radius: 25px;
     padding: 8px 10px;
     color: #ffffff;
-    margin: 10px auto;
+    margin: 20px auto;
     text-align: center
 }
 
@@ -907,6 +905,34 @@ a.nz-a-white:active {
 .nz-article-reprint:hover {
     opacity: 0.8;
 }
+
+/* -------- 文章內頁 - 文章內容定義 -------- */
+.nz-article-main-cont h1 {
+    font-size: 2.5rem;
+}
+
+.nz-article-main-cont img {
+    max-width: 100%;
+    /* width: 100%; */
+}
+
+/* -------- 文章內頁 - 文章內容定義 - Table -------- */
+.nz-article-main-cont table {
+    max-width: 100% !important;
+    width: 100%;
+    background-color: transparent;
+}
+
+.nz-article-main-cont tbody tr:nth-of-type(odd) {
+    background-color: #e8f0e9;
+}
+
+.nz-article-main-cont th, td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
 
 /* -------- 文章內頁 - 附件夾檔 -------- */
 .nz-folder {
@@ -1049,6 +1075,12 @@ a.nz-a-white:active {
     .nz-know-type,
     .nz-course-status {
         font-size: 16px;
+    }
+
+    /* 文章內頁轉載 */
+    .nz-article-reprint {
+        width: 100%;
+        border-radius: 50px;
     }
 }
 

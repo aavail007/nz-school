@@ -208,7 +208,7 @@
 	<section>
 		<div class="container pb-3">
 			<!-- 文章標題 -->
-			<h3 id="h3Title" class="col-12 my-0 py-3 px-0 nz-article-title"></h3>
+			<h2 id="h3Title" class="col-12 my-0 py-3 px-0 nz-article-title"></h2>
 			<!-- 文章資訊 -->
 			<div class="nz-article-info-div">
 				<div class="nz-article-info">
@@ -232,18 +232,18 @@
 					</div>
 				</div>
 				<!-- 分享 -->
-				<div class="nz-share">
-					<div class="socialCircle-container mr-3">
+				<div id="nzShare" class="nz-share">
+					<div class="socialCircle-container">
 						<a class="socialCircle-item nz-mail"><i class="fas fa-envelope"></i></a>
 						<a class="socialCircle-item nz-fb"><i class="fab fa-facebook-square"></i></a>
 						<a class="socialCircle-item nz-line"><i class="fab fa-line"></i></a>
-						<div class="socialCircle-center closed" data-toggle="tooltip" data-placement="bottom"
-							title="社群分享">
+						<div id="socialCircleCenter" onclick="toggleSocialBtn()" class="socialCircle-center closed" data-toggle="tooltip"
+							data-placement="bottom" title="社群分享">
 							<span class="socialCircle-open"><i class="fa fa-share-alt"></i></span>
 							<span class="socialCircle-closed"><i class="fa fa-times"></i></span>
 						</div>
 					</div>
-					<a href="#" class="nz-contact-btn" data-toggle="tooltip" data-placement="bottom" title="聯絡我們">
+					<a id="contactBtn" href="#" class="nz-contact-btn" data-toggle="tooltip" data-placement="bottom" title="聯絡我們">
 						<i class="fas fa-comment-alt"></i>
 					</a>
 				</div>
@@ -440,6 +440,8 @@
 
 	<script src="demoData/articleData.js"></script>
 	<script>
+		let socialBtnShow = false; // 社群按鈕是否被展開
+
 		$(document).ready(function () {
 			getArticleHtml();
 
@@ -449,21 +451,22 @@
 				$(this).ekkoLightbox();
 			});
 
+			// 社群分享 UI 初始化
 			$(".socialCircle-center").socialCircle({
-
-				// Rotate in degrees around the circle 0 to 360
+				// 展開後的按鈕朝哪個角度 0 = 下面 ; 90 = 左邊
 				rotate: 90,
-
-				// Distance of icons from the center
-				radius: 50,
-
+				// 展開後距離中間按鈕的距離
+				radius: 55,
 				// Divide circle by
 				circleSize: 2,
-
-				// <a href="https://www.jqueryscript.net/animation/">Animation</a> speed
+				// 展開速度
 				speed: 500
-
 			});
+
+			// 偵測滾輪
+			window.onscroll = function () {
+				fixedSocialBtn()
+			};
 
 
 		});
@@ -482,6 +485,28 @@
 			$("#h3Title").append(articleDataObj.Title);
 			$("#MainContent").append(articleHtml);
 			$("#articleBreadcrumb").append(articleDataObj.Title);
+		}
+
+		// 展開/關閉社群按鈕
+		function toggleSocialBtn() {
+			if (!socialBtnShow) {
+				// 關閉 tooltip（因為展開社群按鈕時 tooltip 會擋到社群按鈕）
+				$('#socialCircleCenter').tooltip('hide');
+				// 當社群分享鈕 fixed 且打開狀態時，聯絡我的按鈕要隱藏，以免被擋到
+				$('#contactBtn').addClass('nz-fixed-hide');
+			} else {
+				$('#contactBtn').removeClass('nz-fixed-hide');
+			}
+			socialBtnShow = !socialBtnShow;
+		}
+
+		// 固定分享與聯絡我的按鈕
+		function fixedSocialBtn() {
+			if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
+				$("#nzShare").addClass('fixed');
+			} else {
+				$("#nzShare").removeClass('fixed');
+			}
 		}
 	</script>
 </body>

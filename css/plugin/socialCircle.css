@@ -12,7 +12,7 @@
   }
 
   .socialCircle-item:hover {
-      opacity: 0.8;
+      opacity: 0.9;
       color: #ffffff;
   }
   
@@ -34,6 +34,10 @@
     color: #ffffff;
     font-size: 15px;
     cursor: pointer;
+  }
+
+  .socialCircle-center:hover {
+    background: #ff964f;
   }
 
   .open.socialCircle-center {
