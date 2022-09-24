@@ -87,6 +87,10 @@ a .nz-black:hover {
     text-decoration: none;
 }
 
+.nz-warning {
+    color: #ff8b32
+}
+
 .btn:focus {
     box-shadow: none;
 }
@@ -95,6 +99,12 @@ a .nz-black:hover {
 .nz-btn {
     padding: 5px 20px;
     border-radius: 6px;
+}
+
+.nz-lg-btn {
+    padding: 5px 20px;
+    border-radius: 25px;
+    width: 100%;
 }
 
 .nz-btn-primary,
@@ -1045,6 +1055,89 @@ a.nz-a-white:active {
     opacity: 0.5;
 }
 
+/* --------- 會員登入 --------- */
+.nz-not-member {
+
+}
+
+.nz-login-card {
+    width: 46%;
+    max-width: 500px;
+    border-top: 5px solid #45904d;
+    box-shadow: 6px 8px 27px rgb(0 0 0 / 10%);
+    border-radius: 5px 5px 11px 11px;
+    background: #ffffff;
+    padding: 20px 40px;
+    margin: 5px auto;
+    text-align: center;
+    color: #555555;
+}
+
+.nz-img-check {
+    max-width: 115px;
+}
+
+.nz-refresh-check {
+    cursor: pointer;
+    color: #555555;
+}
+
+.nz-refresh-check:hover {
+    color: #ff8b32;
+}
+
+.nz-or-box {
+    border-top: 1px solid #898989;
+    padding: 10px 0;
+    margin-top: 27px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+.nz-or-box:before {
+    content: "或";
+    color: #898989;
+    display: inline-block;
+    position: absolute;
+    top: -15px;
+    background: #fff;
+    padding: 0 20px;
+}
+
+.nz-login-btn:link,
+.nz-login-btn:visited {
+    display: flex;
+    justify-content: center;
+    padding: 6px 25px;
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    border-radius: 25px;
+    text-align: center;
+    margin: 12px 0;
+    color: #555555;
+}
+
+.nz-login-btn:hover {
+    color: #45904d;
+}
+
+.nz-login-btn img {
+    width: 22px;
+}
+
+.nz-login-btn-inner {
+    width: 185px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.nz-error-form {
+    color: #e86a6a;
+    text-align: left;
+}
+
 @media(max-width: 767.98px) {
     /* --------- table rwd --------- */
     .nz-rwd-table th,
@@ -1189,6 +1282,11 @@ a.nz-a-white:active {
         display: flex;
         align-items: center;
     }
+
+    /* 登入頁 */
+    .nz-login-card {
+        width: 80%;
+    }
 }
 
 @media(max-width: 1199.98px) {
@@ -1206,5 +1304,18 @@ a.nz-a-white:active {
         font-size: 18px;
         width: 30px;
         height: 30px;
+    }
+}
+
+/* RWD */
+@media(max-width: 575.98px) {
+    /* 登入頁 */
+    .nz-login-card {
+        width: 100%;
+        padding: 20px 8px;
+    }
+
+    .nz-login-card p {
+        font-size: 14px;
     }
 }

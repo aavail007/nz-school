@@ -60,7 +60,7 @@
 				<div class="d-none d-lg-block">
 					<ul class="nav justify-content-end align-items-center font-weight-bold">
 						<li class="nz-nav-item">
-							<a class="nz-primary d-flex" href="login.html" data-toggle="tooltip" data-placement="top" title="前往會員登入頁">
+							<a class="nz-primary d-flex" href="#" data-toggle="tooltip" data-placement="top" title="前往會員登入頁">
 								<div class="nz-user-pc"><i class="fas fa-user"></i></div>會員登入
 							</a>
 						</li>
@@ -193,7 +193,7 @@
 			<li class="ml-2" aria-current="page">
 				<i class="fas fa-chevron-right"></i>
 				<a class="d-flex" href="knowledge.html">
-					<div class="ml-2">淨零知識</div>
+					<div class="ml-2">會員登入</div>
 				</a>
 			</li>
 			<li class="active ml-2" aria-current="page">
@@ -207,147 +207,59 @@
 
 	<section>
 		<div class="container pb-3">
-			<!-- 文章標題 -->
-			<h2 id="h3Title" class="col-12 my-0 py-3 px-0 nz-article-title"></h2>
-			<!-- 文章資訊 -->
-			<div class="nz-article-info-div">
-				<div class="nz-article-info">
-					<div class="mr-3">
-						<i class="fas fa-folder-open"></i>
-						<span class="mx-1">科技新知</span>
-					</div>
-					<div class="mr-3">
-						<i class="far fa-calendar-alt"></i>
-						<span>2022/09/19</span>
-					</div>
-					<div class="mr-3">
-						<i class="far fa-eye"></i>
-						<span>9501</span>
-					</div>
-					<div class="mr-3 nz-tags">
-						<i class="fas fa-tags"></i>
-						<a href="#">淨零</a>
-						<a href="#">排碳</a>
-						<a href="#">轉型</a>
-					</div>
-				</div>
-				<!-- 分享 -->
-				<div id="nzShare" class="nz-share">
-					<div class="socialCircle-container">
-						<a class="socialCircle-item nz-mail"><i class="fas fa-envelope"></i></a>
-						<a class="socialCircle-item nz-fb"><i class="fab fa-facebook-square"></i></a>
-						<a class="socialCircle-item nz-line"><i class="fab fa-line"></i></a>
-						<div id="socialCircleCenter" onclick="toggleSocialBtn()" class="socialCircle-center closed" data-toggle="tooltip"
-							data-placement="bottom" title="社群分享">
-							<span class="socialCircle-open"><i class="fa fa-share-alt"></i></span>
-							<span class="socialCircle-closed"><i class="fa fa-times"></i></span>
-						</div>
-					</div>
-					<a id="contactBtn" href="#" class="nz-contact-btn" data-toggle="tooltip" data-placement="bottom" title="聯絡我們">
-						<i class="fas fa-comment-alt"></i>
-					</a>
-				</div>
+			<h1 class="nz-title text-center nz-primary my-2">會員登入</h1>
+			<div class="nz-not-member text-center ">還不是會員?
+				<a href="https://college.itri.org.tw/XFile/ConditionsM">
+					加入會員
+				</a>
 			</div>
-			<!-- 文章主要內容 -->
-			<div id="MainContent" class="nz-article-main-cont"></div>
-			<!-- 文章轉載自 -->
-			<a class="article_place my-4" target="_blank"
-				href="https://www.itri.org.tw/ListStyle.aspx?DisplayStyle=18_content&SiteID=1&MmmID=1036452026061075714&MGID=1073255522611155031">
-				<div class="nz-article-reprint">
-					<i class="fas fa-share-square"></i>
-					<span class="ml-2">文章轉載自工業技術研究院工業技術與資訊月刊</span>
-				</div>
-			</a>
-			<!-- 附件夾檔 -->
-			<div class="nz-folder">
-				<div class="nz-folder-title">附件下載</div>
-				<div class="row my-2">
-					<!-- 附件-圖 -->
-					<div class="col-md-3 col-6">
-						<div class="nz-folder-card">
-							<div class="nz-folder-img">
-								<a href="img/example/img-1.JPG" data-toggle="lightbox" data-gallery="img-gallery">
-									<img alt="附件圖片" src="img/example/img-1.JPG">
-									<div class="nz-file-mask">
-										<div class="nz-file-name nz-overflow-ellipsis" data-toggle="tooltip" data-placement="bottom"
-											title="附件圖片1.jpg">附件圖片1.jpg</div>
-									</div>
-								</a>
-							</div>
-							<div class="d-flex justify-content-around nz-file-tool">
-								<a href="img/example/img-1.JPG" class="nz-file-tool-btn" data-toggle="lightbox"
-									data-gallery="img-gallery-2">
-									<i class="far fa-eye" data-toggle="tooltip" data-placement="bottom" title="預覽"></i>
-								</a>
-								<a href="#" class="nz-file-tool-btn nz-download" data-toggle="tooltip" data-placement="bottom"
-									title="下載">
-									<i class="fas fa-download"></i>
-								</a>
-							</div>
+			<div class="nz-login-card">
+				<h3>產業學習網</h3>
+				<p>走得多慢都無所謂，只要你不停下腳步。</p>
+				<small class="nz-warning">-使用產業學院帳號登入-</small>
+				<form class="my-2">
+					<div class="row text-left">
+						<div class="col-12 mb-2">
+							<input type="text" class="form-control" placeholder="產業學院帳號(註冊的Email信箱)">
+							<small class="nz-error-form">請填入帳號</small>
+						</div>
+						<div class="col-12 my-2">
+							<input type="password" class="form-control" placeholder="產業學院密碼">
+							<!-- <small class="nz-error-form">請填入密碼</small> -->
+						</div>
+						<div class="col-md-3 col-sm-3 col-4 my-2 text-left">
+							<img id="imgCheck" class="nz-img-check"
+								src="https://college.itri.org.tw/api/TM_WebUI_Captcha_Get?id=6b2dcba8-10e4-4831-aa39-0ecae1b3eb7d&amp;1663987356131"
+								alt="驗證碼">
+						</div>
+						<div class="col-md-9 col-sm-9 col-8 my-2">
+							<input type="text" class="form-control" placeholder="驗證碼">
+							<!-- <small class="nz-error-form">請輸入算式的答案</small> -->
+						</div>
+						<div class="col text-left">
+							<div class="d-inline-block nz-refresh-check">重新產生驗證碼</div>
 						</div>
 					</div>
-					<!-- 附件-圖 -->
-					<div class="col-md-3 col-6">
-						<div class="nz-folder-card">
-							<div class="nz-folder-img">
-								<a href="img/example/img-2.JPG" data-toggle="lightbox" data-gallery="img-gallery">
-									<img alt="附件圖片" src="img/example/img-2.JPG">
-									<div class="nz-file-mask">
-										<div class="nz-file-name nz-overflow-ellipsis" data-toggle="tooltip" data-placement="bottom"
-											title="附件圖片2附件圖片2附件圖片2.jpg">附件圖片2附件圖片2附件圖片2.jpg</div>
-									</div>
-								</a>
-							</div>
-							<div class="d-flex justify-content-around nz-file-tool">
-								<a href="img/example/img-2.JPG" class="nz-file-tool-btn" data-toggle="lightbox"
-									data-gallery="img-gallery-2">
-									<i class="far fa-eye" data-toggle="tooltip" data-placement="bottom" title="預覽"></i>
-								</a>
-								<a href="#" class="nz-file-tool-btn nz-download" data-toggle="tooltip" data-placement="bottom"
-									title="下載">
-									<i class="fas fa-download"></i>
-								</a>
-							</div>
-						</div>
+					
+					<button type="submit" class="btn nz-lg-btn nz-btn-primary my-3">登 入</button>
+					<div class="text-right">
+						<a href="https://college.itri.org.tw/XFile/Forget">忘記密碼？</a>
 					</div>
-					<!-- 附件檔案 -->
-					<div class="col-md-3 col-6">
-						<div class="nz-folder-card">
-							<div class="nz-folder-img">
-								<a>
-									<div class="nz-file-office">
-										<i class="fas fa-file-alt"></i>
-										<div class="nz-file-name nz-overflow-ellipsis" data-toggle="tooltip" data-placement="bottom"
-											title="課程報名簡章_20220919.pptx">課程報名簡章_20220919.pptx</div>
-									</div>
-								</a>
-							</div>
-							<div class="d-flex justify-content-around nz-file-tool">
-								<a href="#" class="nz-file-tool-btn" data-toggle="tooltip" data-placement="bottom" title="下載">
-									<i class="fas fa-download"></i>
-								</a>
-							</div>
+				</form>
+				<div class="nz-or-box"></div>
+				<div class="nz-third-login">
+					<a class="nz-login-btn" href="#">
+						<div class="nz-login-btn-inner">
+							<img src="img/login/google_login.png">
+							<div class="ml-3">Google 登入 / 註冊</div>
 						</div>
-					</div>
-					<!-- 附件檔案 -->
-					<div class="col-md-3 col-6">
-						<div class="nz-folder-card">
-							<div class="nz-folder-img">
-								<a>
-									<div class="nz-file-office">
-										<i class="fas fa-file-alt"></i>
-										<div class="nz-file-name nz-overflow-ellipsis" data-toggle="tooltip" data-placement="bottom"
-											title="課程報名表_20220919.xels">課程報名表_20220919.xlsx</div>
-									</div>
-								</a>
-							</div>
-							<div class="d-flex justify-content-around nz-file-tool">
-								<a href="#" class="nz-file-tool-btn" data-toggle="tooltip" data-placement="bottom" title="下載">
-									<i class="fas fa-download"></i>
-								</a>
-							</div>
+					</a>
+					<a class="nz-login-btn" href="#">
+						<div class="nz-login-btn-inner">
+							<img src="img/login/line_login.png">
+							<div class="ml-3">Line 登入 / 註冊</div>
 						</div>
-					</div>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -437,78 +349,6 @@
 			</div>
 		</div>
 	</footer>
-
-	<script src="demoData/articleData.js"></script>
-	<script>
-		let socialBtnShow = false; // 社群按鈕是否被展開
-
-		$(document).ready(function () {
-			getArticleHtml();
-
-			// 圖片預覽功能初始化
-			$(document).on('click', '[data-toggle="lightbox"]', function (event) {
-				event.preventDefault();
-				$(this).ekkoLightbox();
-			});
-
-			// 社群分享 UI 初始化
-			$(".socialCircle-center").socialCircle({
-				// 展開後的按鈕朝哪個角度 0 = 下面 ; 90 = 左邊
-				rotate: 90,
-				// 展開後距離中間按鈕的距離
-				radius: 55,
-				// Divide circle by
-				circleSize: 2,
-				// 展開速度
-				speed: 500
-			});
-
-			// 偵測滾輪
-			window.onscroll = function () {
-				fixedSocialBtn()
-			};
-
-
-		});
-
-		// 取得文章 html
-		function getArticleHtml() {
-			// 取得 url 文章參數
-			const queryString = window.location.search;
-			const urlParams = new URLSearchParams(queryString);
-			const articleId = urlParams.get('articleId') || "1";
-			// 取得該 id 文章資料
-			let articleDataObj = demoData["articleData" + articleId];
-			// 取得 demo 資料的 html
-			let articleHtml = articleDataObj.Desc;
-			// 將資料新增到靜態 html 上
-			$("#h3Title").append(articleDataObj.Title);
-			$("#MainContent").append(articleHtml);
-			$("#articleBreadcrumb").append(articleDataObj.Title);
-		}
-
-		// 展開/關閉社群按鈕
-		function toggleSocialBtn() {
-			if (!socialBtnShow) {
-				// 關閉 tooltip（因為展開社群按鈕時 tooltip 會擋到社群按鈕）
-				$('#socialCircleCenter').tooltip('hide');
-				// 當社群分享鈕 fixed 且打開狀態時，聯絡我的按鈕要隱藏，以免被擋到
-				$('#contactBtn').addClass('nz-fixed-hide');
-			} else {
-				$('#contactBtn').removeClass('nz-fixed-hide');
-			}
-			socialBtnShow = !socialBtnShow;
-		}
-
-		// 固定分享與聯絡我的按鈕
-		function fixedSocialBtn() {
-			if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
-				$("#nzShare").addClass('fixed');
-			} else {
-				$("#nzShare").removeClass('fixed');
-			}
-		}
-	</script>
 </body>
 
 </html>
