@@ -827,7 +827,7 @@ a.nz-a-white:active {
 .nz-share.fixed {
     position: fixed;
     right: 20px;
-    bottom: 60px;
+    bottom: 50px;
     z-index: 999;
     flex-direction: column-reverse;
 }
@@ -1206,7 +1206,6 @@ a.nz-a-white:active {
     .nz-article-reprint {
         width: 100%;
         border-radius: 50px;
-        padding: 12px 20px;
     }
 }
 
