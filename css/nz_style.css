@@ -103,7 +103,7 @@ a .nz-black:hover {
 }
 
 .nz-lg-btn {
-    padding: 5px 20px;
+    padding: 8px 20px;
     border-radius: 25px;
     width: 100%;
     max-width: 450px;
@@ -1107,7 +1107,7 @@ a.nz-a-white:active {
 .nz-login-btn:visited {
     display: flex;
     justify-content: center;
-    padding: 6px 25px;
+    padding: 8px 25px;
     background-color: #ffffff;
     border: 1px solid #ced4da;
     border-radius: 25px;
