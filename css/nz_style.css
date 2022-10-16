@@ -809,13 +809,13 @@ a.nz-a-white:active {
 .nz-sort-select {
     min-width: 70px;
     max-width: 150px;
-    width: 40%
+    width: 60%
 }
 
 .nz-course-list-tab {
     min-width: 80px;
     max-width: 200px;
-    width: 45%
+    width: 35%
 }
 
 /* -------- 文章內頁 -------- */
