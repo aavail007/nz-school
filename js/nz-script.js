@@ -30,8 +30,10 @@ $(document).ready(function () {
 
 // 手機版 header 滾輪往下縮小
 function scrollFunction() {
-  if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+  var scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+  if (scrollTop > 60) {
     $("#nzHeader").addClass("nz-small-header");
+  } else if (scrollTop <=60 && scrollTop >= 30) {
   } else {
     $("#nzHeader").removeClass("nz-small-header");
   }
