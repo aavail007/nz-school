@@ -35,6 +35,11 @@ header {
     background-color: #35c9c6 !important;
 }
 
+.nz-bg-darkblue {
+    background-color: #19428B !important;
+}
+
+
 .nz-bg-dark-gray {
     background-color: #959494 !important;
 }
@@ -219,6 +224,10 @@ a .nz-black:hover {
     padding: 10px 15px;
 }
 
+.nz-nav-item a{
+    align-items: center!important;
+}
+
 .nz-nav-item:last-child {
     padding: 10px 0 10px 15px;
 }
@@ -282,6 +291,20 @@ a .nz-black:hover {
 .nz-title-2 {
     font-size: 28px;
     font-weight: 900;
+    color: #02757F;
+}
+
+.nz-title-3 {
+    font-size: 28px;
+    font-weight: bolder;
+    color:#1a9d90;
+}
+
+.nz-title-4 {
+    text-indent: 1em;
+    font-size: 22px;
+    font-weight: bolder;
+    color:#6f9d1a;
 }
 
 .nz-subtitle {
@@ -493,12 +516,19 @@ a .nz-black:hover {
 }
 
 /* 淨零知識 + 專業課程卡片 */
-.nz-know-card,
+.nz-know-card {
+    background-color: #fff;
+    border-radius: 11px;
+    overflow: hidden;
+    min-height: 350px;
+    margin: 15px 0;
+    box-shadow: 0 6px 27px rgba(0, 0, 0, 0.08);
+}
 .nz-course-bg-card {
     background-color: #fff;
     border-radius: 11px;
     overflow: hidden;
-    min-height: 380px;
+    min-height: 390px;
     margin: 15px 0;
     box-shadow: 0 6px 27px rgba(0, 0, 0, 0.08);
 }
@@ -544,7 +574,7 @@ a .nz-black:hover {
 .nz-course-bg-card-info p {
     font-size: 14px;
     color: #898989;
-    min-height: 60px;
+    min-height: 15px;
 }
 
 .nz-know-type,
@@ -896,6 +926,12 @@ a.nz-a-white:active {
 .nz-tags a{
     text-decoration: underline;
     margin: 0 2px;
+}
+.nz-tags a.keyword{
+    text-decoration:none;
+}
+.nz-tags a.keyword:hover{
+     cursor:default ;
 }
 
 /* 文章內頁 - 文章轉載 */
@@ -1344,3 +1380,11 @@ a.nz-a-white:active {
         font-size: 14px;
     }
 }
+@media(max-width: 410px) {
+    .nz-footer-logo {
+    height: 36px;
+    }
+    .nz-footer-tour {
+    font-size: 12px;
+    }
+    }
