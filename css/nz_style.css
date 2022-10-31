@@ -1013,6 +1013,54 @@ a.nz-a-white:active {
     color: #ffffff;
 }
 
+/* 主圖 第一種(滿版)*/
+.nz-figure {
+    margin: 20px auto;
+}
+  
+.nz-figure figcaption {
+    font-size: 14px;
+    padding: 15px;
+    text-align: center;
+    color: #898989;
+    line-height: 2;
+}
+  
+/* 主圖 第二種(縮小置中版) */
+.nz-figure-2 {
+    width: 70%;
+    margin: 20px auto;
+}
+  
+.nz-figure-2 figcaption {
+    font-size: 14px;
+    padding: 15px;
+    text-align: center;
+    border: solid 1px #eee;
+    color: #898989;
+    line-height: 2;
+}
+  
+/* nz-figure 第三種(縮小置中有底色版) */
+.nz-figure-3 {
+    background-color: #e8f0e9;
+}
+
+.nz-figure-3 .nz-figure-img {
+    width: 65%;
+    margin: 0px auto;
+    padding: 25px 0;
+}
+
+.nz-figure-3 figcaption {
+    font-size: 14px;
+    padding: 15px;
+    text-align: center;
+    border: solid 1px #eee;
+    color: #898989;
+    background-color: #ffffff;
+    line-height: 2;
+}
 
 /* -------- 文章內頁 - 附件夾檔 -------- */
 .nz-folder {
@@ -1347,6 +1395,18 @@ a.nz-a-white:active {
     /* 登入頁 */
     .nz-login-card {
         width: 80%;
+    }
+
+    /* 文章內頁主圖 - 第二種(縮小置中版) */
+    .nz-figure-2 {
+        width: 100%;
+        /* margin: 0px; */
+    }
+
+    /* 文章內頁主圖 - 第三種(縮小置中有底色版) */
+    .nz-figure-3 .nz-figure-img {
+        width: 80%;
+        padding: 0;
     }
 }
 
